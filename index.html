@@ -1203,6 +1203,43 @@
       margin-top: 4rem;
     }
 
+    .work-heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .work-heading .section-title {
+      margin-bottom: 0;
+    }
+
+    .full-case-study-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .65rem 1rem;
+      border: 1px solid rgba(58, 181, 195, .35);
+      border-radius: 3px;
+      background: transparent;
+      color: var(--teal);
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: .74rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all .25s var(--ease);
+    }
+
+    .full-case-study-link:hover {
+      background: rgba(58, 181, 195, .1);
+      color: var(--cream);
+      transform: translateY(-2px);
+    }
+
     .case-card {
       display: grid;
       grid-template-columns: 5fr 4fr;
@@ -2301,6 +2338,41 @@
       padding: 2rem;
     }
 
+    .modal-box.document-modal {
+      max-width: 1180px;
+      height: 90vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .modal-box.document-modal .modal-body {
+      padding: 0;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .case-study-frame {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: var(--navy);
+      display: block;
+    }
+
+    .modal-doc-link {
+      color: var(--teal);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .modal-doc-link:hover {
+      color: var(--cream);
+    }
+
     /* Screens gallery */
     .modal-screens {
       display: grid;
@@ -2515,7 +2587,8 @@
       <div class="hero-left">
         <div class="hero-eyebrow">Available for Remote UX Designer Roles</div>
         <h1 class="hero-name">RASHMI<br><span class="accent">PADMA</span>NABHA</h1>
-        <p class="hero-title">Principal Product Designer | GenAI UX designer | AI Experience Design | Accessibility Consultant | WCAG 2.2 - 3.0 Silver | UX Research & Behavioral Psychology Strategist | Figma | Agentic AI</p>
+        <p class="hero-title">Principal Product Designer | GenAI UX designer | AI Experience Design | Accessibility
+          Consultant | WCAG 2.2 - 3.0 Silver | UX Research & Behavioral Psychology Strategist | Figma | Agentic AI</p>
         <p class="hero-desc">17+ years leading UX for enterprise and AI-powered products — reducing user drop-off,
           increasing task completion, and shipping design systems adopted by cross-functional teams of 50+. I partner
           with product and engineering to turn messy, complex workflows into experiences that move business metrics.</p>
@@ -2681,7 +2754,11 @@
     <!-- CASE STUDIES -->
     <section class="work" id="work">
       <div class="section-label">Case Studies</div>
-      <h2 class="section-title reveal">SELECTED WORK</h2>
+      <div class="work-heading reveal">
+        <h2 class="section-title">SELECTED WORK</h2>
+        <button class="full-case-study-link" onclick="openModal('modal-full-case-study')" aria-haspopup="dialog"
+          type="button">View Full case study -></button>
+      </div>
       <p class="section-subtitle reveal">Five focused case studies across AI workplace experience, enterprise SaaS,
         asset management, and accessibility - with the strongest details on the landing page and full stories inside
         each
@@ -2814,7 +2891,7 @@
             </div>
           </div>
         </div>
- <!-- Case 4: Web Accessibility Audit - Synovus Bank -->
+        <!-- Case 4: Web Accessibility Audit - Synovus Bank -->
         <div class="case-card image-case reveal">
           <div class="case-content">
             <div>
@@ -2900,7 +2977,7 @@
         </div>
 
 
-       
+
 
 
       </div>
@@ -3232,6 +3309,26 @@
   <div class="img-fullscreen" id="imgFullscreen" onclick="this.classList.remove('active')" role="dialog"
     aria-label="Fullscreen image view">
     <img id="imgFullscreenSrc" src="" alt="">
+  </div>
+
+  <!-- MODAL: Full Case Study Document -->
+  <div class="modal-overlay" id="modal-full-case-study" role="dialog" aria-modal="true"
+    aria-labelledby="modal-full-case-study-title">
+    <div class="modal-box document-modal">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="modal-full-case-study-title">Full Case Study</div>
+          <div class="modal-subtitle">AI-Powered Intelligent Check-In System</div>
+        </div>
+        <a href="CaseStudy_RashmiPadmanabha_Stories.pdf.pdf" class="modal-doc-link" target="_blank"
+          rel="noopener">Open PDF</a>
+        <button class="modal-close" onclick="closeModal('modal-full-case-study')" aria-label="Close modal">x</button>
+      </div>
+      <div class="modal-body">
+        <iframe class="case-study-frame" src="CaseStudy_RashmiPadmanabha_Stories.pdf.pdf"
+          title="Full case study document"></iframe>
+      </div>
+    </div>
   </div>
 
   <!-- MODAL: Kalik Enterprise SaaS Platform -->
