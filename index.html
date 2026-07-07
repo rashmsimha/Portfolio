@@ -371,14 +371,13 @@
       border-radius: 8px;
       padding: .8rem;
       color: #666;
-      ;
       font-size: .72rem;
       line-height: 1.45;
     }
 
     body.light-mode .smart-system-step strong {
       display: block;
-      color: var(--cream);
+      color: var(--teal3);
       font-size: .68rem;
       letter-spacing: .08em;
       text-transform: uppercase;
@@ -760,6 +759,14 @@
 
     body.light-mode .modal-list li {
       color: #444;
+    }
+
+    body.light-mode .modal-list li strong {
+      color: #1a1a2e;
+    }
+
+    body.light-mode .info-card-text {
+      color: #333;
     }
 
     body.light-mode .modal-outcome-label {
@@ -1442,7 +1449,7 @@
 
     .expertise-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 1.5rem;
       margin-top: 4rem;
     }
@@ -2823,6 +2830,14 @@
       color: var(--teal);
     }
 
+    .modal-list li strong {
+      color: var(--cream);
+    }
+
+    .info-card-text {
+      color: var(--cream);
+    }
+
     /* Tags */
     .modal-tags {
       display: flex;
@@ -2877,7 +2892,7 @@
   </style>
 </head>
 
-<body style="background:#0d1b2a;color:#f0ede6">
+<body>
 
   <!-- Cursor -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -2942,7 +2957,7 @@
         <div class="hero-card">
           <div class="hero-card-label">Impact at a Glance</div>
           <div class="hero-stat">
-            <div class="hero-stat-num" data-target="18">17+</div>
+            <div class="hero-stat-num" data-target="18">18+</div>
             <div class="hero-stat-label">Years of Product Design Experience</div>
             <div class="hero-stat-bar">
               <div class="hero-stat-fill" data-width="95" style="width:95%"></div>
@@ -2983,8 +2998,13 @@
         <div class="about-text reveal">
           <p>I am a <strong>Product Designer and Experience Research Strategist</strong> who has spent 18+ years making
             complex enterprise systems feel intuitive, human, and worth using.</p>
-          <p>My work spans enterprise intranet platforms, AI-assisted interfaces, conversational UX, content authoring
-            systems, and search - across financial services, B2B, public sector, and consumer products.</p>
+          <p>I own products end to end - from discovery and problem framing through architecture, interaction design,
+            and the details that ship - across enterprise intranet platforms, AI-assisted interfaces, conversational
+            UX, content authoring systems, and search. That ownership has carried across financial services, B2B,
+            public sector, and consumer products, which means I've had to re-earn trust with a new industry's
+            constraints, compliance bar, and users each time rather than repeating one playbook. What carries across
+            all of it isn't domain knowledge - it's a repeatable way of untangling ambiguity, so I can pick up a new
+            domain and be productive fast.</p>
           <p>What makes me different is a <strong>grounding in Behavioural Psychology</strong> (MA in Behavioural
             Psychology — MIT, in progress) -
             I don't just observe what users do, I understand why they feel stuck, uncertain, or capable. That shapes
@@ -3003,9 +3023,10 @@
           </div>
           <div class="pillar">
             <div class="pillar-icon">SY</div>
-            <div class="pillar-title">Systems Thinking</div>
+            <div class="pillar-title">Product Strategy &amp; Systems Thinking</div>
             <div class="pillar-desc">I design platforms, not pages - scalable IA, reusable components, and governance
-              frameworks that hold up at enterprise scale.</div>
+              frameworks that hold up at enterprise scale, tied back to roadmap priorities and business outcomes, not
+              just screens.</div>
           </div>
           <div class="pillar">
             <div class="pillar-icon">AI</div>
@@ -3074,6 +3095,39 @@
             <li>AI-assisted smart tagging</li>
           </ul>
         </div>
+        <div class="expertise-card reveal">
+          <div class="expertise-card-icon">AC</div>
+          <div class="expertise-card-title">Accessibility &amp; Compliance</div>
+          <ul>
+            <li>WCAG 2.0/2.2 audits &amp; remediation</li>
+            <li>Compliance scoring &amp; reporting</li>
+            <li>Regulated-industry design governance</li>
+            <li>Violation triage by user impact</li>
+            <li>Zero-critical-failure delivery under deadline</li>
+          </ul>
+        </div>
+        <div class="expertise-card reveal">
+          <div class="expertise-card-icon">RS</div>
+          <div class="expertise-card-title">UX Research &amp; Validation</div>
+          <ul>
+            <li>Contextual inquiry &amp; diary studies</li>
+            <li>Usability testing &amp; heuristic evaluation</li>
+            <li>Journey maps &amp; service blueprints</li>
+            <li>User interviews &amp; longitudinal benchmarking</li>
+            <li>Evidence-based stakeholder facilitation</li>
+          </ul>
+        </div>
+        <div class="expertise-card reveal">
+          <div class="expertise-card-icon">TY</div>
+          <div class="expertise-card-title">Visual Design &amp; Design Systems</div>
+          <ul>
+            <li>Design systems, component &amp; UI pattern libraries</li>
+            <li>Hi-fidelity prototyping with AI tools</li>
+            <li>Typography systems &amp; type scales</li>
+            <li>Grid, layout &amp; colour/contrast systems</li>
+            <li>Concept sketching &amp; ideation</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -3082,8 +3136,6 @@
       <div class="section-label">Case Studies</div>
       <div class="work-heading reveal">
         <h2 class="section-title">SELECTED WORK</h2>
-        <button class="full-case-study-link" onclick="openModal('modal-full-case-study')" aria-haspopup="dialog"
-          type="button">View Full case study -></button>
       </div>
       <p class="section-subtitle reveal">Five focused case studies across agentic workplace experience, enterprise SaaS,
         asset management, and accessibility - with the strongest details on the landing page and full stories inside
@@ -3864,26 +3916,6 @@
     <img id="imgFullscreenSrc" src="" alt="">
   </div>
 
-  <!-- MODAL: Full Case Study Document -->
-  <div class="modal-overlay" id="modal-full-case-study" role="dialog" aria-modal="true"
-    aria-labelledby="modal-full-case-study-title">
-    <div class="modal-box document-modal">
-      <div class="modal-header">
-        <div>
-          <div class="modal-title" id="modal-full-case-study-title">Full Case Study</div>
-          <div class="modal-subtitle">AI-Powered Intelligent Check-In System</div>
-        </div>
-        <a href="CaseStudy_RashmiPadmanabha_Stories.pdf.pdf" class="modal-doc-link" target="_blank" rel="noopener">Open
-          PDF</a>
-        <button class="modal-close" onclick="closeModal('modal-full-case-study')" aria-label="Close modal">x</button>
-      </div>
-      <div class="modal-body">
-        <iframe class="case-study-frame" src="CaseStudy_RashmiPadmanabha_Stories.pdf.pdf"
-          title="Full case study document"></iframe>
-      </div>
-    </div>
-  </div>
-
   <!-- MODAL: Kalik Enterprise SaaS Platform -->
   <div class="modal-overlay" id="modal-enterprise-saas" role="dialog" aria-modal="true"
     aria-labelledby="modal-enterprise-saas-title">
@@ -3958,13 +3990,13 @@
         <div class="modal-section">
           <div class="modal-section-title">Users</div>
           <ul class="modal-list">
-            <li><strong style="color:var(--cream)">Factory and operations users</strong> needed a simple way to make
+            <li><strong>Factory and operations users</strong> needed a simple way to make
               controlled edits without learning a professional design tool.</li>
-            <li><strong style="color:var(--cream)">Brand and artwork designers</strong> needed precision controls,
+            <li><strong>Brand and artwork designers</strong> needed precision controls,
               version history, file locking, and predictable collaboration.</li>
-            <li><strong style="color:var(--cream)">Regulatory reviewers</strong> needed AI support for copy, barcode,
+            <li><strong>Regulatory reviewers</strong> needed AI support for copy, barcode,
               artwork, and regional compliance checks before release.</li>
-            <li><strong style="color:var(--cream)">Managers and approvers</strong> needed status visibility, audit
+            <li><strong>Managers and approvers</strong> needed status visibility, audit
               trails, and fewer email-led handoffs.</li>
           </ul>
         </div>
@@ -3975,6 +4007,16 @@
             control, and validation needed confidence. Treating them as separate tools made the journey brittle. The
             design needed one shared artwork backbone with role-specific surfaces.</p>
         </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Ideation &amp; Concepting</div>
+          <p class="modal-text">Before any screen was built, I mapped the artwork lifecycle on a whiteboard as a single
+            object moving through states - draft, locked, in review, validated, released - rather than as separate
+            tools. Early concept sketches explored three competing shapes for the "create" experience: a single
+            unified editor, a fully separate novice tool, and a mode-switching model. Paper sketches of the mode
+            toggle, file-lock indicator, and inline validation overlay were tested in stakeholder walkthroughs before
+            any high-fidelity work began, which is what surfaced Simple/Pro modes as the strongest direction.</p>
+        </div>
+
         <div class="modal-section">
           <div class="modal-section-title">Platform Architecture</div>
           <div class="smart-system-map">
@@ -3995,18 +4037,38 @@
         <div class="modal-section">
           <div class="modal-section-title">Key Design Decisions</div>
           <ul class="modal-list">
-            <li><strong style="color:var(--cream)">Mode Switching</strong> - Simple mode reduced fear for occasional
+            <li><strong>Mode Switching</strong> - Simple mode reduced fear for occasional
               users, while Pro mode kept advanced controls for expert designers.</li>
-            <li><strong style="color:var(--cream)">Smart File Locking</strong> - Ownership, wait states, and estimated
+            <li><strong>Smart File Locking</strong> - Ownership, wait states, and estimated
               unlock timing prevented conflicting edits without hiding collaboration context.</li>
-            <li><strong style="color:var(--cream)">Inline AI Validation</strong> - High-confidence issues appeared on
+            <li><strong>Inline AI Validation</strong> - High-confidence issues appeared on
               the canvas with rule references, suggested fixes, and override controls.</li>
-            <li><strong style="color:var(--cream)">Status-Led Navigation</strong> - Draft, review, approved, and
+            <li><strong>Status-Led Navigation</strong> - Draft, review, approved, and
               rejected states became navigational anchors rather than buried metadata.</li>
-            <li><strong style="color:var(--cream)">Design System Governance</strong> - Shared patterns for comments,
+            <li><strong>Design System Governance</strong> - Shared patterns for comments,
               approvals, alerts, and validation scaled across the suite instead of being redesigned in each product.
             </li>
           </ul>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Typography &amp; Visual Language</div>
+          <p class="modal-text">Typography carried real regulatory weight here, since the labels being designed inside
+            the editor are themselves typographic artifacts. I defined a distinct type scale for two contexts: the UI
+            shell (a compact, high-density scale for status badges, review comments, and audit-trail timestamps where
+            scannability mattered most) and the canvas itself (precise point-size and leading controls so designers
+            could match regulated label copy exactly). Monospaced figures were used for version numbers and
+            timestamps so values stayed visually aligned in dense tables, while a single accent weight distinguished
+            AI-flagged text from human-authored copy without relying on colour alone.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Visual Design &amp; Design System</div>
+          <p class="modal-text">Six previously separate Kallik product areas needed to feel like one suite, so visual
+            design decisions were made at the system level first. I built a shared component library - status
+            badges, review cards, validation callouts, and file-lock indicators - so the same pattern meant the same
+            thing whether a user was in the editor, the approval queue, or the AI validation screen. A restrained
+            navy/ice-blue/crimson palette kept regulated, high-stakes states (blocked, flagged, rejected) visually
+            distinct without turning the interface into a warning-colour maze, and a consistent card-and-grid layout
+            gave dense compliance data room to breathe.</p>
         </div>
         <div class="modal-section">
           <div class="modal-section-title">Testing &amp; Iteration</div>
@@ -4113,24 +4175,45 @@
             <div
               style="background:rgba(231,76,60,.08);border:1px solid rgba(231,76,60,.2);border-radius:8px;padding:.9rem">
               <div style="font-size:.68rem;color:#e88;font-weight:700">1.4.3 - Colour Contrast</div>
-              <div style="font-size:.8rem;color:var(--cream);margin-top:.3rem">CTA buttons below 4.5:1 ratio</div>
+              <div class="info-card-text" style="font-size:.8rem;margin-top:.3rem">CTA buttons below 4.5:1 ratio</div>
             </div>
             <div
               style="background:rgba(231,76,60,.08);border:1px solid rgba(231,76,60,.2);border-radius:8px;padding:.9rem">
               <div style="font-size:.68rem;color:#e88;font-weight:700">1.1.1 - Non-Text Content</div>
-              <div style="font-size:.8rem;color:var(--cream);margin-top:.3rem">14 images missing alt text</div>
+              <div class="info-card-text" style="font-size:.8rem;margin-top:.3rem">14 images missing alt text</div>
             </div>
             <div
               style="background:rgba(231,76,60,.08);border:1px solid rgba(231,76,60,.2);border-radius:8px;padding:.9rem">
               <div style="font-size:.68rem;color:#e88;font-weight:700">2.4.7 - Focus Visible</div>
-              <div style="font-size:.8rem;color:var(--cream);margin-top:.3rem">Removed on 9 components</div>
+              <div class="info-card-text" style="font-size:.8rem;margin-top:.3rem">Removed on 9 components</div>
             </div>
             <div
               style="background:rgba(231,76,60,.08);border:1px solid rgba(231,76,60,.2);border-radius:8px;padding:.9rem">
               <div style="font-size:.68rem;color:#e88;font-weight:700">2.1.1 - Keyboard Access</div>
-              <div style="font-size:.8rem;color:var(--cream);margin-top:.3rem">3 carousels mouse-only</div>
+              <div class="info-card-text" style="font-size:.8rem;margin-top:.3rem">3 carousels mouse-only</div>
             </div>
           </div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Typography &amp; Remediation Ideation</div>
+          <p class="modal-text">Typography sat at the centre of this audit, not just colour. Beyond the 1.4.3 contrast
+            failures, I flagged undersized body copy on statement pages, line lengths that ran too wide for
+            comfortable reading, and inconsistent heading levels that broke screen-reader navigation. For each
+            category of violation I sketched two or three remediation options - for example, a darker text token
+            versus a heavier font weight to fix contrast without clashing with brand colour - and scored them as
+            quick wins or structural fixes so engineering could sequence the roadmap by effort and risk rather than
+            fixing issues in the order they were found.</p>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Visual Design &amp; Design System</div>
+          <p class="modal-text">Because this was an audit of an existing banking platform rather than a greenfield
+            build, visual design work here meant fixing the design system in place, not replacing it. I defined
+            accessible token replacements for every failing colour pair, extended the existing component library with
+            visible-focus states and higher-contrast variants, and documented each fix as a reusable pattern rather
+            than a one-off screen change, so engineering could apply the same token or component update everywhere
+            it recurred across the 220,000+ user platform.</p>
         </div>
 
       </div>
@@ -4202,34 +4285,44 @@
         </div>
 
         <div class="modal-section">
+          <div class="modal-section-title">Ideation &amp; Concepting</div>
+          <p class="modal-text">Because the same underlying data had to serve four very different jobs, I started with
+            low-fidelity concept sketches rather than screens. Whiteboard sessions mapped two competing information
+            architectures - a single shared dashboard with role-based filters, versus four purpose-built dashboards
+            sharing one data model - and sketched navigation as both a flat searchable list and a Sites → Block →
+            Core → Units drill-down. Sketching the drill-down as a simple box diagram made the scale problem (20,000
+            sites, 50,000 units) visible early, which is what ruled out flat search before any UI was built.</p>
+        </div>
+
+        <div class="modal-section">
           <div class="modal-section-title">The 4 Role Dashboards</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem">
             <div
               style="background:rgba(58,181,195,.08);border:1px solid rgba(58,181,195,.22);border-radius:8px;padding:1rem">
               <div style="font-size:.68rem;color:var(--teal);font-weight:700;margin-bottom:.4rem">DIRECTOR OF ASSETS
               </div>
-              <div style="font-size:.78rem;color:var(--cream);line-height:1.5">Portfolio-wide KPIs. Decent Homes
+              <div class="info-card-text" style="font-size:.78rem;line-height:1.5">Portfolio-wide KPIs. Decent Homes
                 Standard score (target 95%). Overdue compliance certs. Cost analysis vs estimated. Stock condition
                 surveys. Program builder for capital works.</div>
             </div>
             <div
               style="background:rgba(46,204,113,.07);border:1px solid rgba(46,204,113,.2);border-radius:8px;padding:1rem">
               <div style="font-size:.68rem;color:#2ecc71;font-weight:700;margin-bottom:.4rem">VOID MANAGER</div>
-              <div style="font-size:.78rem;color:var(--cream);line-height:1.5">Void pipeline by stage (Inspection →
+              <div class="info-card-text" style="font-size:.78rem;line-height:1.5">Void pipeline by stage (Inspection →
                 Repair → Ready to Let). Average re-let time vs 30-day target. Cost per void vs £1200 standard. Rent loss
                 exposure. First-time lettable clearance rate. Post-move-in CSAT.</div>
             </div>
             <div
               style="background:rgba(241,196,15,.06);border:1px solid rgba(241,196,15,.18);border-radius:8px;padding:1rem">
               <div style="font-size:.68rem;color:#f1c40f;font-weight:700;margin-bottom:.4rem">COMPLIANCE OFFICER</div>
-              <div style="font-size:.78rem;color:var(--cream);line-height:1.5">Gas safety, EPC, fire risk, and
+              <div class="info-card-text" style="font-size:.78rem;line-height:1.5">Gas safety, EPC, fire risk, and
                 electrical certificates by status. Overdue count with escalation flags. Upcoming expiry calendar.
                 Regulatory risk score per property block.</div>
             </div>
             <div
               style="background:rgba(231,76,60,.07);border:1px solid rgba(231,76,60,.2);border-radius:8px;padding:1rem">
               <div style="font-size:.68rem;color:#e88;font-weight:700;margin-bottom:.4rem">REPAIRS MANAGER</div>
-              <div style="font-size:.78rem;color:var(--cream);line-height:1.5">Active cases by type: Disrepair, Damp
+              <div class="info-card-text" style="font-size:.78rem;line-height:1.5">Active cases by type: Disrepair, Damp
                 &amp; Mould, Major. Work order queue with SLA status. Contractor assignment. Component replacement
                 tracking. Repairs cost vs budget.</div>
             </div>
@@ -4264,7 +4357,7 @@
               <div
                 style="background:rgba(46,204,113,.06);border:1px solid rgba(46,204,113,.2);border-radius:8px;padding:.8rem">
                 <div style="font-size:.65rem;color:#2ecc71;font-weight:600;margin-bottom:.35rem">ROI INDICATORS</div>
-                <div style="display:flex;flex-direction:column;gap:.25rem;font-size:.74rem;color:var(--cream)">
+                <div class="info-card-text" style="display:flex;flex-direction:column;gap:.25rem;font-size:.74rem">
                   <div>Rent Loss Prevented: <span style="color:#2ecc71;font-weight:600">£30K/period</span></div>
                   <div>Compliance Fine Risk: <span style="color:#2ecc71;font-weight:600">↓ 78%</span></div>
                   <div>Planned vs Reactive Spend: <span style="color:#2ecc71;font-weight:600">+41%</span></div>
@@ -4274,7 +4367,7 @@
                 style="background:rgba(58,181,195,.06);border:1px solid rgba(58,181,195,.2);border-radius:8px;padding:.8rem">
                 <div style="font-size:.65rem;color:var(--teal);font-weight:600;margin-bottom:.35rem">WORKFLOW EFFICIENCY
                 </div>
-                <div style="display:flex;flex-direction:column;gap:.25rem;font-size:.74rem;color:var(--cream)">
+                <div class="info-card-text" style="display:flex;flex-direction:column;gap:.25rem;font-size:.74rem">
                   <div>Void workflow: <span style="color:var(--teal);font-weight:600">14 steps → 4 steps</span></div>
                   <div>Compliance review time: <span style="color:var(--teal);font-weight:600">3d → 4h</span></div>
                   <div>Cross-system reconciliation: <span style="color:var(--teal);font-weight:600">Eliminated</span>
@@ -4288,22 +4381,42 @@
         <div class="modal-section">
           <div class="modal-section-title">Key Design Decisions</div>
           <ul class="modal-list">
-            <li><strong style="color:var(--cream)">Role-Adaptive Entry Points</strong> — Login detects user role and
+            <li><strong>Role-Adaptive Entry Points</strong> — Login detects user role and
               routes to their specialised dashboard. No configuration required. Each view surfaces only the alerts,
               metrics, and actions relevant to that role.</li>
-            <li><strong style="color:var(--cream)">Smart Alert System</strong> — System-flagged data issues and
+            <li><strong>Smart Alert System</strong> — System-flagged data issues and
               inspection triggers appear as contextual banners with inline "Review" CTAs, not buried in notification
               panels.</li>
-            <li><strong style="color:var(--cream)">Progress vs Target Design</strong> — Every KPI shows current value
+            <li><strong>Progress vs Target Design</strong> — Every KPI shows current value
               alongside target threshold (e.g. 30-day re-let target, £1200 cost-per-void standard) so users can
               self-assess performance without digging into reports.</li>
-            <li><strong style="color:var(--cream)">Audit Trail &amp; Activity Feed</strong> — A time-stamped activity
+            <li><strong>Audit Trail &amp; Activity Feed</strong> — A time-stamped activity
               sidebar gives all roles visibility of recent actions (surveys completed, certificates issued, void status
               changes) to replace manual status emails.</li>
-            <li><strong style="color:var(--cream)">Responsive Hierarchy</strong> — Sites → Block → Core → Units
+            <li><strong>Responsive Hierarchy</strong> — Sites → Block → Core → Units
               drill-down model with 20K sites and 50K units required a spatial hierarchy navigation pattern, not flat
               search.</li>
           </ul>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Typography &amp; Visual Language</div>
+          <p class="modal-text">With four roles reading the same KPI-dense screens under time pressure, type had to do
+            most of the hierarchy work. I set tabular (fixed-width) numerals for every metric so values stayed aligned
+            for fast scanning down a column, paired with a clear three-level scale separating the metric value, its
+            label, and its target threshold. Colour was never the only signal for status - typographic weight and a
+            consistent up/down indicator carried meaning too, so the dashboards stayed legible under the muted
+            palette used for compliance-critical screens.</p>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Visual Design &amp; Design System</div>
+          <p class="modal-text">With four role-specific dashboards sharing one data model, I built a single component
+            library - KPI cards, alert banners, progress-vs-target widgets, and the site/block/core/unit drill-down
+            pattern - so each role's dashboard felt bespoke while staying visually consistent underneath. Each role
+            got its own accent colour (teal for Director, green for Void Manager, amber for Compliance, red for
+            Repairs) applied only to that role's KPI cards, giving quick visual orientation across 50,000+ units
+            without needing four separate design languages.</p>
         </div>
 
         <div class="modal-section">
@@ -4391,11 +4504,11 @@
         <div class="modal-section">
           <div class="modal-section-title">Users</div>
           <ul class="modal-list">
-            <li><strong style="color:var(--cream)">Visitor / Client</strong> needs fast entry, clear guidance, and a
+            <li><strong>Visitor / Client</strong> needs fast entry, clear guidance, and a
               premium hospitality experience.</li>
-            <li><strong style="color:var(--cream)">Host / Employee</strong> needs visit planning, tracking, room
+            <li><strong>Host / Employee</strong> needs visit planning, tracking, room
               readiness, and coordination visibility.</li>
-            <li><strong style="color:var(--cream)">Receptionist</strong> needs reduced manual workload and better
+            <li><strong>Receptionist</strong> needs reduced manual workload and better
               prioritization during peak times.</li>
           </ul>
         </div>
@@ -4421,6 +4534,16 @@
             <li>Enable hosts to pre-register visitors, request access, book rooms, and arrange hospitality.</li>
             <li>Give visitors quick check-in, automatic access, clear navigation, and reliable support.</li>
           </ul>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Ideation &amp; Concepting</div>
+          <p class="modal-text">The strongest early insight - that check-in was a chain of moments, not a single kiosk
+            screen - came out of storyboarding the visitor's day end to end on a whiteboard before any screens
+            existed. I sketched three check-in concepts (badge scan, QR code, and face recognition) as rough paper
+            flows and walked reception staff through each to gauge speed and comfort, which is what pushed face
+            recognition and QR forward as the primary paths. The host dashboard also went through a low-fi card-sort
+            style sketch to decide whether "today's visitors" or "pending approvals" should anchor the home view.</p>
         </div>
 
         <div class="modal-section">
@@ -4450,6 +4573,26 @@
               requests.</li>
             <li>Host dashboard for visit planning, today's visitors, meeting preparation, and quick actions.</li>
           </ul>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Typography &amp; Visual Language</div>
+          <p class="modal-text">The kiosk and host-dashboard surfaces needed two different typographic registers. The
+            kiosk used a larger, high-contrast display scale designed for a quick glance from arm's length under
+            lobby lighting, with short, plain-language labels instead of dense instructions. The host dashboard and
+            visitor assistant chat, by contrast, used a warmer conversational voice and a smaller, denser scale suited
+            to sustained reading, so the same system could feel welcoming at the kiosk and efficient at the desk
+            without switching brand language.</p>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Visual Design &amp; Design System</div>
+          <p class="modal-text">The kiosk, host dashboard, and visitor assistant were built from one shared component
+            set - status pills, step indicators, and access-state cards - so a "checked in" or "access granted" state
+            looked and behaved the same everywhere it appeared, even though the surrounding layout changed by
+            context. A warm, hospitality-appropriate palette was reserved for the visitor-facing kiosk and assistant,
+            while the host dashboard used a calmer, denser visual treatment suited to repeated daily use, keeping the
+            two experiences on one design system without feeling like two different products.</p>
         </div>
 
         <div class="modal-section">
