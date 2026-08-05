@@ -174,10 +174,11 @@
 
   /* JOURNEY MAP IMAGE */
   .journey-map-wrap{border-radius:10px;overflow:hidden;border:1px solid var(--surface-border)}
-  .journey-map-wrap img{width:100%;display:block}
-  .journey-map-dark{display:none}
-  [data-theme="dark"] .journey-map-light{display:none}
-  [data-theme="dark"] .journey-map-dark{display:block}
+  .journey-map-wrap img{width:100%}
+  .journey-map-wrap img.journey-map-light{display:block}
+  .journey-map-wrap img.journey-map-dark{display:none}
+  [data-theme="dark"] .journey-map-wrap img.journey-map-light{display:none}
+  [data-theme="dark"] .journey-map-wrap img.journey-map-dark{display:block}
 
   /* PERSONA CARDS */
   .persona-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}
