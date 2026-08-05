@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="708" viewBox="0 0 1400 708" font-family="Arial, Helvetica, sans-serif">
+<defs><filter id="ns" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/></filter></defs>
+<rect x="0" y="0" width="1400" height="708" fill="#132233"/>
+<rect x="1" y="1" width="1398" height="706" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2" rx="18"/>
+<text x="700.0" y="46" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="3" fill="#3ab5c3">KALLIK AToM &#183; RESEARCH SYNTHESIS</text>
+<text x="700.0" y="80" text-anchor="middle" font-size="30" font-weight="700" fill="#f0ede6">Affinity Mapping</text>
+<text x="700.0" y="104" text-anchor="middle" font-size="13.5" fill="rgba(240,237,230,.72)">48 contextual interviews &#183; 8 card-sort sessions &#183; 400+ raw data points, clustered into 4 themes</text>
+<rect x="50" y="128" width="300" height="34" rx="17" fill="#3ab5c3"/>
+<text x="200.0" y="150" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Version Control Chaos</text>
+<g transform="rotate(0.6 200.0 198.0)">
+<rect x="50" y="152" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="50" y="152" width="6" height="92" rx="3" fill="#3ab5c3"/>
+<text x="72" y="189.5" font-size="13" fill="#f0ede6">Folder called “Final”…</text>
+<text x="72" y="206.5" font-size="13" fill="#f0ede6">inside, “Actually Final”</text>
+</g>
+<g transform="rotate(-0.8 200.0 306.0)">
+<rect x="50" y="260" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="50" y="260" width="6" height="92" rx="3" fill="#3ab5c3"/>
+<text x="72" y="289.0" font-size="13" fill="#f0ede6">Personal naming conventions</text>
+<text x="72" y="306.0" font-size="13" fill="#f0ede6">substitute for real</text>
+<text x="72" y="323.0" font-size="13" fill="#f0ede6">versioning</text>
+</g>
+<g transform="rotate(1.2 200.0 414.0)">
+<rect x="50" y="368" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="50" y="368" width="6" height="92" rx="3" fill="#3ab5c3"/>
+<text x="72" y="405.5" font-size="13" fill="#f0ede6">No visibility once a file</text>
+<text x="72" y="422.5" font-size="13" fill="#f0ede6">enters the email chain</text>
+</g>
+<g transform="rotate(1.6 200.0 522.0)">
+<rect x="50" y="476" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="50" y="476" width="6" height="92" rx="3" fill="#3ab5c3"/>
+<text x="72" y="513.5" font-size="13" fill="#f0ede6">Multiple designers editing</text>
+<text x="72" y="530.5" font-size="13" fill="#f0ede6">the same artwork, blind</text>
+</g>
+<rect x="383" y="128" width="300" height="34" rx="17" fill="#e07a76"/>
+<text x="533.0" y="150" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">AI Trust Gap</text>
+<g transform="rotate(-1.4 533.0 198.0)">
+<rect x="383" y="152" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="383" y="152" width="6" height="92" rx="3" fill="#e07a76"/>
+<text x="405" y="189.5" font-size="13" fill="#f0ede6">AI flags carry no rule or</text>
+<text x="405" y="206.5" font-size="13" fill="#f0ede6">confidence score</text>
+</g>
+<g transform="rotate(-1.4 533.0 306.0)">
+<rect x="383" y="260" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="383" y="260" width="6" height="92" rx="3" fill="#e07a76"/>
+<text x="405" y="297.5" font-size="13" fill="#f0ede6">Reviewers close every flag</text>
+<text x="405" y="314.5" font-size="13" fill="#f0ede6">without reading it</text>
+</g>
+<g transform="rotate(-0.4 533.0 414.0)">
+<rect x="383" y="368" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="383" y="368" width="6" height="92" rx="3" fill="#e07a76"/>
+<text x="405" y="405.5" font-size="13" fill="#f0ede6">Binary pass / fail feels</text>
+<text x="405" y="422.5" font-size="13" fill="#f0ede6">arbitrary, not helpful</text>
+</g>
+<g transform="rotate(-1.4 533.0 522.0)">
+<rect x="383" y="476" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="383" y="476" width="6" height="92" rx="3" fill="#e07a76"/>
+<text x="405" y="513.5" font-size="13" fill="#f0ede6">No way to see why the AI</text>
+<text x="405" y="530.5" font-size="13" fill="#f0ede6">raised a flag</text>
+</g>
+<rect x="716" y="128" width="300" height="34" rx="17" fill="#e0a94a"/>
+<text x="866.0" y="150" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Approval Black Box</text>
+<g transform="rotate(0.6 866.0 198.0)">
+<rect x="716" y="152" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="716" y="152" width="6" height="92" rx="3" fill="#e0a94a"/>
+<text x="738" y="189.5" font-size="13" fill="#f0ede6">Approved by replying to an</text>
+<text x="738" y="206.5" font-size="13" fill="#f0ede6">email</text>
+</g>
+<g transform="rotate(-0.4 866.0 306.0)">
+<rect x="716" y="260" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="716" y="260" width="6" height="92" rx="3" fill="#e0a94a"/>
+<text x="738" y="297.5" font-size="13" fill="#f0ede6">No audit trail of who</text>
+<text x="738" y="314.5" font-size="13" fill="#f0ede6">approved what, when</text>
+</g>
+<g transform="rotate(-1.4 866.0 414.0)">
+<rect x="716" y="368" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="716" y="368" width="6" height="92" rx="3" fill="#e0a94a"/>
+<text x="738" y="405.5" font-size="13" fill="#f0ede6">Approval history scattered</text>
+<text x="738" y="422.5" font-size="13" fill="#f0ede6">across inboxes</text>
+</g>
+<g transform="rotate(-0.4 866.0 522.0)">
+<rect x="716" y="476" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="716" y="476" width="6" height="92" rx="3" fill="#e0a94a"/>
+<text x="738" y="513.5" font-size="13" fill="#f0ede6">4–6 hrs per label on manual</text>
+<text x="738" y="530.5" font-size="13" fill="#f0ede6">checklists</text>
+</g>
+<rect x="1049" y="128" width="300" height="34" rx="17" fill="#4fd28a"/>
+<text x="1199.0" y="150" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">Print-Time Uncertainty</text>
+<g transform="rotate(-0.8 1199.0 198.0)">
+<rect x="1049" y="152" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="1049" y="152" width="6" height="92" rx="3" fill="#4fd28a"/>
+<text x="1071" y="189.5" font-size="13" fill="#f0ede6">“Is this definitely the</text>
+<text x="1071" y="206.5" font-size="13" fill="#f0ede6">right file?” — Finn</text>
+</g>
+<g transform="rotate(-1.4 1199.0 306.0)">
+<rect x="1049" y="260" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="1049" y="260" width="6" height="92" rx="3" fill="#4fd28a"/>
+<text x="1071" y="297.5" font-size="13" fill="#f0ede6">No print specs attached to</text>
+<text x="1071" y="314.5" font-size="13" fill="#f0ede6">released files</text>
+</g>
+<g transform="rotate(-1.4 1199.0 414.0)">
+<rect x="1049" y="368" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="1049" y="368" width="6" height="92" rx="3" fill="#4fd28a"/>
+<text x="1071" y="405.5" font-size="13" fill="#f0ede6">Occasionally the wrong</text>
+<text x="1071" y="422.5" font-size="13" fill="#f0ede6">version reaches press</text>
+</g>
+<g transform="rotate(1.2 1199.0 522.0)">
+<rect x="1049" y="476" width="300" height="92" rx="6" fill="#1b2f42" stroke="rgba(255,255,255,.10)" stroke-width="1" filter="url(#ns)"/>
+<rect x="1049" y="476" width="6" height="92" rx="3" fill="#4fd28a"/>
+<text x="1071" y="513.5" font-size="13" fill="#f0ede6">No confirmation artwork was</text>
+<text x="1071" y="530.5" font-size="13" fill="#f0ede6">actually approved</text>
+</g>
+<rect x="50" y="618" width="1299" height="66" rx="14" fill="#0d1b2a"/>
+<text x="700.0" y="646" text-anchor="middle" font-size="15.5" font-weight="700" fill="#ffffff">4 themes &#8594; one insight: users had already work-arounded a broken system into something simpler</text>
+<text x="700.0" y="668" text-anchor="middle" font-size="12.5" fill="rgba(255,255,255,.55)">Directly informed the 3-level validation indicator &#8212; High / Review / Flag &#8212; replacing a binary pass/fail</text>
+</svg>

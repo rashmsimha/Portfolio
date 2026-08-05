@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rashmi Padmanabha — Principal Product Designer | Responsible AI · Accessibility · Enterprise SaaS</title>
 <meta name="description" content="Principal Product Designer with 19+ years designing enterprise SaaS, Responsible AI, and WCAG-accessible products.">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --cream:#14232f; --cream-dim:rgba(20,35,47,.68); --cream-faint:rgba(20,35,47,.45);
@@ -158,6 +158,49 @@
   .modal-outcomes{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:1rem}
   .modal-outcome-num{font-family:var(--font-display);font-size:1.7rem;color:var(--teal)}
   .modal-outcome-label{font-size:.68rem;color:var(--cream-faint);text-transform:uppercase;letter-spacing:.03em}
+
+  /* PROCESS TIMELINE */
+  .process-timeline{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin-bottom:.3rem}
+  .pt-step{background:var(--surface-tint);border:1px solid rgba(58,181,195,.28);color:var(--cream-dim);font-size:.68rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:.42rem .85rem;border-radius:20px;white-space:nowrap}
+  .pt-arrow{color:var(--teal);font-size:.75rem;opacity:.7}
+
+  /* EXPANDABLE SECTIONS */
+  details.modal-details{border:1px solid var(--surface-border);border-radius:8px;margin-bottom:.9rem;overflow:hidden;background:var(--surface-tint)}
+  details.modal-details summary{cursor:pointer;list-style:none;padding:.85rem 1.1rem;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+  details.modal-details summary::-webkit-details-marker{display:none}
+  details.modal-details summary .sicon{font-size:1.1rem;font-weight:400;color:var(--cream-faint);flex-shrink:0;transition:transform .2s var(--ease)}
+  details.modal-details[open] summary .sicon{transform:rotate(45deg)}
+  details.modal-details .modal-details-body{padding:.2rem 1.1rem 1.1rem}
+
+  /* JOURNEY MAP IMAGE */
+  .journey-map-wrap{border-radius:10px;overflow:hidden;border:1px solid var(--surface-border)}
+  .journey-map-wrap img{width:100%;display:block}
+  .journey-map-dark{display:none}
+  [data-theme="dark"] .journey-map-light{display:none}
+  [data-theme="dark"] .journey-map-dark{display:block}
+
+  /* PERSONA CARDS */
+  .persona-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}
+  .persona-card{background:var(--surface-tint);border:1px solid rgba(58,181,195,.22);border-radius:10px;padding:1.2rem}
+  .persona-top{display:flex;align-items:center;gap:.7rem;margin-bottom:.8rem}
+  .persona-avatar{width:42px;height:42px;flex-shrink:0;border-radius:50%;background:var(--teal);color:var(--on-accent);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.05rem;letter-spacing:.02em}
+  .persona-name{font-weight:700;color:var(--cream);font-size:.92rem;line-height:1.25}
+  .persona-role{font-size:.66rem;color:var(--cream-faint);text-transform:uppercase;letter-spacing:.04em;margin-top:.15rem}
+  .persona-pain{font-size:.8rem;color:var(--cream-dim);margin-bottom:.7rem}
+  .persona-need{font-size:.76rem;background:rgba(58,181,195,.1);border-left:2px solid var(--teal);padding:.55rem .7rem;border-radius:4px;color:var(--cream)}
+  .persona-need b{color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:.62rem;display:block;margin-bottom:.25rem}
+
+  /* PRIORITY MATRIX AXIS LABELS */
+  .matrix-wrap{display:grid;grid-template-columns:26px 1fr;grid-template-rows:1fr 26px;gap:.6rem}
+  .matrix-axis-y{grid-row:1;grid-column:1;display:flex;align-items:center;justify-content:center}
+  .matrix-axis-y span{writing-mode:vertical-rl;transform:rotate(180deg);font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--teal)}
+  .matrix-axis-x{grid-row:2;grid-column:2;text-align:center;font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--teal)}
+  .matrix-wrap .priority-matrix{grid-row:1;grid-column:2}
+
+  /* WHY ME callout */
+  .why-me{margin-top:1.6rem;background:var(--surface-tint);border:1px solid rgba(58,181,195,.25);border-left:3px solid var(--teal);border-radius:8px;padding:1.3rem 1.5rem}
+  .why-me .wm-label{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:.5rem}
+  .why-me p{color:var(--cream);font-size:.95rem;margin-bottom:0}
   .method-chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}
   .method-chip{display:flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:500;padding:.55rem 1rem;border-radius:8px;background:rgba(58,181,195,.08);border:1px solid rgba(58,181,195,.25);color:var(--cream)}
   .method-chip .ic{font-size:1.05rem;line-height:1}
@@ -261,6 +304,10 @@
         <p>What carries across every domain isn't domain knowledge — it's a grounding in <strong>Behavioural Psychology</strong> (MA in progress) that shapes how I read ambiguity, trust, and friction in a product.</p>
       </div>
       <div class="quote">"I design for the person who has no choice but to use the tool — and that responsibility shapes every decision."</div>
+    </div>
+    <div class="why-me">
+      <div class="wm-label">Why Me</div>
+      <p>I specialize in transforming highly regulated, enterprise-scale workflows into AI-powered experiences that improve trust, accessibility, and measurable business outcomes — the specific combination of Responsible AI, WCAG-by-design, and compliance-heavy domain fluency most Principal Designer candidates don't carry into the interview.</p>
     </div>
   </div>
 </section>
@@ -466,109 +513,17 @@
         <p class="modal-text">Regulated artwork operations ran across three disconnected products — an artwork editor, a file manager, and an early AI validation concept — stitched together with email, shared drives, and manual sign-offs. I unified them into one governed platform, cutting label review time from 6 hours to 38 minutes.</p>
       </div>
       <div class="modal-section">
-        <div class="modal-section-title">Problem</div>
-        <p class="modal-text" style="margin-bottom:.7rem">The process was as risky as the label itself: personal naming conventions stood in for version control, AI flags carried no rule or confidence so reviewers closed every one, approvals moved by email reply with no audit trail, and print operators received files with no confirmation of approval status.</p>
-        <div class="quote" style="font-size:1rem;padding-left:1rem">"I have a folder called Final. Inside it is another folder called Actually Final." — Artwork Designer</div>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Research &amp; Insights</div>
-        <div class="method-chips">
-          <span class="method-chip"><span class="ic">🗣️</span>Contextual Interviews — 48 sessions</span>
-          <span class="method-chip"><span class="ic">🗺️</span>Workflow &amp; Journey Mapping — 6 maps</span>
-          <span class="method-chip"><span class="ic">🃏</span>Card Sorting — 8 participants</span>
-          <span class="method-chip"><span class="ic">🧪</span>Moderated Usability Testing — 2 rounds</span>
-        </div>
-        <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> 80+ people across three role groups, 400+ data points across two usability rounds, and a full mapping of exactly where the artwork "lost its identity" between handoffs.</p>
-        <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> Users had already workarounded the broken system into something simpler — the real workflow was invisible inside three disconnected tools. The card-sort findings directly informed a three-level validation indicator (High / Review / Flag) instead of a binary pass/fail.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Personas &amp; Pain Points</div>
-        <ul class="modal-list">
-          <li><strong style="color:var(--cream)">Aria, the Designer</strong> — relied on personal naming conventions as version control, with no visibility once artwork entered the email chain. Needed auto-versioning and system-enforced file locking.</li>
-          <li><strong style="color:var(--cream)">Rowan, Reviewer &amp; Approver</strong> — spent 4–6 hours per label on manual checklists, ignored AI flags with no rule cited, and approved by email reply with no audit trail. Needed AI that shows its reasoning and one structured workflow.</li>
-          <li><strong style="color:var(--cream)">Finn, Print Operator</strong> — printed from files with no print specs attached, occasionally the wrong version, asking "Is this definitely the right file?" Needed only released, validated artwork in view with a visible audit chain.</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Key Decisions</div>
-        <ul class="modal-list">
-          <li><strong style="color:var(--cream)">Pro Editor with Auto-Versioning</strong> — every save auto-versions, timestamped, attributed, and smart-locked. Result: 0 version conflicts post-launch.</li>
-          <li><strong style="color:var(--cream)">Inline AI Validation, On the Canvas</strong> — rule-cited, confidence-scored (High/Review/Flag) with a suggested fix, replacing unexplained flags. Result: 91% of errors caught, 3× AI action rate.</li>
-          <li><strong style="color:var(--cream)">Unified Review + Approval Workflow</strong> — one-click approve auto-records version, checks, and timestamp. Result: immutable audit trail by default.</li>
-          <li><strong style="color:var(--cream)">Status-Led Navigation</strong> — Draft → Review → Approved → Released became the primary IA, replacing flat file lists. Result: status visible at a glance.</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Feature Prioritization Matrix</div>
-        <p class="modal-text" style="margin-bottom:.9rem">Scored against the personas' pain points — Impact on trust &amp; compliance risk vs. Effort to ship.</p>
-        <div class="priority-matrix">
-          <div class="matrix-quad">
-            <div class="mq-title">High Impact · Low Effort — Quick Wins</div>
-            <div class="mq-items">
-              <span class="matrix-item">Status-Led Navigation</span>
-              <span class="matrix-item">Approval Timestamp Auto-Capture</span>
-            </div>
-          </div>
-          <div class="matrix-quad">
-            <div class="mq-title">High Impact · High Effort — Major Projects</div>
-            <div class="mq-items">
-              <span class="matrix-item">Inline AI Validation on Canvas</span>
-              <span class="matrix-item">Pro Editor with Auto-Versioning</span>
-              <span class="matrix-item">Unified Review + Approval Workflow</span>
-            </div>
-          </div>
-          <div class="matrix-quad">
-            <div class="mq-title">Low Impact · Low Effort — Fill-Ins</div>
-            <div class="mq-items">
-              <span class="matrix-item">Personal File Tagging</span>
-              <span class="matrix-item">Dark Mode</span>
-            </div>
-          </div>
-          <div class="matrix-quad">
-            <div class="mq-title">Low Impact · High Effort — Deprioritized</div>
-            <div class="mq-items">
-              <span class="matrix-item">Multi-language Auto-Translation</span>
-              <span class="matrix-item">Custom Report Builder</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Information Architecture</div>
-        <ul class="ia-tree">
-          <li><strong>Library</strong> — all artwork assets, filterable by brand, market, status<ul><li>Draft → Review → Approved → Released</li></ul></li>
-          <li><strong>Editor</strong> — Pro editor with auto-versioning, role-gated</li>
-          <li><strong>Approvals</strong> — one-click approve, full version history</li>
-          <li><strong>Compliance Dashboard</strong> — inline AI validation flags with rule references</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">User Journey — Before &amp; After</div>
-        <p class="modal-text" style="margin-bottom:.5rem"><strong style="color:var(--cream)">Before — three disconnected tools:</strong></p>
-        <div class="journey-flow" style="margin-bottom:1rem">
-          <span class="journey-step">Create (local save)</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Export &amp; email</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Manual review (4–6 hrs)</span><span class="journey-arrow">→</span>
-          <span class="journey-step">AI check ignored</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Approve by email</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Print — guessing</span>
-        </div>
-        <p class="modal-text" style="margin-bottom:.5rem"><strong style="color:var(--cream)">After — one governed platform:</strong></p>
-        <div class="journey-flow">
-          <span class="journey-step">Create &amp; lock</span><span class="journey-arrow">→</span>
-          <span class="journey-step">In-system review</span><span class="journey-arrow">→</span>
-          <span class="journey-step">AI validation (38 min)</span><span class="journey-arrow">→</span>
-          <span class="journey-step">One-click approve</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Release to print</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Audit-ready</span>
-        </div>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Typography</div>
-        <div class="type-specimen">
-          <div class="type-row"><span class="type-sample" style="font-family:var(--font-display);font-size:1.6rem">Aa — Bebas Neue</span><span class="type-meta">Section headers</span></div>
-          <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-weight:600;font-size:1.05rem">Aa — Poppins Medium</span><span class="type-meta">UI labels, buttons</span></div>
-          <div class="type-row"><span class="type-sample" style="font-family:monospace;font-size:1rem">Aa — Monospace</span><span class="type-meta">Rule codes, version IDs</span></div>
+        <div class="modal-section-title">Process</div>
+        <div class="process-timeline">
+          <span class="pt-step">Research</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Journey Mapping</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Wireframes</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Prototyping</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Usability Testing</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Iteration</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Final Design</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Launch</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Business Results</span>
         </div>
       </div>
       <div class="modal-section">
@@ -582,16 +537,171 @@
         </div>
       </div>
       <div class="modal-section">
+        <div class="modal-section-title">User Journey — Before &amp; After</div>
+        <div class="journey-map-wrap">
+          <img class="journey-map-light" src="kallik-journey-map.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review 4 to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from 6 hours to 38 minutes, an 89 percent reduction.">
+          <img class="journey-map-dark" src="kallik-journey-map-dark.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review 4 to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from 6 hours to 38 minutes, an 89 percent reduction.">
+        </div>
+      </div>
+
+      <details class="modal-details">
+        <summary>Problem <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <p class="modal-text" style="margin-bottom:.7rem">The process was as risky as the label itself: personal naming conventions stood in for version control, AI flags carried no rule or confidence so reviewers closed every one, approvals moved by email reply with no audit trail, and print operators received files with no confirmation of approval status.</p>
+          <div class="quote" style="font-size:1rem;padding-left:1rem">"I have a folder called Final. Inside it is another folder called Actually Final." — Artwork Designer</div>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Research &amp; Insights <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="method-chips">
+            <span class="method-chip"><span class="ic">🗣️</span>Contextual Interviews — 48 sessions</span>
+            <span class="method-chip"><span class="ic">🗺️</span>Workflow &amp; Journey Mapping — 6 maps</span>
+            <span class="method-chip"><span class="ic">🃏</span>Card Sorting — 8 participants</span>
+            <span class="method-chip"><span class="ic">🧪</span>Moderated Usability Testing — 2 rounds</span>
+          </div>
+          <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> 80+ people across three role groups, 400+ data points across two usability rounds, and a full mapping of exactly where the artwork "lost its identity" between handoffs.</p>
+          <div class="journey-map-wrap" style="margin:1rem 0">
+            <img class="journey-map-light" src="kallik-affinity-map.svg" alt="Affinity map of Kallik AToM research findings clustered into four themes: Version Control Chaos, AI Trust Gap, Approval Black Box, and Print-Time Uncertainty, leading to the insight that users had work-arounded a broken system, which informed a 3-level validation indicator.">
+            <img class="journey-map-dark" src="kallik-affinity-map-dark.svg" alt="Affinity map of Kallik AToM research findings clustered into four themes: Version Control Chaos, AI Trust Gap, Approval Black Box, and Print-Time Uncertainty, leading to the insight that users had work-arounded a broken system, which informed a 3-level validation indicator.">
+          </div>
+          <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> Users had already workarounded the broken system into something simpler — the real workflow was invisible inside three disconnected tools. The card-sort findings directly informed a three-level validation indicator (High / Review / Flag) instead of a binary pass/fail.</p>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Personas &amp; Pain Points <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-top">
+                <div class="persona-avatar">A</div>
+                <div>
+                  <div class="persona-name">Aria</div>
+                  <div class="persona-role">The Designer</div>
+                </div>
+              </div>
+              <p class="persona-pain">Relied on personal naming conventions as version control — no visibility once artwork entered the email chain.</p>
+              <div class="persona-need"><b>Needed</b>Auto-versioning and system-enforced file locking.</div>
+            </div>
+            <div class="persona-card">
+              <div class="persona-top">
+                <div class="persona-avatar">R</div>
+                <div>
+                  <div class="persona-name">Rowan</div>
+                  <div class="persona-role">Reviewer &amp; Approver</div>
+                </div>
+              </div>
+              <p class="persona-pain">Spent 4–6 hrs per label on manual checklists, ignored AI flags with no rule cited, approved by email reply.</p>
+              <div class="persona-need"><b>Needed</b>AI that shows its reasoning, and one structured workflow.</div>
+            </div>
+            <div class="persona-card">
+              <div class="persona-top">
+                <div class="persona-avatar">F</div>
+                <div>
+                  <div class="persona-name">Finn</div>
+                  <div class="persona-role">Print Operator</div>
+                </div>
+              </div>
+              <p class="persona-pain">Printed from files with no print specs attached, occasionally the wrong version — "Is this definitely the right file?"</p>
+              <div class="persona-need"><b>Needed</b>Only released, validated artwork in view with a visible audit chain.</div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Key Decisions <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="modal-list">
+            <li><strong style="color:var(--cream)">Pro Editor with Auto-Versioning</strong> — every save auto-versions, timestamped, attributed, and smart-locked. Result: 0 version conflicts post-launch.</li>
+            <li><strong style="color:var(--cream)">Inline AI Validation, On the Canvas</strong> — rule-cited, confidence-scored (High/Review/Flag) with a suggested fix, replacing unexplained flags. Result: 91% of errors caught, 3× AI action rate.</li>
+            <li><strong style="color:var(--cream)">Unified Review + Approval Workflow</strong> — one-click approve auto-records version, checks, and timestamp. Result: immutable audit trail by default.</li>
+            <li><strong style="color:var(--cream)">Status-Led Navigation</strong> — Draft → Review → Approved → Released became the primary IA, replacing flat file lists. Result: status visible at a glance.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Feature Prioritization Matrix <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <p class="modal-text" style="margin-bottom:.9rem">Scored against the personas' pain points — Impact on trust &amp; compliance risk vs. Effort to ship.</p>
+          <div class="matrix-wrap">
+            <div class="matrix-axis-y"><span>Impact →</span></div>
+            <div class="priority-matrix">
+              <div class="matrix-quad">
+                <div class="mq-title">High Impact · Low Effort — Quick Wins</div>
+                <div class="mq-items">
+                  <span class="matrix-item">Status-Led Navigation</span>
+                  <span class="matrix-item">Approval Timestamp Auto-Capture</span>
+                </div>
+              </div>
+              <div class="matrix-quad">
+                <div class="mq-title">High Impact · High Effort — Major Projects</div>
+                <div class="mq-items">
+                  <span class="matrix-item">Inline AI Validation on Canvas</span>
+                  <span class="matrix-item">Pro Editor with Auto-Versioning</span>
+                  <span class="matrix-item">Unified Review + Approval Workflow</span>
+                </div>
+              </div>
+              <div class="matrix-quad">
+                <div class="mq-title">Low Impact · Low Effort — Fill-Ins</div>
+                <div class="mq-items">
+                  <span class="matrix-item">Personal File Tagging</span>
+                  <span class="matrix-item">Dark Mode</span>
+                </div>
+              </div>
+              <div class="matrix-quad">
+                <div class="mq-title">Low Impact · High Effort — Deprioritized</div>
+                <div class="mq-items">
+                  <span class="matrix-item">Multi-language Auto-Translation</span>
+                  <span class="matrix-item">Custom Report Builder</span>
+                </div>
+              </div>
+            </div>
+            <div class="matrix-axis-x">Effort →</div>
+          </div>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Information Architecture <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="journey-map-wrap">
+            <img class="journey-map-light" src="kallik-ia-map.svg" alt="Kallik AToM information architecture: AToM Platform hub connects to four modules — Library (all artwork assets, filterable by brand, market, status), Editor (auto-versioning, role-gated), Approvals (one-click approve, full version history), and Compliance Dashboard (inline AI validation flags with rule references). The Library module has a status flow: Draft, Review, Approved, Released.">
+            <img class="journey-map-dark" src="kallik-ia-map-dark.svg" alt="Kallik AToM information architecture: AToM Platform hub connects to four modules — Library (all artwork assets, filterable by brand, market, status), Editor (auto-versioning, role-gated), Approvals (one-click approve, full version history), and Compliance Dashboard (inline AI validation flags with rule references). The Library module has a status flow: Draft, Review, Approved, Released.">
+          </div>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Typography <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <p class="modal-text" style="margin-bottom:.9rem">The product runs on <strong style="color:var(--cream)">Roboto</strong> throughout — chosen for its neutral, highly legible letterforms and tabular figures, which matter when reviewers are scanning version numbers and rule codes under time pressure.</p>
+          <div class="type-specimen">
+            <div class="type-row"><span class="type-sample" style="font-family:'Roboto',sans-serif;font-weight:700;font-size:1.5rem">Aa — Roboto Bold</span><span class="type-meta">Section &amp; module headers</span></div>
+            <div class="type-row"><span class="type-sample" style="font-family:'Roboto',sans-serif;font-weight:500;font-size:1.05rem">Aa — Roboto Medium</span><span class="type-meta">UI labels, buttons, status chips</span></div>
+            <div class="type-row"><span class="type-sample" style="font-family:'Roboto',sans-serif;font-weight:400;font-size:.95rem">Aa — Roboto Regular</span><span class="type-meta">Body copy, table &amp; list data</span></div>
+            <div class="type-row"><span class="type-sample" style="font-family:'Roboto Mono',monospace;font-size:1rem">Aa — Roboto Mono</span><span class="type-meta">Rule codes, version IDs, timestamps</span></div>
+          </div>
+        </div>
+      </details>
+
+      <div class="modal-section">
         <div class="quote" style="font-size:1rem">"By transforming three disconnected products into one governed platform, we created a system that Aria, Rowan, and Finn could each trust — for different reasons, at different stages. In industries where a label error can reach a patient, that trust is not a design preference. It is the product." — Rashmi Padmanabha, Principal Product Designer</div>
       </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Key Learnings</div>
-        <ul class="modal-list">
-          <li>AI trust is earned through transparency, not capability.</li>
-          <li>Design the shared data model before the first screen.</li>
-          <li>The last person in the chain defines whether the system worked.</li>
-        </ul>
-      </div>
+
+      <details class="modal-details">
+        <summary>Key Learnings <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="modal-list">
+            <li>AI trust is earned through transparency, not capability.</li>
+            <li>Design the shared data model before the first screen.</li>
+            <li>The last person in the chain defines whether the system worked.</li>
+          </ul>
+        </div>
+      </details>
     </div>
   </div>
 </div>
@@ -616,63 +726,17 @@
         <p class="modal-text">I designed an end-to-end workplace visitor experience system that turns check-in into a connected service moment. One check-in triggers access control, host notifications, room readiness, navigation guidance, hospitality preparation, and visitor support.</p>
       </div>
       <div class="modal-section">
-        <div class="modal-section-title">Problem</div>
-        <p class="modal-text">Clients experienced delays and confusion during check-in. Hosts lacked reliable tools to plan visits and arrange hospitality. Receptionists had to handle access, coordination, questions, and peak visitor traffic manually, which made premium visits feel fragmented.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Research &amp; Insights</div>
-        <div class="method-chips">
-          <span class="method-chip"><span class="ic">🗣️</span>Receptionist Interviews</span>
-          <span class="method-chip"><span class="ic">👥</span>Host Discussions</span>
-          <span class="method-chip"><span class="ic">💬</span>Client Feedback</span>
-          <span class="method-chip"><span class="ic">🧪</span>Task-Based Usability Testing</span>
-        </div>
-        <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> Logged reception overload during visitor peaks, host follow-through on food/room/access arrangements, and where clients lost confidence in the flow after check-in.</p>
-        <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> Check-in was not a single kiosk interaction — it was a chain of dependent moments across people, access, space, and hospitality. This reframed the design problem from "screen design" to system design.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Users</div>
-        <ul class="modal-list">
-          <li><strong style="color:var(--cream)">Visitor / Client</strong> — needs fast entry, clear guidance, and a premium hospitality experience.</li>
-          <li><strong style="color:var(--cream)">Host / Employee</strong> — needs visit planning, tracking, room readiness, and coordination visibility.</li>
-          <li><strong style="color:var(--cream)">Receptionist</strong> — needs reduced manual workload and better prioritisation during peak times.</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Key Decisions</div>
-        <ul class="modal-list">
-          <li><strong style="color:var(--cream)">AI Self Check-in</strong> — face recognition, mobile number, or QR code replaced manual reception queuing.</li>
-          <li><strong style="color:var(--cream)">Automated Access Control</strong> — approved access activates automatically and notifies host and reception in real time.</li>
-          <li><strong style="color:var(--cream)">Visitor Assistant</strong> — on-demand help for directions, meeting rooms, WiFi, host connection, and refreshment requests.</li>
-          <li><strong style="color:var(--cream)">Host Dashboard</strong> — visit planning, today's visitors, meeting prep, and quick actions in one place.</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Information Architecture</div>
-        <ul class="ia-tree">
-          <li><strong>Pre-Visit</strong> — host schedules visit, registers client, requests access, books hospitality</li>
-          <li><strong>Check-in</strong> — face recognition / phone number / QR code, role-gated</li>
-          <li><strong>Access &amp; Notify</strong> — system activates access, alerts host and reception</li>
-          <li><strong>Support</strong> — visitor assistant for guidance, WiFi, and service requests</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">User Journey</div>
-        <div class="journey-flow">
-          <span class="journey-step">Pre-visit scheduling</span><span class="journey-arrow">→</span>
-          <span class="journey-step">AI self check-in</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Auto access &amp; notify</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Guided navigation</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Hospitality</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Checkout &amp; exit</span>
-        </div>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Typography</div>
-        <div class="type-specimen">
-          <div class="type-row"><span class="type-sample" style="font-family:var(--font-display);font-size:1.6rem">Aa — Bebas Neue</span><span class="type-meta">Kiosk step headers</span></div>
-          <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-weight:600;font-size:1.15rem">Aa — Poppins Medium, large</span><span class="type-meta">Kiosk touch targets, distance readability</span></div>
-          <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-size:.9rem;color:var(--cream-dim)">Aa — Poppins Regular</span><span class="type-meta">Host dashboard detail text</span></div>
+        <div class="modal-section-title">Process</div>
+        <div class="process-timeline">
+          <span class="pt-step">Research</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Journey Mapping</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Wireframes</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Prototyping</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Usability Testing</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Iteration</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Final Design</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Launch</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Business Results</span>
         </div>
       </div>
       <div class="modal-section">
@@ -685,13 +749,94 @@
         </div>
       </div>
       <div class="modal-section">
-        <div class="modal-section-title">Learnings</div>
-        <ul class="modal-list">
-          <li>System design was more valuable than isolated screen design — the experience depended on multiple teams acting at the right time.</li>
-          <li>Automation reduced cognitive load for visitors, hosts, and receptionists alike.</li>
-          <li>End-to-end thinking made the experience feel premium, because support continued after the check-in moment.</li>
-        </ul>
+        <div class="modal-section-title">User Journey</div>
+        <div class="journey-flow">
+          <span class="journey-step">Pre-visit scheduling</span><span class="journey-arrow">→</span>
+          <span class="journey-step">AI self check-in</span><span class="journey-arrow">→</span>
+          <span class="journey-step">Auto access &amp; notify</span><span class="journey-arrow">→</span>
+          <span class="journey-step">Guided navigation</span><span class="journey-arrow">→</span>
+          <span class="journey-step">Hospitality</span><span class="journey-arrow">→</span>
+          <span class="journey-step">Checkout &amp; exit</span>
+        </div>
       </div>
+
+      <details class="modal-details">
+        <summary>Problem <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <p class="modal-text">Clients experienced delays and confusion during check-in. Hosts lacked reliable tools to plan visits and arrange hospitality. Receptionists had to handle access, coordination, questions, and peak visitor traffic manually, which made premium visits feel fragmented.</p>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Research &amp; Insights <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="method-chips">
+            <span class="method-chip"><span class="ic">🗣️</span>Receptionist Interviews</span>
+            <span class="method-chip"><span class="ic">👥</span>Host Discussions</span>
+            <span class="method-chip"><span class="ic">💬</span>Client Feedback</span>
+            <span class="method-chip"><span class="ic">🧪</span>Task-Based Usability Testing</span>
+          </div>
+          <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> Logged reception overload during visitor peaks, host follow-through on food/room/access arrangements, and where clients lost confidence in the flow after check-in.</p>
+          <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> Check-in was not a single kiosk interaction — it was a chain of dependent moments across people, access, space, and hospitality. This reframed the design problem from "screen design" to system design.</p>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Users <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="modal-list">
+            <li><strong style="color:var(--cream)">Visitor / Client</strong> — needs fast entry, clear guidance, and a premium hospitality experience.</li>
+            <li><strong style="color:var(--cream)">Host / Employee</strong> — needs visit planning, tracking, room readiness, and coordination visibility.</li>
+            <li><strong style="color:var(--cream)">Receptionist</strong> — needs reduced manual workload and better prioritisation during peak times.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Key Decisions <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="modal-list">
+            <li><strong style="color:var(--cream)">AI Self Check-in</strong> — face recognition, mobile number, or QR code replaced manual reception queuing.</li>
+            <li><strong style="color:var(--cream)">Automated Access Control</strong> — approved access activates automatically and notifies host and reception in real time.</li>
+            <li><strong style="color:var(--cream)">Visitor Assistant</strong> — on-demand help for directions, meeting rooms, WiFi, host connection, and refreshment requests.</li>
+            <li><strong style="color:var(--cream)">Host Dashboard</strong> — visit planning, today's visitors, meeting prep, and quick actions in one place.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Information Architecture <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="ia-tree">
+            <li><strong>Pre-Visit</strong> — host schedules visit, registers client, requests access, books hospitality</li>
+            <li><strong>Check-in</strong> — face recognition / phone number / QR code, role-gated</li>
+            <li><strong>Access &amp; Notify</strong> — system activates access, alerts host and reception</li>
+            <li><strong>Support</strong> — visitor assistant for guidance, WiFi, and service requests</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Typography <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="type-specimen">
+            <div class="type-row"><span class="type-sample" style="font-family:var(--font-display);font-size:1.6rem">Aa — Bebas Neue</span><span class="type-meta">Kiosk step headers</span></div>
+            <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-weight:600;font-size:1.15rem">Aa — Poppins Medium, large</span><span class="type-meta">Kiosk touch targets, distance readability</span></div>
+            <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-size:.9rem;color:var(--cream-dim)">Aa — Poppins Regular</span><span class="type-meta">Host dashboard detail text</span></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Learnings <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="modal-list">
+            <li>System design was more valuable than isolated screen design — the experience depended on multiple teams acting at the right time.</li>
+            <li>Automation reduced cognitive load for visitors, hosts, and receptionists alike.</li>
+            <li>End-to-end thinking made the experience feel premium, because support continued after the check-in moment.</li>
+          </ul>
+        </div>
+      </details>
     </div>
   </div>
 </div>
@@ -715,53 +860,17 @@
         <p class="modal-text">A UK social housing association managing 50,000+ units had no unified platform — four operational roles each relied on spreadsheets and email chains to track KPIs and compliance. I designed a single role-adaptive platform surfacing the right information to each role from one shared data model.</p>
       </div>
       <div class="modal-section">
-        <div class="modal-section-title">The Four Roles</div>
-        <ul class="modal-list">
-          <li><strong style="color:var(--cream)">Director of Assets</strong> — portfolio-wide KPIs, Decent Homes Standard score, cost analysis.</li>
-          <li><strong style="color:var(--cream)">Void Manager</strong> — void pipeline by stage, re-let time vs target, rent loss exposure.</li>
-          <li><strong style="color:var(--cream)">Compliance Officer</strong> — certificate status, overdue escalation flags, regulatory risk.</li>
-          <li><strong style="color:var(--cream)">Repairs Manager</strong> — work order queue, SLA status, contractor assignment.</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Research &amp; Insights</div>
-        <div class="method-chips">
-          <span class="method-chip"><span class="ic">👥</span>Contextual Inquiry &amp; Shadowing — 4 roles</span>
-          <span class="method-chip"><span class="ic">🗺️</span>Service Blueprinting</span>
-          <span class="method-chip"><span class="ic">🧭</span>Journey Mapping</span>
-          <span class="method-chip"><span class="ic">💡</span>Design Thinking Workshops</span>
-        </div>
-        <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> Measured average void re-let time against target SLA, tracked how often compliance deadlines were missed due to lack of visibility, and mapped duplicate data entry happening independently across teams.</p>
-        <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> All four roles needed the same underlying data but conflicting views of it — so the decision was one shared data model with role-based dashboard routing, instead of building four separate apps.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Key Decision</div>
-        <p class="modal-text">Login detects role and routes to a specialised dashboard automatically — each view surfaces only the alerts, metrics, and actions relevant to that role, sharing one component library underneath.</p>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Information Architecture</div>
-        <ul class="ia-tree">
-          <li><strong>Role-based routing at login</strong> — hub-and-spoke model, one shared data layer<ul><li>Director of Assets · Void Manager · Compliance Officer · Repairs Manager</li></ul></li>
-          <li><strong>Each dashboard</strong> — portfolio KPIs, active alerts, drill-down detail views</li>
-          <li><strong>Shared component library</strong> underneath all four role views</li>
-        </ul>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">User Journey — Void Manager</div>
-        <div class="journey-flow">
-          <span class="journey-step">Login → role dashboard</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Void pipeline by stage</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Flag overdue re-let</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Assign contractor</span><span class="journey-arrow">→</span>
-          <span class="journey-step">Track to close</span>
-        </div>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-title">Typography</div>
-        <div class="type-specimen">
-          <div class="type-row"><span class="type-sample" style="font-family:var(--font-display);font-size:1.6rem">Aa — Bebas Neue</span><span class="type-meta">KPI headers</span></div>
-          <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-variant-numeric:tabular-nums;font-size:1.05rem">Aa 123 — Tabular figures</span><span class="type-meta">Dashboard metrics</span></div>
-          <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-size:.9rem;color:var(--cream-dim)">Aa — Poppins Regular</span><span class="type-meta">Table &amp; list data</span></div>
+        <div class="modal-section-title">Process</div>
+        <div class="process-timeline">
+          <span class="pt-step">Research</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Journey Mapping</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Wireframes</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Prototyping</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Usability Testing</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Iteration</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Final Design</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Launch</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Business Results</span>
         </div>
       </div>
       <div class="modal-section">
@@ -773,6 +882,71 @@
           <div><div class="modal-outcome-num">4</div><div class="modal-outcome-label">Roles, one platform</div></div>
         </div>
       </div>
+      <div class="modal-section">
+        <div class="modal-section-title">User Journey — Void Manager</div>
+        <div class="journey-flow">
+          <span class="journey-step">Login → role dashboard</span><span class="journey-arrow">→</span>
+          <span class="journey-step">Void pipeline by stage</span><span class="journey-arrow">→</span>
+          <span class="journey-step">Flag overdue re-let</span><span class="journey-arrow">→</span>
+          <span class="journey-step">Assign contractor</span><span class="journey-arrow">→</span>
+          <span class="journey-step">Track to close</span>
+        </div>
+      </div>
+
+      <details class="modal-details">
+        <summary>The Four Roles <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="modal-list">
+            <li><strong style="color:var(--cream)">Director of Assets</strong> — portfolio-wide KPIs, Decent Homes Standard score, cost analysis.</li>
+            <li><strong style="color:var(--cream)">Void Manager</strong> — void pipeline by stage, re-let time vs target, rent loss exposure.</li>
+            <li><strong style="color:var(--cream)">Compliance Officer</strong> — certificate status, overdue escalation flags, regulatory risk.</li>
+            <li><strong style="color:var(--cream)">Repairs Manager</strong> — work order queue, SLA status, contractor assignment.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Research &amp; Insights <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="method-chips">
+            <span class="method-chip"><span class="ic">👥</span>Contextual Inquiry &amp; Shadowing — 4 roles</span>
+            <span class="method-chip"><span class="ic">🗺️</span>Service Blueprinting</span>
+            <span class="method-chip"><span class="ic">🧭</span>Journey Mapping</span>
+            <span class="method-chip"><span class="ic">💡</span>Design Thinking Workshops</span>
+          </div>
+          <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> Measured average void re-let time against target SLA, tracked how often compliance deadlines were missed due to lack of visibility, and mapped duplicate data entry happening independently across teams.</p>
+          <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> All four roles needed the same underlying data but conflicting views of it — so the decision was one shared data model with role-based dashboard routing, instead of building four separate apps.</p>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Key Decision <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <p class="modal-text">Login detects role and routes to a specialised dashboard automatically — each view surfaces only the alerts, metrics, and actions relevant to that role, sharing one component library underneath.</p>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Information Architecture <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="ia-tree">
+            <li><strong>Role-based routing at login</strong> — hub-and-spoke model, one shared data layer<ul><li>Director of Assets · Void Manager · Compliance Officer · Repairs Manager</li></ul></li>
+            <li><strong>Each dashboard</strong> — portfolio KPIs, active alerts, drill-down detail views</li>
+            <li><strong>Shared component library</strong> underneath all four role views</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Typography <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="type-specimen">
+            <div class="type-row"><span class="type-sample" style="font-family:var(--font-display);font-size:1.6rem">Aa — Bebas Neue</span><span class="type-meta">KPI headers</span></div>
+            <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-variant-numeric:tabular-nums;font-size:1.05rem">Aa 123 — Tabular figures</span><span class="type-meta">Dashboard metrics</span></div>
+            <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-size:.9rem;color:var(--cream-dim)">Aa — Poppins Regular</span><span class="type-meta">Table &amp; list data</span></div>
+          </div>
+        </div>
+      </details>
     </div>
   </div>
 </div>

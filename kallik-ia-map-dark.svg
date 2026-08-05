@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="380" viewBox="0 0 1400 380" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1400" height="380" fill="#132233"/>
+<rect x="1" y="1" width="1398" height="378" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2" rx="18"/>
+<path d="M 700.0 110 C 700.0 140, 200.0 146, 200.0 176" stroke="rgba(58,181,195,.55)" stroke-width="2" fill="none"/>
+<path d="M 700.0 110 C 700.0 140, 533.0 146, 533.0 176" stroke="rgba(58,181,195,.55)" stroke-width="2" fill="none"/>
+<path d="M 700.0 110 C 700.0 140, 866.0 146, 866.0 176" stroke="rgba(58,181,195,.55)" stroke-width="2" fill="none"/>
+<path d="M 700.0 110 C 700.0 140, 1199.0 146, 1199.0 176" stroke="rgba(58,181,195,.55)" stroke-width="2" fill="none"/>
+<rect x="570.0" y="56" width="260" height="54" rx="12" fill="#0d1b2a"/>
+<text x="700.0" y="79" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">AToM Platform</text>
+<text x="700.0" y="97" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,.6)">One shared, governed data model</text>
+<rect x="50" y="176" width="300" height="96" rx="12" fill="#1b2f42" stroke="rgba(58,181,195,.32)" stroke-width="1.5"/>
+<rect x="50" y="176" width="6" height="96" rx="3" fill="#3ab5c3"/>
+<text x="74" y="206" font-size="15" font-weight="700" fill="#f0ede6">Library</text>
+<text x="74" y="228" font-size="11.5" fill="rgba(240,237,230,.68)">All artwork assets — filterable by</text>
+<text x="74" y="244" font-size="11.5" fill="rgba(240,237,230,.68)">brand, market, status</text>
+<rect x="383" y="176" width="300" height="96" rx="12" fill="#1b2f42" stroke="rgba(58,181,195,.32)" stroke-width="1.5"/>
+<rect x="383" y="176" width="6" height="96" rx="3" fill="#3ab5c3"/>
+<text x="407" y="206" font-size="15" font-weight="700" fill="#f0ede6">Editor</text>
+<text x="407" y="228" font-size="11.5" fill="rgba(240,237,230,.68)">Pro editor with auto-versioning,</text>
+<text x="407" y="244" font-size="11.5" fill="rgba(240,237,230,.68)">role-gated</text>
+<rect x="716" y="176" width="300" height="96" rx="12" fill="#1b2f42" stroke="rgba(58,181,195,.32)" stroke-width="1.5"/>
+<rect x="716" y="176" width="6" height="96" rx="3" fill="#3ab5c3"/>
+<text x="740" y="206" font-size="15" font-weight="700" fill="#f0ede6">Approvals</text>
+<text x="740" y="228" font-size="11.5" fill="rgba(240,237,230,.68)">One-click approve, full version</text>
+<text x="740" y="244" font-size="11.5" fill="rgba(240,237,230,.68)">history</text>
+<rect x="1049" y="176" width="300" height="96" rx="12" fill="#1b2f42" stroke="rgba(58,181,195,.32)" stroke-width="1.5"/>
+<rect x="1049" y="176" width="6" height="96" rx="3" fill="#3ab5c3"/>
+<text x="1073" y="206" font-size="15" font-weight="700" fill="#f0ede6">Compliance Dashboard</text>
+<text x="1073" y="228" font-size="11.5" fill="rgba(240,237,230,.68)">Inline AI validation flags with</text>
+<text x="1073" y="244" font-size="11.5" fill="rgba(240,237,230,.68)">rule references</text>
+<text x="50" y="296" font-size="10.5" font-weight="700" letter-spacing=".06em" fill="#3ab5c3">LIBRARY STATUS FLOW</text>
+<rect x="50.0" y="306" width="67.5" height="40" rx="8" fill="none" stroke="#3ab5c3" stroke-width="1.5"/>
+<text x="83.75" y="330.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#f0ede6">Draft</text>
+<polygon points="119.5,321.0 119.5,331.0 125.5,326.0" fill="#3ab5c3"/>
+<rect x="127.5" y="306" width="67.5" height="40" rx="8" fill="none" stroke="#3ab5c3" stroke-width="1.5"/>
+<text x="161.25" y="330.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#f0ede6">Review</text>
+<polygon points="197.0,321.0 197.0,331.0 203.0,326.0" fill="#3ab5c3"/>
+<rect x="205.0" y="306" width="67.5" height="40" rx="8" fill="none" stroke="#3ab5c3" stroke-width="1.5"/>
+<text x="238.75" y="330.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#f0ede6">Approved</text>
+<polygon points="274.5,321.0 274.5,331.0 280.5,326.0" fill="#3ab5c3"/>
+<rect x="282.5" y="306" width="67.5" height="40" rx="8" fill="none" stroke="#3ab5c3" stroke-width="1.5"/>
+<text x="316.25" y="330.0" text-anchor="middle" font-size="11.5" font-weight="700" fill="#f0ede6">Released</text>
+</svg>

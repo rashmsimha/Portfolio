@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" font-family="Arial, Helvetica, sans-serif">
+<rect x="0" y="0" width="1400" height="520" fill="#f7f5f0"/>
+<rect x="1" y="1" width="1398" height="518" fill="none" stroke="rgba(20,35,47,.10)" stroke-width="2" rx="18"/>
+<text x="700.0" y="46" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="3" fill="#0f8a97">KALLIK AToM &#183; CASE STUDY</text>
+<text x="700.0" y="80" text-anchor="middle" font-size="30" font-weight="700" fill="#14232f">User Journey &#8212; Before &amp; After</text>
+<circle cx="44" cy="115" r="5" fill="#b8433f"/>
+<text x="59" y="120" font-size="14" font-weight="700" letter-spacing="1.2" fill="#b8433f">BEFORE &#8212; THREE DISCONNECTED TOOLS</text>
+<rect x="35" y="134" width="190" height="108" rx="12" fill="#fbebea" stroke="rgba(184,67,63,.35)" stroke-width="1.5"/>
+<text x="130.0" y="174" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">Create</text>
+<text x="130.0" y="198" text-anchor="middle" font-size="12.5" fill="#b8433f">local save only</text>
+<circle cx="57" cy="156" r="12" fill="#b8433f"/>
+<text x="57" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">1</text>
+<line x1="231" y1="188.0" x2="255" y2="188.0" stroke="#b8433f" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="255,182.0 255,194.0 265,188.0" fill="#b8433f"/>
+<rect x="263" y="134" width="190" height="108" rx="12" fill="#fbebea" stroke="rgba(184,67,63,.35)" stroke-width="1.5"/>
+<text x="358.0" y="174" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">Export &amp; email</text>
+<text x="358.0" y="198" text-anchor="middle" font-size="12.5" fill="#b8433f">no version control</text>
+<circle cx="285" cy="156" r="12" fill="#b8433f"/>
+<text x="285" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">2</text>
+<line x1="459" y1="188.0" x2="483" y2="188.0" stroke="#b8433f" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="483,182.0 483,194.0 493,188.0" fill="#b8433f"/>
+<rect x="491" y="134" width="190" height="108" rx="12" fill="#fbebea" stroke="rgba(184,67,63,.35)" stroke-width="1.5"/>
+<text x="586.0" y="174" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">Manual review</text>
+<text x="586.0" y="198" text-anchor="middle" font-size="12.5" fill="#b8433f">4–6 hrs / label</text>
+<circle cx="513" cy="156" r="12" fill="#b8433f"/>
+<text x="513" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">3</text>
+<line x1="687" y1="188.0" x2="711" y2="188.0" stroke="#b8433f" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="711,182.0 711,194.0 721,188.0" fill="#b8433f"/>
+<rect x="719" y="134" width="190" height="108" rx="12" fill="#fbebea" stroke="rgba(184,67,63,.35)" stroke-width="1.5"/>
+<text x="814.0" y="174" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">AI check</text>
+<text x="814.0" y="198" text-anchor="middle" font-size="12.5" fill="#b8433f">flags ignored</text>
+<circle cx="741" cy="156" r="12" fill="#b8433f"/>
+<text x="741" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+<line x1="915" y1="188.0" x2="939" y2="188.0" stroke="#b8433f" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="939,182.0 939,194.0 949,188.0" fill="#b8433f"/>
+<rect x="947" y="134" width="190" height="108" rx="12" fill="#fbebea" stroke="rgba(184,67,63,.35)" stroke-width="1.5"/>
+<text x="1042.0" y="174" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">Approve</text>
+<text x="1042.0" y="198" text-anchor="middle" font-size="12.5" fill="#b8433f">by email reply</text>
+<circle cx="969" cy="156" r="12" fill="#b8433f"/>
+<text x="969" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+<line x1="1143" y1="188.0" x2="1167" y2="188.0" stroke="#b8433f" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="1167,182.0 1167,194.0 1177,188.0" fill="#b8433f"/>
+<rect x="1175" y="134" width="190" height="108" rx="12" fill="#fbebea" stroke="rgba(184,67,63,.35)" stroke-width="1.5"/>
+<text x="1270.0" y="174" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">Print</text>
+<text x="1270.0" y="198" text-anchor="middle" font-size="12.5" fill="#b8433f">guessing version</text>
+<circle cx="1197" cy="156" r="12" fill="#b8433f"/>
+<text x="1197" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">6</text>
+<rect x="440.0" y="276" width="520" height="56" rx="28" fill="#14232f"/>
+<text x="630.0" y="311" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">6 hours</text>
+<text x="700.0" y="311" text-anchor="middle" font-size="17" font-weight="700" fill="#0f8a97">&#8594;</text>
+<text x="770.0" y="311" text-anchor="middle" font-size="17" font-weight="700" fill="#3ab5c3">38 minutes</text>
+<text x="905.0" y="311" text-anchor="middle" font-size="12" fill="rgba(255,255,255,.65)">(89% faster)</text>
+<circle cx="44" cy="359" r="5" fill="#0f8a97"/>
+<text x="59" y="364" font-size="14" font-weight="700" letter-spacing="1.2" fill="#0f8a97">AFTER &#8212; ONE GOVERNED PLATFORM</text>
+<rect x="35" y="378" width="190" height="108" rx="12" fill="#e4f4f5" stroke="rgba(15,138,151,.35)" stroke-width="1.5"/>
+<text x="130.0" y="418" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">Create &amp; lock</text>
+<text x="130.0" y="442" text-anchor="middle" font-size="12.5" fill="#0f8a97">auto-versioned</text>
+<circle cx="203" cy="400" r="12" fill="#0f8a97"/>
+<path d="M 198 400 l 3.5 4 l 7 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="231" y1="432.0" x2="255" y2="432.0" stroke="#0f8a97" stroke-width="2.5"/>
+<polygon points="255,426.0 255,438.0 265,432.0" fill="#0f8a97"/>
+<rect x="263" y="378" width="190" height="108" rx="12" fill="#e4f4f5" stroke="rgba(15,138,151,.35)" stroke-width="1.5"/>
+<text x="358.0" y="418" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">In-system review</text>
+<text x="358.0" y="442" text-anchor="middle" font-size="12.5" fill="#0f8a97">one workflow</text>
+<circle cx="431" cy="400" r="12" fill="#0f8a97"/>
+<path d="M 426 400 l 3.5 4 l 7 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="459" y1="432.0" x2="483" y2="432.0" stroke="#0f8a97" stroke-width="2.5"/>
+<polygon points="483,426.0 483,438.0 493,432.0" fill="#0f8a97"/>
+<rect x="491" y="378" width="190" height="108" rx="12" fill="#e4f4f5" stroke="rgba(15,138,151,.35)" stroke-width="1.5"/>
+<text x="586.0" y="418" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">AI validation</text>
+<text x="586.0" y="442" text-anchor="middle" font-size="12.5" fill="#0f8a97">38 min / label</text>
+<circle cx="659" cy="400" r="12" fill="#0f8a97"/>
+<path d="M 654 400 l 3.5 4 l 7 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="687" y1="432.0" x2="711" y2="432.0" stroke="#0f8a97" stroke-width="2.5"/>
+<polygon points="711,426.0 711,438.0 721,432.0" fill="#0f8a97"/>
+<rect x="719" y="378" width="190" height="108" rx="12" fill="#e4f4f5" stroke="rgba(15,138,151,.35)" stroke-width="1.5"/>
+<text x="814.0" y="418" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">One-click approve</text>
+<text x="814.0" y="442" text-anchor="middle" font-size="12.5" fill="#0f8a97">audit trail</text>
+<circle cx="887" cy="400" r="12" fill="#0f8a97"/>
+<path d="M 882 400 l 3.5 4 l 7 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="915" y1="432.0" x2="939" y2="432.0" stroke="#0f8a97" stroke-width="2.5"/>
+<polygon points="939,426.0 939,438.0 949,432.0" fill="#0f8a97"/>
+<rect x="947" y="378" width="190" height="108" rx="12" fill="#e4f4f5" stroke="rgba(15,138,151,.35)" stroke-width="1.5"/>
+<text x="1042.0" y="418" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">Release to print</text>
+<text x="1042.0" y="442" text-anchor="middle" font-size="12.5" fill="#0f8a97">status-gated</text>
+<circle cx="1115" cy="400" r="12" fill="#0f8a97"/>
+<path d="M 1110 400 l 3.5 4 l 7 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1143" y1="432.0" x2="1167" y2="432.0" stroke="#0f8a97" stroke-width="2.5"/>
+<polygon points="1167,426.0 1167,438.0 1177,432.0" fill="#0f8a97"/>
+<rect x="1175" y="378" width="190" height="108" rx="12" fill="#e4f4f5" stroke="rgba(15,138,151,.35)" stroke-width="1.5"/>
+<text x="1270.0" y="418" text-anchor="middle" font-size="16" font-weight="700" fill="#14232f">Audit-ready</text>
+<text x="1270.0" y="442" text-anchor="middle" font-size="12.5" fill="#0f8a97">0 conflicts</text>
+<circle cx="1343" cy="400" r="12" fill="#0f8a97"/>
+<path d="M 1338 400 l 3.5 4 l 7 -8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
