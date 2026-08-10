@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="316" viewBox="0 0 1400 316" font-family="Arial, Helvetica, sans-serif"><rect x="0" y="0" width="1400" height="316" fill="#132233"/>
+<rect x="1" y="1" width="1398" height="314" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2" rx="18"/>
+<path d="M 700.0 114 C 700.0 144, 200.0 146, 200.0 176" stroke="rgba(58,181,195,.55)" stroke-width="2" fill="none"/>
+<path d="M 700.0 114 C 700.0 144, 533.0 146, 533.0 176" stroke="rgba(58,181,195,.55)" stroke-width="2" fill="none"/>
+<path d="M 700.0 114 C 700.0 144, 866.0 146, 866.0 176" stroke="rgba(58,181,195,.55)" stroke-width="2" fill="none"/>
+<path d="M 700.0 114 C 700.0 144, 1199.0 146, 1199.0 176" stroke="rgba(58,181,195,.55)" stroke-width="2" fill="none"/>
+<rect x="550.0" y="56" width="300" height="58" rx="12" fill="#0d1b2a"/>
+<text x="700.0" y="80" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">MACI — “What can I do?”</text>
+<text x="700.0" y="99" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,.6)">Guided conversation inside Microsoft Teams</text>
+<rect x="50" y="176" width="300" height="100" rx="12" fill="#1b2f42" stroke="rgba(58,181,195,.32)" stroke-width="1.5"/>
+<rect x="50" y="176" width="6" height="100" rx="3" fill="#3ab5c3"/>
+<text x="74" y="206" font-size="15" font-weight="700" fill="#f0ede6">Timesheet &amp; Effort</text>
+<text x="74" y="228" font-size="11.5" fill="rgba(240,237,230,.68)">Submit project and organization</text>
+<text x="74" y="244" font-size="11.5" fill="rgba(240,237,230,.68)">effort, fill timesheet</text>
+<rect x="383" y="176" width="300" height="100" rx="12" fill="#1b2f42" stroke="rgba(58,181,195,.32)" stroke-width="1.5"/>
+<rect x="383" y="176" width="6" height="100" rx="3" fill="#3ab5c3"/>
+<text x="407" y="206" font-size="15" font-weight="700" fill="#f0ede6">Leave &amp; Holidays</text>
+<text x="407" y="228" font-size="11.5" fill="rgba(240,237,230,.68)">Apply NIO, apply leave (annual /</text>
+<text x="407" y="244" font-size="11.5" fill="rgba(240,237,230,.68)">half-day), view holiday calendar</text>
+<rect x="716" y="176" width="300" height="100" rx="12" fill="#1b2f42" stroke="rgba(58,181,195,.32)" stroke-width="1.5"/>
+<rect x="716" y="176" width="6" height="100" rx="3" fill="#3ab5c3"/>
+<text x="740" y="206" font-size="15" font-weight="700" fill="#f0ede6">Approvals</text>
+<text x="740" y="228" font-size="11.5" fill="rgba(240,237,230,.68)">Approve Genie tickets, approve</text>
+<text x="740" y="244" font-size="11.5" fill="rgba(240,237,230,.68)">timesheets from your team</text>
+<rect x="1049" y="176" width="300" height="100" rx="12" fill="#1b2f42" stroke="rgba(58,181,195,.32)" stroke-width="1.5"/>
+<rect x="1049" y="176" width="6" height="100" rx="3" fill="#3ab5c3"/>
+<text x="1073" y="206" font-size="15" font-weight="700" fill="#f0ede6">Support &amp; Info</text>
+<text x="1073" y="228" font-size="11.5" fill="rgba(240,237,230,.68)">ID card, productivity dashboard,</text>
+<text x="1073" y="244" font-size="11.5" fill="rgba(240,237,230,.68)">COVID support, help, feedback</text></svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="316" viewBox="0 0 1400 316" font-family="Arial, Helvetica, sans-serif"><rect x="0" y="0" width="1400" height="316" fill="#f7f5f0"/>
+<rect x="1" y="1" width="1398" height="314" fill="none" stroke="rgba(20,35,47,.10)" stroke-width="2" rx="18"/>
+<path d="M 700.0 114 C 700.0 144, 200.0 146, 200.0 176" stroke="rgba(15,138,151,.55)" stroke-width="2" fill="none"/>
+<path d="M 700.0 114 C 700.0 144, 533.0 146, 533.0 176" stroke="rgba(15,138,151,.55)" stroke-width="2" fill="none"/>
+<path d="M 700.0 114 C 700.0 144, 866.0 146, 866.0 176" stroke="rgba(15,138,151,.55)" stroke-width="2" fill="none"/>
+<path d="M 700.0 114 C 700.0 144, 1199.0 146, 1199.0 176" stroke="rgba(15,138,151,.55)" stroke-width="2" fill="none"/>
+<rect x="550.0" y="56" width="300" height="58" rx="12" fill="#14232f"/>
+<text x="700.0" y="80" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">Visitor Experience Platform</text>
+<text x="700.0" y="99" text-anchor="middle" font-size="10.5" fill="rgba(255,255,255,.6)">One connected system, entry to exit</text>
+<rect x="50" y="176" width="300" height="100" rx="12" fill="#ffffff" stroke="rgba(15,138,151,.28)" stroke-width="1.5"/>
+<rect x="50" y="176" width="6" height="100" rx="3" fill="#0f8a97"/>
+<text x="74" y="206" font-size="15" font-weight="700" fill="#14232f">Pre-Visit</text>
+<text x="74" y="228" font-size="11.5" fill="rgba(20,35,47,.62)">Host schedules visit, registers</text>
+<text x="74" y="244" font-size="11.5" fill="rgba(20,35,47,.62)">client, requests access, books</text>
+<text x="74" y="260" font-size="11.5" fill="rgba(20,35,47,.62)">hospitality</text>
+<rect x="383" y="176" width="300" height="100" rx="12" fill="#ffffff" stroke="rgba(15,138,151,.28)" stroke-width="1.5"/>
+<rect x="383" y="176" width="6" height="100" rx="3" fill="#0f8a97"/>
+<text x="407" y="206" font-size="15" font-weight="700" fill="#14232f">Check-in</text>
+<text x="407" y="228" font-size="11.5" fill="rgba(20,35,47,.62)">Face recognition, phone number, or</text>
+<text x="407" y="244" font-size="11.5" fill="rgba(20,35,47,.62)">QR code — role-gated</text>
+<rect x="716" y="176" width="300" height="100" rx="12" fill="#ffffff" stroke="rgba(15,138,151,.28)" stroke-width="1.5"/>
+<rect x="716" y="176" width="6" height="100" rx="3" fill="#0f8a97"/>
+<text x="740" y="206" font-size="15" font-weight="700" fill="#14232f">Access &amp; Notify</text>
+<text x="740" y="228" font-size="11.5" fill="rgba(20,35,47,.62)">System activates access, alerts</text>
+<text x="740" y="244" font-size="11.5" fill="rgba(20,35,47,.62)">host and reception in real time</text>
+<rect x="1049" y="176" width="300" height="100" rx="12" fill="#ffffff" stroke="rgba(15,138,151,.28)" stroke-width="1.5"/>
+<rect x="1049" y="176" width="6" height="100" rx="3" fill="#0f8a97"/>
+<text x="1073" y="206" font-size="15" font-weight="700" fill="#14232f">Support</text>
+<text x="1073" y="228" font-size="11.5" fill="rgba(20,35,47,.62)">Visitor assistant for guidance,</text>
+<text x="1073" y="244" font-size="11.5" fill="rgba(20,35,47,.62)">WiFi, and service requests</text></svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="526" viewBox="0 0 1400 526" font-family="Arial, Helvetica, sans-serif"><rect x="0" y="0" width="1400" height="526" fill="#132233"/>
+<rect x="1" y="1" width="1398" height="524" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2" rx="18"/>
+<text x="700.0" y="46" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="3" fill="#3ab5c3">AI-POWERED VISITOR EXPERIENCE</text>
+<text x="700.0" y="80" text-anchor="middle" font-size="30" font-weight="700" fill="#f0ede6">Visitor Journey — Before &amp; After</text>
+<text x="700.0" y="104" text-anchor="middle" font-size="13" fill="rgba(240,237,230,.68)">From a fragmented, manual check-in to one connected service moment</text>
+<circle cx="44" cy="115" r="5" fill="#e07a76"/>
+<text x="59" y="120" font-size="14" font-weight="700" letter-spacing="1.2" fill="#e07a76">BEFORE — MANUAL &amp; DISCONNECTED</text>
+<rect x="35" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="130.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">No pre-visit notice</text>
+<text x="130.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">host unprepared</text>
+<circle cx="57" cy="156" r="12" fill="#e07a76"/>
+<text x="57" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">1</text>
+<line x1="231" y1="188.0" x2="255" y2="188.0" stroke="#e07a76" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="255,182.0 255,194.0 265,188.0" fill="#e07a76"/>
+<rect x="263" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="358.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Manual reception queue</text>
+<text x="358.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">long wait times</text>
+<circle cx="285" cy="156" r="12" fill="#e07a76"/>
+<text x="285" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">2</text>
+<line x1="459" y1="188.0" x2="483" y2="188.0" stroke="#e07a76" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="483,182.0 483,194.0 493,188.0" fill="#e07a76"/>
+<rect x="491" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="586.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Phone/email access request</text>
+<text x="586.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">delays access</text>
+<circle cx="513" cy="156" r="12" fill="#e07a76"/>
+<text x="513" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">3</text>
+<line x1="687" y1="188.0" x2="711" y2="188.0" stroke="#e07a76" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="711,182.0 711,194.0 721,188.0" fill="#e07a76"/>
+<rect x="719" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="814.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">No guidance on-site</text>
+<text x="814.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">visitor asks around</text>
+<circle cx="741" cy="156" r="12" fill="#e07a76"/>
+<text x="741" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">4</text>
+<line x1="915" y1="188.0" x2="939" y2="188.0" stroke="#e07a76" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="939,182.0 939,194.0 949,188.0" fill="#e07a76"/>
+<rect x="947" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="1042.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Ad hoc hospitality</text>
+<text x="1042.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">reception scrambles</text>
+<circle cx="969" cy="156" r="12" fill="#e07a76"/>
+<text x="969" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">5</text>
+<line x1="1143" y1="188.0" x2="1167" y2="188.0" stroke="#e07a76" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="1167,182.0 1167,194.0 1177,188.0" fill="#e07a76"/>
+<rect x="1175" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="1270.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Unclear checkout</text>
+<text x="1270.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">no exit visibility</text>
+<circle cx="1197" cy="156" r="12" fill="#e07a76"/>
+<text x="1197" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">6</text>
+<rect x="420.0" y="276" width="560" height="56" rx="28" fill="#0d1b2a"/>
+<text x="700.0" y="311" text-anchor="middle" font-size="15.5" font-weight="700" fill="#ffffff">78% faster check-in  ·  80% less reception workload</text>
+<circle cx="44" cy="359" r="5" fill="#3ab5c3"/>
+<text x="59" y="364" font-size="14" font-weight="700" letter-spacing="1.2" fill="#3ab5c3">AFTER — ONE CONNECTED SYSTEM</text>
+<rect x="35" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="130.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Pre-visit scheduling</text>
+<text x="130.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">host preps in advance</text>
+<circle cx="203" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 198 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="231" y1="432.0" x2="255" y2="432.0" stroke="#3ab5c3" stroke-width="2.5"/>
+<polygon points="255,426.0 255,438.0 265,432.0" fill="#3ab5c3"/>
+<rect x="263" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="358.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">AI self check-in</text>
+<text x="358.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">face / phone / QR</text>
+<circle cx="431" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 426 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="459" y1="432.0" x2="483" y2="432.0" stroke="#3ab5c3" stroke-width="2.5"/>
+<polygon points="483,426.0 483,438.0 493,432.0" fill="#3ab5c3"/>
+<rect x="491" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="586.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Auto access &amp; notify</text>
+<text x="586.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">real-time alerts</text>
+<circle cx="659" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 654 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="687" y1="432.0" x2="711" y2="432.0" stroke="#3ab5c3" stroke-width="2.5"/>
+<polygon points="711,426.0 711,438.0 721,432.0" fill="#3ab5c3"/>
+<rect x="719" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="814.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Guided navigation</text>
+<text x="814.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">zero confusion</text>
+<circle cx="887" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 882 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="915" y1="432.0" x2="939" y2="432.0" stroke="#3ab5c3" stroke-width="2.5"/>
+<polygon points="939,426.0 939,438.0 949,432.0" fill="#3ab5c3"/>
+<rect x="947" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="1042.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Hospitality</text>
+<text x="1042.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">requests on demand</text>
+<circle cx="1115" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 1110 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1143" y1="432.0" x2="1167" y2="432.0" stroke="#3ab5c3" stroke-width="2.5"/>
+<polygon points="1167,426.0 1167,438.0 1177,432.0" fill="#3ab5c3"/>
+<rect x="1175" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="1270.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Checkout &amp; exit</text>
+<text x="1270.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">fully logged</text>
+<circle cx="1343" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 1338 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>

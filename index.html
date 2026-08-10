@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rashmi Padmanabha — Principal Product Designer | Responsible AI · Accessibility · Enterprise SaaS</title>
+  <meta name="description"
+    content="Principal Product Designer with 19+ years designing enterprise SaaS, Responsible AI, and WCAG-accessible products.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --cream: #14232f;
+      --cream-dim: rgba(20, 35, 47, .68);
+      --cream-faint: rgba(20, 35, 47, .45);
+      --teal: #0f8a97;
+      --teal2: #0c6b76;
+      --navy: #f7f5f0;
+      --navy2: #ffffff;
+      --navy3: #ece8e0;
+      --on-accent: #0d1b2a;
+      --surface-tint: rgba(20, 35, 47, .035);
+      --surface-border: rgba(20, 35, 47, .12);
+      --nav-bg: rgba(247, 245, 240, .88);
+      --scrim: rgba(20, 20, 20, .45);
+      --green: #2ecc71;
+      --font-display: 'Bebas Neue', Arial, sans-serif;
+      --font-serif: 'DM Serif Display', Georgia, serif;
+      --font-body: 'Poppins', -apple-system, sans-serif;
+      --ease: cubic-bezier(.16, 1, .3, 1);
+      --maxw: 1120px;
+    }
+
+    [data-theme="dark"] {
+      --cream: #f0ede6;
+      --cream-dim: rgba(240, 237, 230, .68);
+      --cream-faint: rgba(240, 237, 230, .45);
+      --teal: #3ab5c3;
+      --teal2: #1e8a97;
+      --navy: #0d1b2a;
+      --navy2: #132233;
+      --navy3: #182b40;
+      --on-accent: #0d1b2a;
+      --surface-tint: rgba(255, 255, 255, .03);
+      --surface-border: rgba(255, 255, 255, .08);
+      --nav-bg: rgba(13, 27, 42, .92);
+      --scrim: rgba(5, 10, 16, .85);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--navy);
+      color: var(--cream);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background .3s var(--ease), color .3s var(--ease)
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    a {
+      color: inherit
+    }
+
+    ::selection {
+      background: var(--teal);
+      color: var(--on-accent)
+    }
+
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 2rem
+    }
+
+    .eyebrow {
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--teal)
+    }
+
+    section {
+      padding: 5.5rem 0
+    }
+
+    h2.section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: .02em;
+      margin: .6rem 0 2.6rem
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px
+    }
+
+    /* NAV */
+    header.nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--nav-bg);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--surface-border)
+    }
+
+    .nav-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      letter-spacing: .06em;
+      color: var(--teal)
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      font-size: .85rem;
+      font-weight: 500
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--cream-dim);
+      transition: color .2s
+    }
+
+    .nav-links a:hover {
+      color: var(--teal)
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--cream);
+      font-size: 1.4rem;
+      cursor: pointer
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem
+    }
+
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--surface-border);
+      color: var(--cream-dim);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: .4rem .85rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: border-color .2s, color .2s
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--teal);
+      color: var(--teal)
+    }
+
+    @media(max-width:760px) {
+      .nav-links {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: var(--navy2);
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 2rem;
+        transform: translateY(-120%);
+        transition: transform .3s var(--ease);
+        border-bottom: 1px solid var(--surface-border)
+      }
+
+      .nav-links.open {
+        transform: translateY(0)
+      }
+
+      .nav-links a {
+        display: block;
+        padding: .8rem 0;
+        border-bottom: 1px solid var(--surface-border)
+      }
+
+      .nav-toggle {
+        display: block
+      }
+    }
+
+    /* HERO */
+    .hero {
+      padding: 5rem 0 4rem;
+      text-align: center
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 9vw, 6.5rem);
+      letter-spacing: .03em;
+      line-height: .95;
+      margin: 1rem 0 1.2rem
+    }
+
+    .hero .role {
+      font-size: 1.05rem;
+      color: var(--teal);
+      font-weight: 500;
+      max-width: 700px;
+      margin: 0 auto 1.4rem
+    }
+
+    .hero p.intro {
+      max-width: 640px;
+      margin: 0 auto 2.4rem;
+      color: var(--cream-dim);
+      font-size: 1rem
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--on-accent);
+      font-weight: 600;
+      padding: .85rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: .9rem;
+      letter-spacing: .03em;
+      transition: transform .25s var(--ease), background .25s
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #4fc6d3
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      max-width: 820px;
+      margin: 3.5rem auto 0
+    }
+
+    .stat .num {
+      font-family: var(--font-display);
+      font-size: 2.6rem;
+      color: var(--teal);
+      letter-spacing: .02em
+    }
+
+    .stat .label {
+      font-size: .72rem;
+      color: var(--cream-faint);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-top: .2rem
+    }
+
+    @media(max-width:640px) {
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem
+      }
+    }
+
+    /* ABOUT */
+    .about {
+      background: var(--navy2)
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start
+    }
+
+    .about p {
+      color: var(--cream-dim);
+      margin-bottom: 1.1rem
+    }
+
+    .about strong {
+      color: var(--cream)
+    }
+
+    .quote {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.3rem;
+      color: var(--cream);
+      border-left: 3px solid var(--teal);
+      padding-left: 1.3rem;
+      line-height: 1.5
+    }
+
+    @media(max-width:800px) {
+      .about-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* EXPERTISE */
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem
+    }
+
+    .exp-card {
+      background: var(--surface-tint);
+      border: 1px solid rgba(58, 181, 195, .15);
+      border-radius: 10px;
+      padding: 1.6rem
+    }
+
+    .exp-card .tag {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--teal);
+      letter-spacing: .03em;
+      margin-bottom: .6rem
+    }
+
+    .exp-card p {
+      font-size: .85rem;
+      color: var(--cream-dim)
+    }
+
+    /* CASE STUDIES */
+    .case-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.75rem
+    }
+
+    .case-card {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 0;
+      background: var(--surface-tint);
+      border: 1px solid rgba(58, 181, 195, .15);
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform .3s var(--ease), border-color .3s
+    }
+
+    .case-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(58, 181, 195, .4)
+    }
+
+    .case-img {
+      background: var(--navy3);
+      overflow: hidden;
+      min-height: 220px
+    }
+
+    .case-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top
+    }
+
+    .case-body {
+      padding: 2rem
+    }
+
+    .case-tags {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+      margin-bottom: .9rem
+    }
+
+    .case-tag {
+      font-size: .62rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: .22rem .6rem;
+      border-radius: 2px;
+      background: rgba(58, 181, 195, .1);
+      border: 1px solid rgba(58, 181, 195, .25);
+      color: var(--teal)
+    }
+
+    .case-body h3 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      letter-spacing: .02em;
+      margin-bottom: .3rem
+    }
+
+    .case-body .role {
+      font-size: .78rem;
+      color: var(--cream-faint);
+      margin-bottom: .9rem
+    }
+
+    .case-body p.desc {
+      font-size: .88rem;
+      color: var(--cream-dim);
+      margin-bottom: 1.3rem
+    }
+
+    .case-outcomes {
+      display: flex;
+      gap: 1.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.1rem
+    }
+
+    .case-outcomes .n {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--teal)
+    }
+
+    .case-outcomes .l {
+      font-size: .65rem;
+      color: var(--cream-faint);
+      text-transform: uppercase;
+      letter-spacing: .04em
+    }
+
+    .case-link {
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--teal);
+      text-decoration: none
+    }
+
+    @media(max-width:760px) {
+      .case-card {
+        grid-template-columns: 1fr
+      }
+
+      .case-img {
+        min-height: 180px
+      }
+    }
+
+    /* EXPERIENCE */
+    .exp-item {
+      border-left: 2px solid rgba(58, 181, 195, .25);
+      padding-left: 1.8rem;
+      margin-bottom: 2.8rem;
+      position: relative
+    }
+
+    .exp-item::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: .3rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--teal)
+    }
+
+    .exp-item .period {
+      font-size: .75rem;
+      color: var(--teal);
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      margin-bottom: .3rem
+    }
+
+    .exp-item h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: .02em
+    }
+
+    .exp-item .company {
+      font-size: .85rem;
+      color: var(--cream-faint);
+      margin-bottom: .9rem
+    }
+
+    .exp-item ul {
+      list-style: none;
+      font-size: .88rem;
+      color: var(--cream-dim)
+    }
+
+    .exp-item li {
+      padding-left: 1.1rem;
+      position: relative;
+      margin-bottom: .5rem
+    }
+
+    .exp-item li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+      font-size: .75rem
+    }
+
+    /* AI PORTFOLIO */
+    .ai-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem
+    }
+
+    .ai-card {
+      background: var(--surface-tint);
+      border: 1px solid rgba(58, 181, 195, .15);
+      border-radius: 12px;
+      padding: 1.8rem
+    }
+
+    .ai-card .icon {
+      font-size: 1.9rem;
+      margin-bottom: .8rem
+    }
+
+    .ai-card .ai-tag {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--teal2);
+      letter-spacing: .04em;
+      margin-bottom: .6rem;
+      opacity: .7
+    }
+
+    .ai-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      letter-spacing: .02em;
+      margin-bottom: .6rem
+    }
+
+    .ai-card p {
+      font-size: .83rem;
+      color: var(--cream-dim);
+      margin-bottom: .9rem
+    }
+
+    .ai-card ul {
+      list-style: none;
+      font-size: .8rem;
+      color: var(--cream-dim)
+    }
+
+    .ai-card li {
+      padding-left: 1rem;
+      position: relative;
+      margin-bottom: .4rem
+    }
+
+    .ai-card li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+      font-size: .7rem
+    }
+
+    @media(max-width:800px) {
+      .ai-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* TOOLS */
+    .tools-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem
+    }
+
+    .tool-pill {
+      font-size: .78rem;
+      padding: .4rem 1rem;
+      border-radius: 20px;
+      background: var(--surface-tint);
+      border: 1px solid var(--surface-border);
+      color: var(--cream-dim)
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy2);
+      padding: 4rem 0 2.5rem;
+      text-align: center
+    }
+
+    footer h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: 1rem
+    }
+
+    footer p {
+      color: var(--cream-dim);
+      margin-bottom: 1.8rem
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      font-size: .85rem;
+      font-weight: 600;
+      padding: .7rem 1.5rem;
+      border: 1px solid rgba(58, 181, 195, .3);
+      border-radius: 4px;
+      color: var(--teal);
+      transition: background .2s
+    }
+
+    .footer-links a:hover {
+      background: rgba(58, 181, 195, .1)
+    }
+
+    .copyright {
+      font-size: .75rem;
+      color: var(--cream-faint)
+    }
+
+    /* MODAL */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--scrim);
+      z-index: 100;
+      padding: 2rem 1rem;
+      overflow-y: auto
+    }
+
+    .modal-overlay.open {
+      display: block
+    }
+
+    .modal-box {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--navy2);
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(58, 181, 195, .2)
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1.6rem 1.8rem;
+      border-bottom: 1px solid var(--surface-border);
+      position: sticky;
+      top: 0;
+      background: var(--navy2);
+      z-index: 2
+    }
+
+    .modal-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      letter-spacing: .02em
+    }
+
+    .modal-subtitle {
+      font-size: .8rem;
+      color: var(--cream-faint);
+      margin-top: .2rem
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      color: var(--cream);
+      font-size: 1.3rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: .3rem
+    }
+
+    .modal-body {
+      padding: 1.8rem
+    }
+
+    .modal-screens {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: .9rem;
+      margin-bottom: 1.8rem
+    }
+
+    .modal-screens img {
+      border-radius: 8px;
+      border: 1px solid var(--surface-border)
+    }
+
+    .modal-section {
+      margin-bottom: 1.6rem
+    }
+
+    .modal-section-title {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: .6rem
+    }
+
+    .modal-text {
+      font-size: .88rem;
+      color: var(--cream-dim)
+    }
+
+    .modal-list {
+      list-style: none;
+      font-size: .88rem;
+      color: var(--cream-dim)
+    }
+
+    .modal-list li {
+      padding-left: 1.1rem;
+      position: relative;
+      margin-bottom: .5rem
+    }
+
+    .modal-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+      font-size: .75rem
+    }
+
+    .modal-outcomes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 1rem
+    }
+
+    .modal-outcome-num {
+      font-family: var(--font-display);
+      font-size: 1.7rem;
+      color: var(--teal)
+    }
+
+    .modal-outcome-label {
+      font-size: .68rem;
+      color: var(--cream-faint);
+      text-transform: uppercase;
+      letter-spacing: .03em
+    }
+
+    /* PROCESS TIMELINE */
+    .process-timeline {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .35rem;
+      margin-bottom: .3rem
+    }
+
+    .pt-step {
+      background: var(--surface-tint);
+      border: 1px solid rgba(58, 181, 195, .28);
+      color: var(--cream-dim);
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      padding: .42rem .85rem;
+      border-radius: 20px;
+      white-space: nowrap
+    }
+
+    .pt-arrow {
+      color: var(--teal);
+      font-size: .75rem;
+      opacity: .7
+    }
+
+    /* EXPANDABLE SECTIONS */
+    details.modal-details {
+      border: 1px solid var(--surface-border);
+      border-radius: 8px;
+      margin-bottom: .9rem;
+      overflow: hidden;
+      background: var(--surface-tint)
+    }
+
+    details.modal-details summary {
+      cursor: pointer;
+      list-style: none;
+      padding: .85rem 1.1rem;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem
+    }
+
+    details.modal-details summary::-webkit-details-marker {
+      display: none
+    }
+
+    details.modal-details summary .sicon {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--cream-faint);
+      flex-shrink: 0;
+      transition: transform .2s var(--ease)
+    }
+
+    details.modal-details[open] summary .sicon {
+      transform: rotate(45deg)
+    }
+
+    details.modal-details .modal-details-body {
+      padding: .2rem 1.1rem 1.1rem
+    }
+
+    /* JOURNEY MAP IMAGE */
+    .journey-map-wrap {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--surface-border)
+    }
+
+    .journey-map-wrap img {
+      width: 100%
+    }
+
+    .journey-map-wrap img.journey-map-light {
+      display: block
+    }
+
+    .journey-map-wrap img.journey-map-dark {
+      display: none
+    }
+
+    [data-theme="dark"] .journey-map-wrap img.journey-map-light {
+      display: none
+    }
+
+    [data-theme="dark"] .journey-map-wrap img.journey-map-dark {
+      display: block
+    }
+
+    /* PERSONA CARDS */
+    .persona-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem
+    }
+
+    .persona-card {
+      background: var(--surface-tint);
+      border: 1px solid rgba(58, 181, 195, .22);
+      border-radius: 10px;
+      padding: 1.2rem
+    }
+
+    .persona-top {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      margin-bottom: .8rem
+    }
+
+    .persona-avatar {
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--teal);
+      color: var(--on-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      letter-spacing: .02em
+    }
+
+    .persona-name {
+      font-weight: 700;
+      color: var(--cream);
+      font-size: .92rem;
+      line-height: 1.25
+    }
+
+    .persona-role {
+      font-size: .66rem;
+      color: var(--cream-faint);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-top: .15rem
+    }
+
+    .persona-pain {
+      font-size: .8rem;
+      color: var(--cream-dim);
+      margin-bottom: .7rem
+    }
+
+    .persona-need {
+      font-size: .76rem;
+      background: rgba(58, 181, 195, .1);
+      border-left: 2px solid var(--teal);
+      padding: .55rem .7rem;
+      border-radius: 4px;
+      color: var(--cream)
+    }
+
+    .persona-need b {
+      color: var(--teal);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      font-size: .62rem;
+      display: block;
+      margin-bottom: .25rem
+    }
+
+    /* PRIORITY MATRIX AXIS LABELS */
+    .matrix-wrap {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      grid-template-rows: 1fr 26px;
+      gap: .6rem
+    }
+
+    .matrix-axis-y {
+      grid-row: 1;
+      grid-column: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .matrix-axis-y span {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: .62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--teal)
+    }
+
+    .matrix-axis-x {
+      grid-row: 2;
+      grid-column: 2;
+      text-align: center;
+      font-size: .62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--teal)
+    }
+
+    .matrix-wrap .priority-matrix {
+      grid-row: 1;
+      grid-column: 2
+    }
+
+    /* WHY ME callout */
+    .why-me {
+      margin-top: 1.6rem;
+      background: var(--surface-tint);
+      border: 1px solid rgba(58, 181, 195, .25);
+      border-left: 3px solid var(--teal);
+      border-radius: 8px;
+      padding: 1.3rem 1.5rem
+    }
+
+    .why-me .wm-label {
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: .5rem
+    }
+
+    .why-me p {
+      color: var(--cream);
+      font-size: .95rem;
+      margin-bottom: 0
+    }
+
+    .method-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin-bottom: 1rem
+    }
+
+    .method-chip {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .78rem;
+      font-weight: 500;
+      padding: .55rem 1rem;
+      border-radius: 8px;
+      background: rgba(58, 181, 195, .08);
+      border: 1px solid rgba(58, 181, 195, .25);
+      color: var(--cream)
+    }
+
+    .method-chip .ic {
+      font-size: 1.05rem;
+      line-height: 1
+    }
+
+    .journey-flow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .4rem;
+      margin-bottom: .4rem
+    }
+
+    .journey-step {
+      background: rgba(58, 181, 195, .08);
+      border: 1px solid rgba(58, 181, 195, .25);
+      border-radius: 8px;
+      padding: .55rem .9rem;
+      font-size: .78rem;
+      color: var(--cream);
+      font-weight: 500
+    }
+
+    .journey-arrow {
+      color: var(--teal);
+      font-size: .95rem
+    }
+
+    .ia-tree {
+      font-size: .85rem;
+      color: var(--cream-dim);
+      list-style: none
+    }
+
+    .ia-tree>li {
+      margin-bottom: .5rem;
+      padding-left: 1.1rem;
+      position: relative
+    }
+
+    .ia-tree>li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--teal)
+    }
+
+    .ia-tree>li strong {
+      color: var(--cream)
+    }
+
+    .ia-tree ul {
+      list-style: none;
+      margin-top: .4rem;
+      padding-left: 1.3rem
+    }
+
+    .ia-tree ul li {
+      padding-left: 1rem;
+      position: relative;
+      margin-bottom: .3rem;
+      font-size: .8rem;
+      color: var(--cream-faint)
+    }
+
+    .ia-tree ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: rgba(58, 181, 195, .5)
+    }
+
+    .type-specimen {
+      display: flex;
+      flex-direction: column;
+      gap: 0
+    }
+
+    .type-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid var(--surface-border);
+      padding: .7rem 0;
+      gap: 1rem
+    }
+
+    .type-sample {
+      color: var(--cream)
+    }
+
+    .type-meta {
+      font-size: .68rem;
+      color: var(--cream-faint);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      white-space: nowrap
+    }
+
+    .priority-matrix {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .8rem
+    }
+
+    .matrix-quad {
+      border: 1px solid rgba(58, 181, 195, .2);
+      border-radius: 10px;
+      padding: 1rem;
+      background: var(--surface-tint)
+    }
+
+    .matrix-quad .mq-title {
+      font-size: .66rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: var(--teal);
+      margin-bottom: .7rem;
+      line-height: 1.4
+    }
+
+    .matrix-quad .mq-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem
+    }
+
+    .matrix-item {
+      font-size: .75rem;
+      padding: .4rem .7rem;
+      border-radius: 6px;
+      background: rgba(58, 181, 195, .1);
+      border: 1px solid rgba(58, 181, 195, .25);
+      color: var(--cream)
+    }
+
+    @media(max-width:520px) {
+      .priority-matrix {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .role-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .7rem;
+      margin: 0 auto 1.6rem;
+      max-width: 720px
+    }
+
+    .role-badge {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .82rem;
+      font-weight: 600;
+      padding: .6rem 1.15rem;
+      border-radius: 30px;
+      border: 1px solid rgba(58, 181, 195, .4);
+      background: rgba(58, 181, 195, .09);
+      color: var(--teal)
+    }
+
+    .role-badge .bi {
+      font-size: 1rem
+    }
+
+    .pillars {
+      padding-top: 0;
+      padding-bottom: 2rem
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.3rem
+    }
+
+    .pillar-card {
+      background: rgba(58, 181, 195, .05);
+      border: 1px solid rgba(58, 181, 195, .2);
+      border-radius: 12px;
+      padding: 1.9rem 1.4rem;
+      text-align: center;
+      transition: border-color .25s, transform .25s var(--ease)
+    }
+
+    .pillar-card:hover {
+      border-color: rgba(58, 181, 195, .5);
+      transform: translateY(-3px)
+    }
+
+    .pillar-card .picon {
+      font-size: 1.9rem;
+      margin-bottom: .8rem
+    }
+
+    .pillar-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      letter-spacing: .02em;
+      margin-bottom: .5rem;
+      color: var(--cream)
+    }
+
+    .pillar-card p {
+      font-size: .78rem;
+      color: var(--cream-dim)
+    }
+
+    @media(max-width:800px) {
+      .pillars-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(max-width:480px) {
+      .pillars-grid {
+        grid-template-columns: 1fr
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">RP.</a>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">Dark</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#ai-tools">AI Tools</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Principal Product Designer — Open to Remote Roles Globally</div>
+      <h1>RASHMI<br>PADMANABHA</h1>
+      <div class="role">Principal Product Designer with 19+ years of experience crafting end-to-end product experiences
+        across <strong>Enterprise SaaS</strong>, <strong>B2B</strong>, and <strong>B2C</strong> platforms. Specialized
+        in <strong>AI-powered products</strong>, <strong>Responsible AI</strong>, <strong>Design Systems</strong>, and
+        <strong>accessibility-first design (WCAG 2.2)</strong>.
+      </div>
+      <p class="intro">Building enterprise SaaS and AI-powered products across banking, pharma, social housing, and IT
+        service management — making AI experiences accessible, explainable, and tied to business outcomes.</p>
+      <a class="btn" href="#work">View Case Studies →</a>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="pillars">
+    <div class="wrap">
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <h3>Responsible AI &amp; AI Governance</h3>
+          <p>Designing agentic and generative AI workflows that stay explainable, trustworthy, and governed by design.
+          </p>
+        </div>
+        <div class="pillar-card">
+          <h3>WCAG 2.2 Accessibility SME</h3>
+          <p>Deep WCAG 2.2 / ADA / EAA expertise — audits, remediation, and inclusive design built in from day one.</p>
+        </div>
+        <div class="pillar-card">
+          <h3>Enterprise SaaS</h3>
+          <p>19+ years shipping complex enterprise SaaS products across banking, pharma compliance, social housing, and
+            ITSM — for 220K+, 90K+, and 40K+ user bases, through discovery, delivery, and post-launch iteration in
+            regulated, high-stakes environments.</p>
+        </div>
+        <div class="pillar-card">
+          <h3>Design Systems</h3>
+          <p>Token-based, governed design systems adopted across 8+ cross-functional teams at scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="eyebrow">About</div>
+      <h2 class="section-title">The Designer Behind the Work</h2>
+      <div class="about-grid">
+        <div>
+          <p>I'm a <strong>Principal Product Designer</strong> who has spent 19+ years making complex enterprise and
+            AI-powered systems feel intuitive, trustworthy, and worth using — across banking, pharmaceutical compliance,
+            social housing, and IT service management.</p>
+          <p>My work sits at the intersection of <strong>Responsible AI &amp; AI Governance</strong>, <strong>WCAG 2.2
+              accessibility</strong>, <strong>Enterprise SaaS</strong>, and <strong>Design Systems</strong>: designing
+            agentic and AI-assisted workflows that stay explainable, and interfaces that meet ADA / EAA standards by
+            design, not as an afterthought.</p>
+          <p>What carries across every domain isn't domain knowledge — it's a grounding in <strong>Behavioural
+              Psychology</strong> (MA in progress) that shapes how I read ambiguity, trust, and friction in a product.
+          </p>
+        </div>
+        <div class="quote">"I design for the person who has no choice but to use the tool — and that responsibility
+          shapes every decision."</div>
+      </div>
+      <div class="why-me">
+        <div class="wm-label">Why Me</div>
+        <p>I specialize in transforming highly regulated, enterprise-scale workflows into AI-powered experiences that
+          improve trust, accessibility, and measurable business outcomes — the specific combination of Responsible AI,
+          WCAG-by-design, and compliance-heavy domain fluency most Principal Designer candidates don't carry into the
+          interview.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">What I Do Best</div>
+      <h2 class="section-title">Core Expertise</h2>
+      <div class="expertise-grid">
+        <div class="exp-card">
+          <div class="tag">Product Leadership</div>
+          <p>Design Thinking · Product &amp; UX Strategy · Product Discovery · Stakeholder Management · Agile Delivery ·
+            Cross-functional Leadership</p>
+        </div>
+        <div class="exp-card">
+          <div class="tag">AI &amp; Responsible AI</div>
+          <p>AI Product Design · Responsible AI · AI Governance · Agentic AI · Explainable AI · AI Workflow Design ·
+            Prompt Engineering</p>
+        </div>
+        <div class="exp-card">
+          <div class="tag">UX Research</div>
+          <p>User Interviews · Contextual Inquiry · Usability Testing · Information Architecture · User Journeys ·
+            Service Blueprint · Heuristic Evaluation · Behavioural Psychology</p>
+        </div>
+        <div class="exp-card">
+          <div class="tag">Interaction Design</div>
+          <p>Wireframing · Prototyping · Micro-interactions · Design Systems · Visual Design · Typography · Iconography
+            · Motion Design · Responsive Design</p>
+        </div>
+        <div class="exp-card">
+          <div class="tag">Web Accessibility</div>
+          <p>WCAG 2.2 AA · ADA · European Accessibility Act (EAA) · Inclusive Design · ARIA · Semantic HTML · Keyboard
+            Navigation · Screen Reader Testing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="work">
+    <div class="wrap">
+      <div class="eyebrow">Selected Work</div>
+      <h2 class="section-title">Case Studies</h2>
+      <div class="case-grid">
+
+        <div class="case-card" onclick="openModal('modal-atom')">
+          <div class="case-img"><img src="download.jpg"
+              alt="  Artwork library showing generated label cards and workflow actions"></div>
+          <div class="case-body">
+            <div class="case-tags"><span class="case-tag">Enterprise SaaS</span><span class="case-tag">Responsible
+                AI</span><span class="case-tag">Pharma Compliance</span></div>
+            <h3>Artwork Labelling AToM</h3>
+            <div class="role">Principal Product Designer &amp; UX Researcher · 18 Weeks</div>
+            <p class="desc">Unifying 3 disconnected products — an artwork editor, file manager, and early AI validation
+              concept — into 1 governed platform for regulated pharma and FMCG label operations.</p>
+            <div class="case-outcomes">
+              <div>
+                <div class="n">89%</div>
+                <div class="l">Review time reduction</div>
+              </div>
+              <div>
+                <div class="n">91%</div>
+                <div class="l">Compliance errors caught</div>
+              </div>
+            </div>
+            <span class="case-link">View Case Study →</span>
+          </div>
+        </div>
+
+        <div class="case-card" onclick="openModal('modal-access')">
+          <div class="case-img"><img src="screen1.png" alt="AI-powered visitor check-in host dashboard and kiosk flow">
+          </div>
+          <div class="case-body">
+            <div class="case-tags"><span class="case-tag">AI Workplace UX</span><span class="case-tag">Visitor
+                Experience</span><span class="case-tag">Service Design</span></div>
+            <h3>AI-Powered Visitor Experience</h3>
+            <div class="role"> Workplace Experience — Business Analyst + Product Designer</div>
+            <p class="desc">Turned a fragmented visitor journey into one connected system — AI self check-in, automated
+              access, guided navigation, hospitality, and an on-demand assistant.</p>
+            <div class="case-outcomes">
+              <div>
+                <div class="n">78%</div>
+                <div class="l">Faster check-in</div>
+              </div>
+              <div>
+                <div class="n">80%</div>
+                <div class="l">Less reception workload</div>
+              </div>
+            </div>
+            <span class="case-link">View Case Study →</span>
+          </div>
+        </div>
+
+        <div class="case-card" onclick="openModal('modal-essp')">
+          <div class="case-img"><img src="essp-dashboard-2.png"
+              alt="Employee self-service portal home screen with favorites, productivity, and app center"></div>
+          <div class="case-body">
+            <div class="case-tags"><span class="case-tag">Enterprise Portal</span><span class="case-tag">UX
+                Audit</span><span class="case-tag">Responsive Design</span></div>
+            <h3>Employee Self-Service Portal</h3>
+            <div class="role">Employee Self Service ULTIMA Works — UX Researcher &amp; Product Designer</div>
+            <p class="desc">A UX audit and redesign of an enterprise self-service portal — turning tangled navigation
+              and a desktop-only layout into a simplified, mobile-ready, self-serve experience.</p>
+            <div class="case-outcomes">
+              <div>
+                <div class="n">✓</div>
+                <div class="l">Usability validated</div>
+              </div>
+              <div>
+                <div class="n">↓</div>
+                <div class="l">Support tickets</div>
+              </div>
+            </div>
+            <span class="case-link">View Case Study →</span>
+          </div>
+        </div>
+
+        <div class="case-card" onclick="openModal('modal-maci')">
+          <div class="case-img"><img src="maci-screen1.png"
+              alt="MACI Microsoft Teams chatbot showing quick actions for timesheet, leave, and support"></div>
+          <div class="case-body">
+            <div class="case-tags"><span class="case-tag">Conversational AI</span><span class="case-tag">MS Teams
+                Bot</span><span class="case-tag">0 → 1 Product</span></div>
+            <h3>MACI — AI Chatbot Assistant</h3>
+            <div class="role">Chatbot — UX Research, Wireframing &amp; UI Design</div>
+            <p class="desc">Designed a personal assistant chatbot inside Microsoft Teams, replacing a legacy portal's
+              poor navigation with one guided conversation for timesheets, leave, approvals, and support.</p>
+            <div class="case-outcomes">
+              <div>
+                <div class="n">1</div>
+                <div class="l">Conversation replaces 3 apps</div>
+              </div>
+              <div>
+                <div class="n">✓</div>
+                <div class="l">Shipped in MS Teams</div>
+              </div>
+            </div>
+            <span class="case-link">View Case Study →</span>
+          </div>
+        </div>
+
+        <div class="case-card" onclick="openModal('modal-propsys')">
+          <div class="case-img"><img src="propsys-card.png"
+              alt="PropSys 360 Director of Assets dashboard showing portfolio KPIs and compliance insights"></div>
+          <div class="case-body">
+            <div class="case-tags"><span class="case-tag">Enterprise Dashboard</span><span class="case-tag">UK Social
+                Housing</span><span class="case-tag">4 User Roles</span></div>
+            <h3>PropSys 360</h3>
+            <div class="role">Neo Technology / UK Social Housing — Lead Product UX Designer</div>
+            <p class="desc">A role-adaptive asset management platform giving four distinct teams the right KPIs, alerts,
+              and actions from one shared data model.</p>
+            <div class="case-outcomes">
+              <div>
+                <div class="n">62%</div>
+                <div class="l">Faster void turnaround</div>
+              </div>
+              <div>
+                <div class="n">£2.4M</div>
+                <div class="l">Projected saving</div>
+              </div>
+            </div>
+            <span class="case-link">View Case Study →</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="about" id="experience">
+    <div class="wrap">
+      <div class="eyebrow">Experience</div>
+      <h2 class="section-title">19+ Years of Doing the Work</h2>
+
+      <div class="exp-item">
+        <div class="period">Sep 2023 – Jun 2026</div>
+        <h3>Product Design Leader &amp; Research Strategist</h3>
+        <div class="company">NEO Technology Solutions · Remote — UK Client</div>
+        <ul>
+          <li>Led end-to-end product design for enterprise SaaS products from discovery through delivery.</li>
+          <li>Directed AI-powered workflow and Agentic AI experience design.</li>
+          <li>Defined and governed a design system adopted across 8+ teams, reducing UI inconsistencies by 88%.</li>
+          <li>Increased user trust by 77% through transparent AI interaction design.</li>
+          <li>Redesigned enterprise search and IA, reducing time-to-information by 94% for 90K+ users.</li>
+          <li>Maintained zero critical WCAG 2.2 accessibility issues across released products.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="period">Jan 2007 – Aug 2023</div>
+        <h3>Senior Product Designer &amp; UX Research Strategist</h3>
+        <div class="company">Mindtree/LTIMindtree · 16 years</div>
+        <ul>
+          <li>Led UX strategy for a 40K+ user financial platform, reducing workflow failures by 70% and failed searches
+            by 35%.</li>
+          <li>Conducted the accessibility audit for a 220K+ user banking platform, improving compliance from 31 to 89
+            (94% WCAG AA).</li>
+          <li>Unified 100+ IT services into one platform for 90K+ employees — 35% faster resolution, 2.5× first-time
+            resolution.</li>
+          <li>Ran 26+ contextual inquiries, reducing workflow inconsistencies by 60%.</li>
+          <li>Built and governed enterprise design systems adopted across multiple teams; mentored designers.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI PORTFOLIO -->
+  <section id="ai-tools">
+    <div class="wrap">
+      <div class="eyebrow">Designer Who Builds</div>
+      <h2 class="section-title">AI Portfolio</h2>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <div class="ai-tag">01</div>
+          <h3>AccessibleOS</h3>
+          <p>AI-powered WCAG 2.2 accessibility auditing platform.</p>
+          <ul>
+            <li>Automated accessibility analysis &amp; remediation guidance</li>
+            <li>Compliance reporting mapped to WCAG 2.2 criteria</li>
+          </ul>
+        </div>
+        <div class="ai-card">
+          <div class="ai-tag">02</div>
+          <h3>DesignOS Hub</h3>
+          <p>AI-powered UX research platform.</p>
+          <ul>
+            <li>Turns interview data into insights &amp; opportunity maps</li>
+            <li>Generates accessibility recommendations from research</li>
+          </ul>
+        </div>
+        <div class="ai-card">
+          <div class="ai-tag">03</div>
+          <h3>Token Forge</h3>
+          <p>Design token management platform.</p>
+          <ul>
+            <li>Exports to CSS, SCSS, Tailwind, and JSON</li>
+            <li>Built-in governance and token validation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="about">
+    <div class="wrap">
+      <div class="eyebrow">Tools &amp; Technologies</div>
+      <h2 class="section-title">What I Work With</h2>
+      <div class="tools-row">
+        <span class="tool-pill">Figma / Figma AI</span>
+        <span class="tool-pill">FigJam</span>
+        <span class="tool-pill">Miro</span>
+        <span class="tool-pill">Claude AI / Claude Code</span>
+        <span class="tool-pill">ChatGPT / Codex</span>
+        <span class="tool-pill">Cursor</span>
+        <span class="tool-pill">Maze</span>
+        <span class="tool-pill">Dovetail</span>
+        <span class="tool-pill">Notion / NotebookLM</span>
+        <span class="tool-pill">Design Tokens / Figma Variables</span>
+        <span class="tool-pill">HTML / CSS / SCSS</span>
+        <span class="tool-pill">WCAG 2.2 / ADA / EAA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="wrap">
+      <h2>Let's Talk</h2>
+      <p>Available for remote Principal Product Designer &amp; UX Research Strategist roles worldwide.</p>
+      <div class="footer-links">
+        <a href="mailto:rashmisimha18@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/rashmipadmanabha" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#work">Case Studies</a>
+      </div>
+      <div class="copyright">© 2026 Rashmi Padmanabha — Principal Product Designer</div>
+    </div>
+  </footer>
+
+  <!-- MODAL: Kallik AToM -->
+  <div class="modal-overlay" id="modal-atom" role="dialog" aria-modal="true" aria-labelledby="modal-atom-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="modal-atom-title">Artwork AToM</div>
+          <div class="modal-subtitle">Artwork Labelling Company / Pharma &amp; FMCG — Principal Product Designer &amp;
+            UX Researcher · 18 Weeks</div>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-atom')" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">Overview</div>
+          <p class="modal-text">Regulated artwork operations ran across three disconnected products — an artwork editor,
+            a file manager, and an early AI validation concept — stitched together with email, shared drives, and manual
+            sign-offs. I unified them into one governed platform, cutting label review time from 6 hours to 38 minutes.
+          </p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Process</div>
+          <div class="process-timeline">
+            <span class="pt-step">Research</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Journey Mapping</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Wireframes</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Prototyping</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Usability Testing</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Iteration</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Final Design</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Launch</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Business Results</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Outcomes — 3 Months Post-Launch</div>
+          <div class="modal-outcomes">
+            <div>
+              <div class="modal-outcome-num">89%</div>
+              <div class="modal-outcome-label">Review time reduction</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">91%</div>
+              <div class="modal-outcome-label">Compliance errors caught</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">0</div>
+              <div class="modal-outcome-label">Version conflicts</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">3×</div>
+              <div class="modal-outcome-label">AI action rate</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">4</div>
+              <div class="modal-outcome-label">New enterprise customers</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">User Journey — Before &amp; After</div>
+          <div class="journey-map-wrap">
+            <img class="journey-map-light" src="kallik-journey-map.svg"
+              alt="Kallik AToM user journey before: Create, Export and email, Manual review 4 to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from 6 hours to 38 minutes, an 89 percent reduction.">
+            <img class="journey-map-dark" src="kallik-journey-map-dark.svg"
+              alt="Kallik AToM user journey before: Create, Export and email, Manual review 4 to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from 6 hours to 38 minutes, an 89 percent reduction.">
+          </div>
+        </div>
+
+        <details class="modal-details">
+          <summary>Problem <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text" style="margin-bottom:.7rem">The process was as risky as the label itself: personal
+              naming conventions stood in for version control, AI flags carried no rule or confidence so reviewers
+              closed every one, approvals moved by email reply with no audit trail, and print operators received files
+              with no confirmation of approval status.</p>
+            <div class="quote" style="font-size:1rem;padding-left:1rem">"I have a folder called Final. Inside it is
+              another folder called Actually Final." — Artwork Designer</div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Research &amp; Insights <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="method-chips">
+              <span class="method-chip"><span class="ic">🗣️</span>Contextual Interviews — 48 sessions</span>
+              <span class="method-chip"><span class="ic">🗺️</span>Workflow &amp; Journey Mapping — 6 maps</span>
+              <span class="method-chip"><span class="ic">🃏</span>Card Sorting — 8 participants</span>
+              <span class="method-chip"><span class="ic">🧪</span>Moderated Usability Testing — 2 rounds</span>
+            </div>
+            <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong>
+              80+ people across three role groups, 400+ data points across two usability rounds, and a full mapping of
+              exactly where the artwork "lost its identity" between handoffs.</p>
+            <div class="journey-map-wrap" style="margin:1rem 0">
+              <img class="journey-map-light" src="kallik-affinity-map.svg"
+                alt="Affinity map of Kallik AToM research findings clustered into four themes: Version Control Chaos, AI Trust Gap, Approval Black Box, and Print-Time Uncertainty, leading to the insight that users had work-arounded a broken system, which informed a 3-level validation indicator.">
+              <img class="journey-map-dark" src="kallik-affinity-map-dark.svg"
+                alt="Affinity map of Kallik AToM research findings clustered into four themes: Version Control Chaos, AI Trust Gap, Approval Black Box, and Print-Time Uncertainty, leading to the insight that users had work-arounded a broken system, which informed a 3-level validation indicator.">
+            </div>
+            <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> Users had already
+              workarounded the broken system into something simpler — the real workflow was invisible inside three
+              disconnected tools. The card-sort findings directly informed a three-level validation indicator (High /
+              Review / Flag) instead of a binary pass/fail.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Personas &amp; Pain Points <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="persona-grid">
+              <div class="persona-card">
+                <div class="persona-top">
+                  <div class="persona-avatar">A</div>
+                  <div>
+                    <div class="persona-name">Aria</div>
+                    <div class="persona-role">The Designer</div>
+                  </div>
+                </div>
+                <p class="persona-pain">Relied on personal naming conventions as version control — no visibility once
+                  artwork entered the email chain.</p>
+                <div class="persona-need"><b>Needed</b>Auto-versioning and system-enforced file locking.</div>
+              </div>
+              <div class="persona-card">
+                <div class="persona-top">
+                  <div class="persona-avatar">R</div>
+                  <div>
+                    <div class="persona-name">Rowan</div>
+                    <div class="persona-role">Reviewer &amp; Approver</div>
+                  </div>
+                </div>
+                <p class="persona-pain">Spent 4–6 hrs per label on manual checklists, ignored AI flags with no rule
+                  cited, approved by email reply.</p>
+                <div class="persona-need"><b>Needed</b>AI that shows its reasoning, and one structured workflow.</div>
+              </div>
+              <div class="persona-card">
+                <div class="persona-top">
+                  <div class="persona-avatar">F</div>
+                  <div>
+                    <div class="persona-name">Finn</div>
+                    <div class="persona-role">Print Operator</div>
+                  </div>
+                </div>
+                <p class="persona-pain">Printed from files with no print specs attached, occasionally the wrong version
+                  — "Is this definitely the right file?"</p>
+                <div class="persona-need"><b>Needed</b>Only released, validated artwork in view with a visible audit
+                  chain.</div>
+              </div>
+            </div>
+            <div class="journey-map-wrap" style="margin-top:1rem">
+              <img class="journey-map-light" src="kallik-empathy-map.svg"
+                alt="Empathy map for three Kallik AToM personas — Aria the Designer, Rowan the Reviewer and Approver, and Finn the Print Operator — each broken into Says, Thinks, Does, and Feels quadrants synthesised from 48 contextual interviews.">
+              <img class="journey-map-dark" src="kallik-empathy-map-dark.svg"
+                alt="Empathy map for three Kallik AToM personas — Aria the Designer, Rowan the Reviewer and Approver, and Finn the Print Operator — each broken into Says, Thinks, Does, and Feels quadrants synthesised from 48 contextual interviews.">
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Key Decisions <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="modal-list">
+              <li><strong style="color:var(--cream)">Pro Editor with Auto-Versioning</strong> — every save
+                auto-versions, timestamped, attributed, and smart-locked. Result: 0 version conflicts post-launch.</li>
+              <li><strong style="color:var(--cream)">Inline AI Validation, On the Canvas</strong> — rule-cited,
+                confidence-scored (High/Review/Flag) with a suggested fix, replacing unexplained flags. Result: 91% of
+                errors caught, 3× AI action rate.</li>
+              <li><strong style="color:var(--cream)">Unified Review + Approval Workflow</strong> — one-click approve
+                auto-records version, checks, and timestamp. Result: immutable audit trail by default.</li>
+              <li><strong style="color:var(--cream)">Status-Led Navigation</strong> — Draft → Review → Approved →
+                Released became the primary IA, replacing flat file lists. Result: status visible at a glance.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Feature Prioritization Matrix <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text" style="margin-bottom:.9rem">Scored against the personas' pain points — Impact on trust
+              &amp; compliance risk vs. Effort to ship.</p>
+            <div class="matrix-wrap">
+              <div class="matrix-axis-y"><span>Impact →</span></div>
+              <div class="priority-matrix">
+                <div class="matrix-quad">
+                  <div class="mq-title">High Impact · Low Effort — Quick Wins</div>
+                  <div class="mq-items">
+                    <span class="matrix-item">Status-Led Navigation</span>
+                    <span class="matrix-item">Approval Timestamp Auto-Capture</span>
+                  </div>
+                </div>
+                <div class="matrix-quad">
+                  <div class="mq-title">High Impact · High Effort — Major Projects</div>
+                  <div class="mq-items">
+                    <span class="matrix-item">Inline AI Validation on Canvas</span>
+                    <span class="matrix-item">Pro Editor with Auto-Versioning</span>
+                    <span class="matrix-item">Unified Review + Approval Workflow</span>
+                  </div>
+                </div>
+                <div class="matrix-quad">
+                  <div class="mq-title">Low Impact · Low Effort — Fill-Ins</div>
+                  <div class="mq-items">
+                    <span class="matrix-item">Personal File Tagging</span>
+                    <span class="matrix-item">Dark Mode</span>
+                  </div>
+                </div>
+                <div class="matrix-quad">
+                  <div class="mq-title">Low Impact · High Effort — Deprioritized</div>
+                  <div class="mq-items">
+                    <span class="matrix-item">Multi-language Auto-Translation</span>
+                    <span class="matrix-item">Custom Report Builder</span>
+                  </div>
+                </div>
+              </div>
+              <div class="matrix-axis-x">Effort →</div>
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Information Architecture <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="journey-map-wrap">
+              <img class="journey-map-light" src="kallik-ia-map.svg"
+                alt="Kallik AToM information architecture: AToM Platform hub connects to four modules — Library (all artwork assets, filterable by brand, market, status), Editor (auto-versioning, role-gated), Approvals (one-click approve, full version history), and Compliance Dashboard (inline AI validation flags with rule references). The Library module has a status flow: Draft, Review, Approved, Released.">
+              <img class="journey-map-dark" src="kallik-ia-map-dark.svg"
+                alt="Kallik AToM information architecture: AToM Platform hub connects to four modules — Library (all artwork assets, filterable by brand, market, status), Editor (auto-versioning, role-gated), Approvals (one-click approve, full version history), and Compliance Dashboard (inline AI validation flags with rule references). The Library module has a status flow: Draft, Review, Approved, Released.">
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Typography <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text" style="margin-bottom:.9rem">The product runs on <strong
+                style="color:var(--cream)">Roboto</strong> throughout — chosen for its neutral, highly legible
+              letterforms and tabular figures, which matter when reviewers are scanning version numbers and rule codes
+              under time pressure.</p>
+            <div class="type-specimen">
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:'Roboto',sans-serif;font-weight:700;font-size:1.5rem">Aa — Roboto Bold</span><span
+                  class="type-meta">Section &amp; module headers</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:'Roboto',sans-serif;font-weight:500;font-size:1.05rem">Aa — Roboto
+                  Medium</span><span class="type-meta">UI labels, buttons, status chips</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:'Roboto',sans-serif;font-weight:400;font-size:.95rem">Aa — Roboto
+                  Regular</span><span class="type-meta">Body copy, table &amp; list data</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:'Roboto Mono',monospace;font-size:1rem">Aa — Roboto Mono</span><span
+                  class="type-meta">Rule codes, version IDs, timestamps</span></div>
+            </div>
+          </div>
+        </details>
+
+        <div class="modal-section">
+          <div class="quote" style="font-size:1rem">"By transforming three disconnected products into one governed
+            platform, we created a system that Aria, Rowan, and Finn could each trust — for different reasons, at
+            different stages. In industries where a label error can reach a patient, that trust is not a design
+            preference. It is the product." — Rashmi Padmanabha, Principal Product Designer</div>
+        </div>
+
+        <details class="modal-details">
+          <summary>Key Learnings <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="modal-list">
+              <li>AI trust is earned through transparency, not capability.</li>
+              <li>Design the shared data model before the first screen.</li>
+              <li>The last person in the chain defines whether the system worked.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="modal-section">
+          <div class="modal-section-title">UI Screens</div>
+          <div class="modal-screens">
+            <img src="download.jpg" alt="AToM artwork library">
+            <img src="download (1).jpg" alt="AToM editor with label elements on canvas">
+            <img src="download (2).jpg" alt="Cloud Designer label preview and publish controls">
+            <img src="image1.png" alt="AI label validation checklist">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: AI-Powered Visitor Experience -->
+  <div class="modal-overlay" id="modal-access" role="dialog" aria-modal="true" aria-labelledby="modal-access-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="modal-access-title">AI-Powered Visitor Experience</div>
+          <div class="modal-subtitle"> Workplace Experience — Business Analyst + Product Designer</div>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-access')" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">Overview</div>
+          <p class="modal-text">I designed an end-to-end workplace visitor experience system that turns check-in into a
+            connected service moment. One check-in triggers access control, host notifications, room readiness,
+            navigation guidance, hospitality preparation, and visitor support.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Process</div>
+          <div class="process-timeline">
+            <span class="pt-step">Research</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Journey Mapping</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Wireframes</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Prototyping</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Usability Testing</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Iteration</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Final Design</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Launch</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Business Results</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Outcomes</div>
+          <div class="modal-outcomes">
+            <div>
+              <div class="modal-outcome-num">78%</div>
+              <div class="modal-outcome-label">Faster check-in time</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">80%</div>
+              <div class="modal-outcome-label">Less receptionist workload</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">0</div>
+              <div class="modal-outcome-label">Visitor confusion after guidance</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">1</div>
+              <div class="modal-outcome-label">Connected system, entry to exit</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Visitor Journey — Before &amp; After</div>
+          <div class="journey-map-wrap">
+            <img class="journey-map-light" src="visitor-journey-map.svg"
+              alt="Visitor journey before: no pre-visit notice, manual reception queue, phone or email access request, no on-site guidance, ad hoc hospitality, unclear checkout. After: pre-visit scheduling, AI self check-in, auto access and notify, guided navigation, hospitality on demand, checkout and exit. 78 percent faster check-in, 80 percent less reception workload.">
+            <img class="journey-map-dark" src="visitor-journey-map-dark.svg"
+              alt="Visitor journey before: no pre-visit notice, manual reception queue, phone or email access request, no on-site guidance, ad hoc hospitality, unclear checkout. After: pre-visit scheduling, AI self check-in, auto access and notify, guided navigation, hospitality on demand, checkout and exit. 78 percent faster check-in, 80 percent less reception workload.">
+          </div>
+        </div>
+
+        <details class="modal-details">
+          <summary>Problem <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text">Clients experienced delays and confusion during check-in. Hosts lacked reliable tools
+              to plan visits and arrange hospitality. Receptionists had to handle access, coordination, questions, and
+              peak visitor traffic manually, which made premium visits feel fragmented.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Research &amp; Insights <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="method-chips">
+              <span class="method-chip"><span class="ic">🗣️</span>Receptionist Interviews</span>
+              <span class="method-chip"><span class="ic">👥</span>Host Discussions</span>
+              <span class="method-chip"><span class="ic">💬</span>Client Feedback</span>
+              <span class="method-chip"><span class="ic">🧪</span>Task-Based Usability Testing</span>
+            </div>
+            <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong>
+              Logged reception overload during visitor peaks, host follow-through on food/room/access arrangements, and
+              where clients lost confidence in the flow after check-in.</p>
+            <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> Check-in was not a
+              single kiosk interaction — it was a chain of dependent moments across people, access, space, and
+              hospitality. This reframed the design problem from "screen design" to system design.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Users <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="modal-list">
+              <li><strong style="color:var(--cream)">Visitor / Client</strong> — needs fast entry, clear guidance, and a
+                premium hospitality experience.</li>
+              <li><strong style="color:var(--cream)">Host / Employee</strong> — needs visit planning, tracking, room
+                readiness, and coordination visibility.</li>
+              <li><strong style="color:var(--cream)">Receptionist</strong> — needs reduced manual workload and better
+                prioritisation during peak times.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Key Decisions <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="modal-list">
+              <li><strong style="color:var(--cream)">AI Self Check-in</strong> — face recognition, mobile number, or QR
+                code replaced manual reception queuing.</li>
+              <li><strong style="color:var(--cream)">Automated Access Control</strong> — approved access activates
+                automatically and notifies host and reception in real time.</li>
+              <li><strong style="color:var(--cream)">Visitor Assistant</strong> — on-demand help for directions, meeting
+                rooms, WiFi, host connection, and refreshment requests.</li>
+              <li><strong style="color:var(--cream)">Host Dashboard</strong> — visit planning, today's visitors, meeting
+                prep, and quick actions in one place.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Information Architecture <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="journey-map-wrap">
+              <img class="journey-map-light" src="visitor-ia-map.svg"
+                alt="Visitor Experience Platform information architecture: hub connects to four modules — Pre-Visit (host schedules visit, registers client, requests access, books hospitality), Check-in (face recognition, phone number, or QR code, role-gated), Access and Notify (system activates access, alerts host and reception in real time), and Support (visitor assistant for guidance, WiFi, and service requests).">
+              <img class="journey-map-dark" src="visitor-ia-map-dark.svg"
+                alt="Visitor Experience Platform information architecture: hub connects to four modules — Pre-Visit (host schedules visit, registers client, requests access, books hospitality), Check-in (face recognition, phone number, or QR code, role-gated), Access and Notify (system activates access, alerts host and reception in real time), and Support (visitor assistant for guidance, WiFi, and service requests).">
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Typography <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text" style="margin-bottom:.9rem">Built on the <strong style="color:var(--cream)">system
+                font stack</strong> (Segoe UI on Windows kiosks, SF Pro on iOS/macOS) — chosen for zero load latency on
+              kiosk hardware and native readability at a distance, over shipping a custom webfont.</p>
+            <div class="type-specimen">
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:-apple-system,'Segoe UI',sans-serif;font-weight:700;font-size:1.5rem">Aa — System
+                  Bold</span><span class="type-meta">Kiosk step headers</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:-apple-system,'Segoe UI',sans-serif;font-weight:600;font-size:1.15rem">Aa — System
+                  Semibold, large</span><span class="type-meta">Kiosk touch targets, distance readability</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:-apple-system,'Segoe UI',sans-serif;font-size:.9rem;color:var(--cream-dim)">Aa —
+                  System Regular</span><span class="type-meta">Host dashboard detail text</span></div>
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Learnings <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="modal-list">
+              <li>System design was more valuable than isolated screen design — the experience depended on multiple
+                teams acting at the right time.</li>
+              <li>Automation reduced cognitive load for visitors, hosts, and receptionists alike.</li>
+              <li>End-to-end thinking made the experience feel premium, because support continued after the check-in
+                moment.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="modal-section">
+          <div class="modal-section-title">UI Screens</div>
+          <div class="modal-screens">
+            <img src="screen1.png" alt="Host dashboard and four-step AI self check-in flow">
+            <img src="screen2.png"
+              alt="Visitor portal with AI assistant, access status, directions, and hospitality support">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Employee Self-Service Portal -->
+  <div class="modal-overlay" id="modal-essp" role="dialog" aria-modal="true" aria-labelledby="modal-essp-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="modal-essp-title">Employee Self-Service Portal</div>
+          <div class="modal-subtitle"> ULTIMA Works — UX Researcher &amp; Product Designer</div>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-essp')" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">Overview</div>
+          <p class="modal-text">ULTIMA Works is the enterprise self-service portal employees use to manage timesheets,
+            attendance, personal data, and access every internal application. I led a UX audit and redesign to fix
+            tangled navigation, a desktop-only layout, and inconsistent design that were pushing employees toward the
+            support desk instead of self-service.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Process</div>
+          <div class="process-timeline">
+            <span class="pt-step">Research</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Task Analysis</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Wireframes</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Prototyping</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Usability Testing</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Iteration</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Final Design</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Launch</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Business Results</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Outcomes</div>
+          <div class="modal-outcomes">
+            <div>
+              <div class="modal-outcome-num">✓</div>
+              <div class="modal-outcome-label">Positive usability results</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">↑</div>
+              <div class="modal-outcome-label">User engagement</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">↑</div>
+              <div class="modal-outcome-label">Task completion speed</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">↓</div>
+              <div class="modal-outcome-label">Support tickets raised</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">User Journey — Before &amp; After</div>
+          <div class="journey-map-wrap">
+            <img class="journey-map-light" src="essp-journey-map.svg"
+              alt="Employee self-service portal journey before: hunting through menus, desktop only, inconsistent layout, policy info buried, giving up and raising a support ticket. After: simplified information architecture, mobile-responsive, consistent design system, instant search, self-serve completion. Higher engagement, faster tasks, fewer support tickets.">
+            <img class="journey-map-dark" src="essp-journey-map-dark.svg"
+              alt="Employee self-service portal journey before: hunting through menus, desktop only, inconsistent layout, policy info buried, giving up and raising a support ticket. After: simplified information architecture, mobile-responsive, consistent design system, instant search, self-serve completion. Higher engagement, faster tasks, fewer support tickets.">
+          </div>
+        </div>
+
+        <details class="modal-details">
+          <summary>Problem <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text">The self-service portal is how every employee manages their personal and professional
+              information day to day — but complex navigation, a non-responsive layout, and inconsistent visual design
+              were turning simple tasks into support tickets. Critical information like policy benefits was buried deep
+              in the structure, hard for employees to find on their own.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Research &amp; Insights <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="method-chips">
+              <span class="method-chip"><span class="ic">📊</span>Session Analysis on Existing Portal</span>
+              <span class="method-chip"><span class="ic">🧪</span>Usability Study</span>
+              <span class="method-chip"><span class="ic">📋</span>Quantitative Survey</span>
+              <span class="method-chip"><span class="ic">👁️</span>Task Analysis</span>
+            </div>
+            <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong>
+              Observed employees performing common tasks to surface pain points and confusion, paired with survey data
+              for measurable, quantitative validation of what the sessions showed.</p>
+            <p class="modal-text"><strong style="color:var(--cream)">Key findings:</strong></p>
+            <ul class="modal-list">
+              <li><strong style="color:var(--cream)">Navigation issues</strong> — employees struggled to locate apps and
+                information in a complex structure.</li>
+              <li><strong style="color:var(--cream)">No responsive design</strong> — the portal wasn't optimized for
+                mobile, blocking access on the go.</li>
+              <li><strong style="color:var(--cream)">Inconsistent layout</strong> — poor visual hierarchy made the
+                experience confusing and overwhelming.</li>
+              <li><strong style="color:var(--cream)">Limited access to information</strong> — critical content like
+                policy benefits was buried deep in the IA.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Key Decisions <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="modal-list">
+              <li><strong style="color:var(--cream)">Simplified Information Architecture</strong> — redesigned the
+                navigation structure and grouped related features together for faster access.</li>
+              <li><strong style="color:var(--cream)">Mobile Optimization</strong> — built a responsive design so the
+                portal is accessible and functional across devices.</li>
+              <li><strong style="color:var(--cream)">Consistent Layout &amp; Design System</strong> — a clear visual
+                hierarchy, improved color, contrast, and use of whitespace for readability.</li>
+              <li><strong style="color:var(--cream)">Enhanced Search</strong> — a keyword search so employees can find
+                relevant information instantly instead of digging through menus.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Information Architecture <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="journey-map-wrap">
+              <img class="journey-map-light" src="essp-ia-map.svg"
+                alt="Employee Self-Service Portal information architecture: hub connects to four modules — My Productivity (timesheet, iAttendance hours, weekly compliance), My Personal Data (profile completion, learning compliance, document updates), App Center (all enterprise applications and dashboards), and My Projects (accounts, active projects, related applications).">
+              <img class="journey-map-dark" src="essp-ia-map-dark.svg"
+                alt="Employee Self-Service Portal information architecture: hub connects to four modules — My Productivity (timesheet, iAttendance hours, weekly compliance), My Personal Data (profile completion, learning compliance, document updates), App Center (all enterprise applications and dashboards), and My Projects (accounts, active projects, related applications).">
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Testing &amp; Validation <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text">Employees were invited to perform specific tasks on the redesigned portal while I
+              observed their interactions, collected feedback, and measured task completion time and success rates.
+              Results were positive — the simplified navigation, mobile optimization, consistent layout, and search
+              functionality streamlined processes and improved employee satisfaction.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Typography <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text" style="margin-bottom:.9rem">The portal runs on the <strong
+                style="color:var(--cream)">system font stack</strong> (Segoe UI / SF Pro), consistent with the rest of
+              the ULTIMA Works enterprise suite — prioritizing native rendering and readability across
+              managed corporate devices over a custom webfont.</p>
+            <div class="type-specimen">
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:-apple-system,'Segoe UI',sans-serif;font-weight:700;font-size:1.5rem">Aa — System
+                  Bold</span><span class="type-meta">Card &amp; section headers</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:-apple-system,'Segoe UI',sans-serif;font-weight:600;font-size:1.05rem">Aa — System
+                  Semibold</span><span class="type-meta">Labels, links, quick actions</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:-apple-system,'Segoe UI',sans-serif;font-size:.9rem;color:var(--cream-dim)">Aa —
+                  System Regular</span><span class="type-meta">Body copy, table data</span></div>
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Key Learnings <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="modal-list">
+              <li>Session analysis paired with survey data gave both the "why" and the measurable "how many" — neither
+                alone was enough to prioritize confidently.</li>
+              <li>Grouping by task, not by system or department, is what actually reduces navigation confusion.</li>
+              <li>Mobile access isn't a nice-to-have for a self-service portal — it's where a large share of quick tasks
+                happen.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="modal-section">
+          <div class="modal-section-title">UI Screens</div>
+          <div class="modal-screens">
+            <img src="essp-dashboard-1.png"
+              alt="My Dashboard Productivity tab with project details, system details, software licenses, productivity chart, leave and holiday details">
+            <img src="essp-dashboard-2.png"
+              alt="Portal home screen with My Favorites, My Productivity, My Personal Data, App Center, My Projects, and Updates">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: MACI AI Chatbot Assistant -->
+  <div class="modal-overlay" id="modal-maci" role="dialog" aria-modal="true" aria-labelledby="modal-maci-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="modal-maci-title">MACI — AI Chatbot Assistant</div>
+          <div class="modal-subtitle">Chatbot — UX Research, Wireframing &amp; UI Design</div>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-maci')" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">Overview</div>
+          <p class="modal-text">MACI is a personal assistant chatbot, built inside Microsoft Teams, that helps employees
+            be more efficient and productive with their daily task needs. With most employees working virtually, the
+            legacy self-service platform's poor navigation and complicated journey made simple requests hard to fulfil —
+            MACI replaces that hunt with one guided conversation.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Process</div>
+          <div class="process-timeline">
+            <span class="pt-step">Research</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Persona &amp; Journey Mapping</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Ideation</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Feature Prioritization</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Wireframes</span><span class="pt-arrow">→</span>
+            <span class="pt-step">UI Design</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Launch</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Feedback</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Outcomes</div>
+          <div class="modal-outcomes">
+            <div>
+              <div class="modal-outcome-num">1</div>
+              <div class="modal-outcome-label">Conversation replaces 3 apps</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">✓</div>
+              <div class="modal-outcome-label">Shipped inside MS Teams</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">↑</div>
+              <div class="modal-outcome-label">Employee time savings</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">😊</div>
+              <div class="modal-outcome-label">Positive employee feedback</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">User Journey — Before &amp; After</div>
+          <div class="journey-map-wrap">
+            <img class="journey-map-light" src="maci-journey-map.svg"
+              alt="MACI user journey before: login to portal, navigate the menu, open productivity, open the leave app, finally did it after multiple apps and steps. After: open Teams chat, ask MACI or tap a button, apply leave inline, confirm and submit, done in one conversation with no app switching.">
+            <img class="journey-map-dark" src="maci-journey-map-dark.svg"
+              alt="MACI user journey before: login to portal, navigate the menu, open productivity, open the leave app, finally did it after multiple apps and steps. After: open Teams chat, ask MACI or tap a button, apply leave inline, confirm and submit, done in one conversation with no app switching.">
+          </div>
+        </div>
+
+        <details class="modal-details">
+          <summary>Problem <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text">With most employees working virtually, communication became vital and service requests
+              grew harder to fulfil. The legacy platform used for daily actions was tremendously difficult to access —
+              poor navigation, a complicated journey map, and no responsive design meant simple tasks like applying for
+              leave took far too many steps.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Research &amp; Insights <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="method-chips">
+              <span class="method-chip"><span class="ic">🗣️</span>User Interviews</span>
+              <span class="method-chip"><span class="ic">📋</span>Surveys</span>
+              <span class="method-chip"><span class="ic">🧪</span>Usability Evaluation of Existing Platforms</span>
+              <span class="method-chip"><span class="ic">🔍</span>Market Research</span>
+            </div>
+            <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> After empathising with
+              users, their needs, pain points, and frustrations doing daily activities became clear — different people
+              had different needs, which a single portal redesign wouldn't solve. That pointed toward a conversational
+              assistant available anywhere, not another screen to navigate.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Persona <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="persona-grid">
+              <div class="persona-card">
+                <div class="persona-top">
+                  <div class="persona-avatar">S</div>
+                  <div>
+                    <div class="persona-name">Srilakshmi</div>
+                    <div class="persona-role">Tech Lead · New · Bengaluru</div>
+                  </div>
+                </div>
+                <p class="persona-pain">Busy with primary tasks, rarely has time to read manuals — visits the web app
+                  mainly to browse policies and organizational updates, bookmarking NIO, Timesheet, and Leave for daily
+                  use.</p>
+                <div class="persona-need"><b>Goal</b>Complete assigned tasks quickly; after office hours, mainly wants
+                  to spend time with family.</div>
+              </div>
+              <div class="persona-card">
+                <div class="persona-top">
+                  <div class="persona-avatar">!</div>
+                  <div>
+                    <div class="persona-name">Pain Points</div>
+                    <div class="persona-role">From research</div>
+                  </div>
+                </div>
+                <p class="persona-pain">Misses submitting timesheets and leaves many times — an efficient platform to
+                  organize and automate daily tasks is needed.</p>
+                <div class="persona-need"><b>Needed</b>Use digital channels efficiently to complete daily tasks with
+                  minimal effort.</div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Why a Chatbot <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text" style="margin-bottom:.7rem">A redesigned web or mobile portal would face the same
+              underlying issues, so the team explored Microsoft Teams bots instead. With Microsoft Teams, an
+              organization can adapt Teams to its own workflows easily and achieve high levels of productivity and
+              remote efficiency — available anytime, anywhere, with personalized alerts, enhancing the digital employee
+              experience for hybrid and remote work.</p>
+            <p class="modal-text">The chatbot was scoped as an initially guided conversation, helping employees with
+              daily activities and reminding them of missed ones. After discussing with stakeholders and product owners,
+              the team named the assistant <strong style="color:var(--cream)">MACI</strong>.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Feature Prioritization <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text" style="margin-bottom:.9rem">Scored for immediate release against the full backlog of
+              requested features.</p>
+            <div class="priority-matrix" style="grid-template-columns:1fr 1fr">
+              <div class="matrix-quad">
+                <div class="mq-title">Immediate — Yes</div>
+                <div class="mq-items">
+                  <span class="matrix-item">Submit Timesheet</span>
+                  <span class="matrix-item">Apply Leave</span>
+                  <span class="matrix-item">Apply Not in Office</span>
+                  <span class="matrix-item">My Holidays</span>
+                  <span class="matrix-item">Policy Updates</span>
+                  <span class="matrix-item">Reminders</span>
+                </div>
+              </div>
+              <div class="matrix-quad">
+                <div class="mq-title">Deferred — No</div>
+                <div class="mq-items">
+                  <span class="matrix-item">Notification</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Basic Flow — "What Can I Do?" <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="journey-map-wrap">
+              <img class="journey-map-light" src="maci-ia-map.svg"
+                alt="MACI what can I do flow: hub connects to four groups — Timesheet and Effort (submit project and organization effort, fill timesheet), Leave and Holidays (apply NIO, apply leave annual or half-day, view holiday calendar), Approvals (approve Genie tickets, approve timesheets), and Support and Info (ID card, productivity dashboard, COVID support, help, feedback).">
+              <img class="journey-map-dark" src="maci-ia-map-dark.svg"
+                alt="MACI what can I do flow: hub connects to four groups — Timesheet and Effort (submit project and organization effort, fill timesheet), Leave and Holidays (apply NIO, apply leave annual or half-day, view holiday calendar), Approvals (approve Genie tickets, approve timesheets), and Support and Info (ID card, productivity dashboard, COVID support, help, feedback).">
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Typography <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text" style="margin-bottom:.9rem">MACI lives inside Microsoft Teams, so the interface
+              inherits the <strong style="color:var(--cream)">Teams system font stack</strong> (Segoe UI) rather than a
+              custom typeface — keeping the bot feel native to the host app instead of like a bolted-on plugin.</p>
+            <div class="type-specimen">
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:-apple-system,'Segoe UI',sans-serif;font-weight:700;font-size:1.3rem">Aa — Segoe UI
+                  Bold</span><span class="type-meta">Card titles, section labels</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:-apple-system,'Segoe UI',sans-serif;font-weight:600;font-size:1rem">Aa — Segoe UI
+                  Semibold</span><span class="type-meta">Quick-action buttons</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:-apple-system,'Segoe UI',sans-serif;font-size:.9rem;color:var(--cream-dim)">Aa —
+                  Segoe UI Regular</span><span class="type-meta">Chat body text</span></div>
+            </div>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Key Learnings <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="modal-list">
+              <li>Meeting employees inside a tool they already have open all day removed more friction than any portal
+                redesign could.</li>
+              <li>Designing directly in the bot framework's own tooling surfaced platform constraints early, before they
+                became rework.</li>
+              <li>Close collaboration with developers was essential to shape a good experience around the real
+                limitations of a chatbot.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="modal-section">
+          <div class="modal-section-title">UI Screens</div>
+          <div class="modal-screens">
+            <img src="maci-screen1.png"
+              alt="MACI Teams chatbot main menu with quick actions for timesheet, NIO, leave, approvals, holidays, ID card, dashboard, and COVID support">
+            <img src="maci-screen2.png"
+              alt="MACI Teams chatbot applying for full day leave with available quota, approver, date pickers, and terms acknowledgment">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: PropSys 360 -->
+  <div class="modal-overlay" id="modal-propsys" role="dialog" aria-modal="true" aria-labelledby="modal-propsys-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="modal-propsys-title">PropSys 360</div>
+          <div class="modal-subtitle">Neo Technology / UK Social Housing — Lead Product UX Designer · 20 Weeks</div>
+        </div>
+        <button class="modal-close" onclick="closeModal('modal-propsys')" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-screens">
+          <img src="propsys-card.png" alt="Director of Assets dashboard with portfolio KPIs and compliance insights">
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Overview</div>
+          <p class="modal-text">A UK social housing association managing 50,000+ units had no unified platform — four
+            operational roles each relied on spreadsheets and email chains to track KPIs and compliance. I designed a
+            single role-adaptive platform surfacing the right information to each role from one shared data model.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Process</div>
+          <div class="process-timeline">
+            <span class="pt-step">Research</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Journey Mapping</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Wireframes</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Prototyping</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Usability Testing</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Iteration</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Final Design</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Launch</span><span class="pt-arrow">→</span>
+            <span class="pt-step">Business Results</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Outcomes</div>
+          <div class="modal-outcomes">
+            <div>
+              <div class="modal-outcome-num">62%</div>
+              <div class="modal-outcome-label">Faster void turnaround</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">£2.4M</div>
+              <div class="modal-outcome-label">Projected annual saving</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">78%</div>
+              <div class="modal-outcome-label">Compliance risk reduction</div>
+            </div>
+            <div>
+              <div class="modal-outcome-num">4</div>
+              <div class="modal-outcome-label">Roles, one platform</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">User Journey — Void Manager</div>
+          <div class="journey-flow">
+            <span class="journey-step">Login → role dashboard</span><span class="journey-arrow">→</span>
+            <span class="journey-step">Void pipeline by stage</span><span class="journey-arrow">→</span>
+            <span class="journey-step">Flag overdue re-let</span><span class="journey-arrow">→</span>
+            <span class="journey-step">Assign contractor</span><span class="journey-arrow">→</span>
+            <span class="journey-step">Track to close</span>
+          </div>
+        </div>
+
+        <details class="modal-details">
+          <summary>The Four Roles <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="modal-list">
+              <li><strong style="color:var(--cream)">Director of Assets</strong> — portfolio-wide KPIs, Decent Homes
+                Standard score, cost analysis.</li>
+              <li><strong style="color:var(--cream)">Void Manager</strong> — void pipeline by stage, re-let time vs
+                target, rent loss exposure.</li>
+              <li><strong style="color:var(--cream)">Compliance Officer</strong> — certificate status, overdue
+                escalation flags, regulatory risk.</li>
+              <li><strong style="color:var(--cream)">Repairs Manager</strong> — work order queue, SLA status, contractor
+                assignment.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Research &amp; Insights <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="method-chips">
+              <span class="method-chip"><span class="ic">👥</span>Contextual Inquiry &amp; Shadowing — 4 roles</span>
+              <span class="method-chip"><span class="ic">🗺️</span>Service Blueprinting</span>
+              <span class="method-chip"><span class="ic">🧭</span>Journey Mapping</span>
+              <span class="method-chip"><span class="ic">💡</span>Design Thinking Workshops</span>
+            </div>
+            <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong>
+              Measured average void re-let time against target SLA, tracked how often compliance deadlines were missed
+              due to lack of visibility, and mapped duplicate data entry happening independently across teams.</p>
+            <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> All four roles needed
+              the same underlying data but conflicting views of it — so the decision was one shared data model with
+              role-based dashboard routing, instead of building four separate apps.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Key Decision <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <p class="modal-text">Login detects role and routes to a specialised dashboard automatically — each view
+              surfaces only the alerts, metrics, and actions relevant to that role, sharing one component library
+              underneath.</p>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Information Architecture <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <ul class="ia-tree">
+              <li><strong>Role-based routing at login</strong> — hub-and-spoke model, one shared data layer<ul>
+                  <li>Director of Assets · Void Manager · Compliance Officer · Repairs Manager</li>
+                </ul>
+              </li>
+              <li><strong>Each dashboard</strong> — portfolio KPIs, active alerts, drill-down detail views</li>
+              <li><strong>Shared component library</strong> underneath all four role views</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="modal-details">
+          <summary>Typography <span class="sicon">+</span></summary>
+          <div class="modal-details-body">
+            <div class="type-specimen">
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:var(--font-display);font-size:1.6rem">Aa — Bebas Neue</span><span
+                  class="type-meta">KPI headers</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:var(--font-body);font-variant-numeric:tabular-nums;font-size:1.05rem">Aa 123 —
+                  Tabular figures</span><span class="type-meta">Dashboard metrics</span></div>
+              <div class="type-row"><span class="type-sample"
+                  style="font-family:var(--font-body);font-size:.9rem;color:var(--cream-dim)">Aa — Poppins
+                  Regular</span><span class="type-meta">Table &amp; list data</span></div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeModal(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow = ''; }
+    document.querySelectorAll('.modal-overlay').forEach(function (m) {
+      m.addEventListener('click', function (e) { if (e.target === m) closeModal(m.id); });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { document.querySelectorAll('.modal-overlay.open').forEach(function (m) { closeModal(m.id); }); }
+    });
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(function (a) {
+      a.addEventListener('click', function () { document.getElementById('navLinks').classList.remove('open'); });
+    });
+
+    // Theme toggle — defaults to light, remembers choice where storage is available
+    (function () {
+      var btn = document.getElementById('themeToggle');
+      var saved = null;
+      try { saved = localStorage.getItem('rp-theme'); } catch (e) { }
+      var theme = saved === 'dark' ? 'dark' : 'light';
+      function apply(t) {
+        if (t === 'dark') { document.documentElement.setAttribute('data-theme', 'dark'); }
+        else { document.documentElement.removeAttribute('data-theme'); }
+        btn.textContent = t === 'dark' ? 'Light' : 'Dark';
+        btn.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+      apply(theme);
+      btn.addEventListener('click', function () {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        apply(theme);
+        try { localStorage.setItem('rp-theme', theme); } catch (e) { }
+      });
+    })();
+  </script>
+</body>
+
+</html>

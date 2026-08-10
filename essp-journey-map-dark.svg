@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="526" viewBox="0 0 1400 526" font-family="Arial, Helvetica, sans-serif"><rect x="0" y="0" width="1400" height="526" fill="#132233"/>
+<rect x="1" y="1" width="1398" height="524" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2" rx="18"/>
+<text x="700.0" y="46" text-anchor="middle" font-size="12" font-weight="700" letter-spacing="3" fill="#3ab5c3">EMPLOYEE SELF-SERVICE PORTAL</text>
+<text x="700.0" y="80" text-anchor="middle" font-size="30" font-weight="700" fill="#f0ede6">User Journey — Before &amp; After</text>
+<text x="700.0" y="104" text-anchor="middle" font-size="13" fill="rgba(240,237,230,.68)">From a confusing, desktop-only portal to a self-serve experience employees complete unaided</text>
+<circle cx="158" cy="115" r="5" fill="#e07a76"/>
+<text x="173" y="120" font-size="14" font-weight="700" letter-spacing="1.2" fill="#e07a76">BEFORE — CONFUSING &amp; DESKTOP-ONLY</text>
+<rect x="149" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="244.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Hunt through menus</text>
+<text x="244.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">complex navigation</text>
+<circle cx="171" cy="156" r="12" fill="#e07a76"/>
+<text x="171" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">1</text>
+<line x1="345" y1="188.0" x2="369" y2="188.0" stroke="#e07a76" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="369,182.0 369,194.0 379,188.0" fill="#e07a76"/>
+<rect x="377" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="472.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Desktop only</text>
+<text x="472.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">no mobile access</text>
+<circle cx="399" cy="156" r="12" fill="#e07a76"/>
+<text x="399" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">2</text>
+<line x1="573" y1="188.0" x2="597" y2="188.0" stroke="#e07a76" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="597,182.0 597,194.0 607,188.0" fill="#e07a76"/>
+<rect x="605" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="700.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Inconsistent layout</text>
+<text x="700.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">confusing hierarchy</text>
+<circle cx="627" cy="156" r="12" fill="#e07a76"/>
+<text x="627" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">3</text>
+<line x1="801" y1="188.0" x2="825" y2="188.0" stroke="#e07a76" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="825,182.0 825,194.0 835,188.0" fill="#e07a76"/>
+<rect x="833" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="928.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Policy info buried</text>
+<text x="928.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">hard to find</text>
+<circle cx="855" cy="156" r="12" fill="#e07a76"/>
+<text x="855" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">4</text>
+<line x1="1029" y1="188.0" x2="1053" y2="188.0" stroke="#e07a76" stroke-width="2.5" stroke-dasharray="5,5"/>
+<polygon points="1053,182.0 1053,194.0 1063,188.0" fill="#e07a76"/>
+<rect x="1061" y="134" width="190" height="108" rx="12" fill="rgba(224,122,118,.12)" stroke="rgba(224,122,118,.4)" stroke-width="1.5"/>
+<text x="1156.0" y="174" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Give up, raise ticket</text>
+<text x="1156.0" y="198" text-anchor="middle" font-size="12" fill="#e07a76">support overload</text>
+<circle cx="1083" cy="156" r="12" fill="#e07a76"/>
+<text x="1083" y="161" text-anchor="middle" font-size="12" font-weight="700" fill="#132233">5</text>
+<rect x="420.0" y="276" width="560" height="56" rx="28" fill="#0d1b2a"/>
+<text x="700.0" y="311" text-anchor="middle" font-size="15.5" font-weight="700" fill="#ffffff">Higher engagement  ·  Faster tasks  ·  Fewer support tickets</text>
+<circle cx="158" cy="359" r="5" fill="#3ab5c3"/>
+<text x="173" y="364" font-size="14" font-weight="700" letter-spacing="1.2" fill="#3ab5c3">AFTER — SIMPLIFIED &amp; SELF-SERVE</text>
+<rect x="149" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="244.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Simplified IA</text>
+<text x="244.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">grouped by task</text>
+<circle cx="317" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 312 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="345" y1="432.0" x2="369" y2="432.0" stroke="#3ab5c3" stroke-width="2.5"/>
+<polygon points="369,426.0 369,438.0 379,432.0" fill="#3ab5c3"/>
+<rect x="377" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="472.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Mobile-responsive</text>
+<text x="472.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">access anywhere</text>
+<circle cx="545" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 540 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="573" y1="432.0" x2="597" y2="432.0" stroke="#3ab5c3" stroke-width="2.5"/>
+<polygon points="597,426.0 597,438.0 607,432.0" fill="#3ab5c3"/>
+<rect x="605" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="700.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Consistent design system</text>
+<text x="700.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">clear hierarchy</text>
+<circle cx="773" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 768 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="801" y1="432.0" x2="825" y2="432.0" stroke="#3ab5c3" stroke-width="2.5"/>
+<polygon points="825,426.0 825,438.0 835,432.0" fill="#3ab5c3"/>
+<rect x="833" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="928.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Instant search</text>
+<text x="928.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">find info in seconds</text>
+<circle cx="1001" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 996 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1029" y1="432.0" x2="1053" y2="432.0" stroke="#3ab5c3" stroke-width="2.5"/>
+<polygon points="1053,426.0 1053,438.0 1063,432.0" fill="#3ab5c3"/>
+<rect x="1061" y="378" width="190" height="108" rx="12" fill="rgba(58,181,195,.12)" stroke="rgba(58,181,195,.4)" stroke-width="1.5"/>
+<text x="1156.0" y="418" text-anchor="middle" font-size="15.5" font-weight="700" fill="#f0ede6">Self-serve, done</text>
+<text x="1156.0" y="442" text-anchor="middle" font-size="12" fill="#3ab5c3">ticket avoided</text>
+<circle cx="1229" cy="400" r="12" fill="#3ab5c3"/>
+<path d="M 1224 400 l 3.5 4 l 7 -8" stroke="#132233" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
