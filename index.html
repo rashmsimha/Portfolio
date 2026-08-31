@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rashmi Padmanabha — Principal Product Designer | Responsible AI · Accessibility · Enterprise SaaS</title>
-<meta name="description" content="Principal Product Designer with 19+ years designing enterprise SaaS, Responsible AI, and WCAG-accessible products.">
+<meta name="description" content="Principal Product Designer with extensive experience designing enterprise SaaS, Responsible AI, and WCAG-accessible products.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -60,11 +60,34 @@
   }
 
   /* HERO */
-  .hero{padding:5rem 0 4rem;text-align:center}
-  .hero h1{font-family:var(--font-display);font-size:clamp(3rem,9vw,6.5rem);letter-spacing:.03em;line-height:.95;margin:1rem 0 1.2rem}
+  .hero{padding:4.5rem 0 4rem}
+  .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:start}
+  .hero-copy{text-align:left}
+  .hero h1{font-family:var(--font-display);font-size:clamp(2.6rem,6vw,4.6rem);letter-spacing:.03em;line-height:.95;margin:1rem 0 1.2rem}
   .hero .role{font-size:1.05rem;color:var(--teal);font-weight:500;max-width:700px;margin:0 auto 1.4rem}
-  .hero .headline{font-family:var(--font-body);font-size:1.15rem;font-weight:600;color:var(--cream);max-width:750px;margin:0 auto .9rem}
-  .hero p.intro{max-width:640px;margin:0 auto 2.4rem;color:var(--cream-dim);font-size:1rem}
+  .hero .headline{font-family:var(--font-body);font-size:1.15rem;font-weight:600;color:var(--cream);max-width:none;margin:0 0 .9rem}
+  .hero p.intro{max-width:640px;margin:0 0 1.6rem;color:var(--cream-dim);font-size:1rem}
+  .hero-copy p:not(.intro){color:var(--cream-dim);margin-bottom:1.1rem;max-width:680px}
+  .hero-copy .btn{margin-top:.8rem}
+  @media(max-width:860px){.hero-copy{text-align:center}.hero p.intro,.hero-copy p:not(.intro){margin-left:auto;margin-right:auto}}
+
+  /* HERO SLIDESHOW */
+  .hero-slideshow{width:100%;border-radius:16px;overflow:hidden;position:sticky;top:6rem;aspect-ratio:3/2;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+  .hero-slideshow .slide{position:absolute;inset:0;opacity:0;animation:heroFade 20s infinite}
+  .hero-slideshow .slide img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}
+  .hero-slideshow .slide:nth-child(1){animation-delay:0s}
+  .hero-slideshow .slide:nth-child(2){animation-delay:5s}
+  .hero-slideshow .slide:nth-child(3){animation-delay:10s}
+  .hero-slideshow .slide:nth-child(4){animation-delay:15s}
+  .hero-slideshow .slide-label{position:absolute;left:1rem;bottom:1rem;background:rgba(20,35,47,.85);color:#fff;font-size:.76rem;font-weight:600;padding:.45rem .95rem;border-radius:20px;z-index:2}
+  @keyframes heroFade{
+    0%{opacity:0}
+    2%{opacity:1}
+    18%{opacity:1}
+    20%{opacity:0}
+    100%{opacity:0}
+  }
+  @media(max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-slideshow{position:relative;aspect-ratio:16/10;order:-1;margin-bottom:1rem}}
   .btn{display:inline-block;background:var(--teal);color:var(--on-accent);font-weight:600;padding:.85rem 2rem;border-radius:4px;text-decoration:none;font-size:.9rem;letter-spacing:.03em;transition:transform .25s var(--ease), background .25s}
   .btn:hover{transform:translateY(-2px);background:#4fc6d3}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:820px;margin:3.5rem auto 0}
@@ -263,28 +286,35 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Principal Product Designer — Open to Remote Roles Globally</div>
-    <h1>RASHMI<br>PADMANABHA</h1>
-    <div class="headline">Principal Product Designer &amp; AI Strategist | Scaling Enterprise SaaS, System Thinking &amp; UX Governance</div>
-    <p class="intro">I design digital products that earn trust by explaining themselves — showing the reasoning behind a decision, AI-driven or not, clearly enough that someone can act on it with confidence instead of just trusting a black box.</p>
-    <a class="btn" href="#work">View Case Studies →</a>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="wrap">
-    <div class="eyebrow">About</div>
-    <div class="about-grid">
-      <div>
-        <p>I care about the business problem and the user's problem equally, and 19+ years as a Principal Product Designer has been proving it in practice — across banking, pharmaceutical compliance, social housing, and IT service management, building systems that hold up once real people are using them under pressure.</p>
-        <p>That's shaped by an MA in Behavioural Psychology (in progress) — training that's less about interfaces and more about reading why people trust, hesitate, or give up on a system. It's the same lens whether I'm running an accessibility audit, governing a design system, or deciding what an AI feature should be allowed to do on its own.</p>
-        <p>Every decision gets weighed against a business number, not just a usability score — review time, error rate, support tickets, revenue retained. Design that can't point to one of those is a guess wearing a nice interface.</p>
+<!-- HERO / INTRO -->
+<section class="hero" id="about">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Principal Product Designer — Open to Remote Roles Globally</div>
+      <h1>RASHMI<br>PADMANABHA</h1>
+      <div class="headline">Principal Product Designer who translates complex enterprise workflows into simple, user-centric experiences — aligning business goals with real user needs</div>
+      <p class="intro">I design digital products that earn trust by explaining themselves — showing the reasoning behind a decision, AI-driven or not, clearly enough that someone can act on it with confidence instead of just trusting a black box.</p>
+      <p>That conviction comes from extensive experience building systems that hold up once real people are using them under pressure — across banking, pharmaceutical compliance, social housing, and IT service management. It's sharpened by an MA in Behavioural Psychology (in progress), which shaped how I read why people trust, hesitate, or give up on a system — whether I'm running an accessibility audit, governing a design system, or deciding what an AI feature should be allowed to do on its own.</p>
+      <p>Every decision gets weighed against a business number, not just a usability score — review time, error rate, support tickets, revenue retained. Design that can't point to one of those is a guess wearing a nice interface.</p>
+      <a class="btn" href="#work">View Case Studies →</a>
+    </div>
+    <div class="hero-slideshow">
+      <div class="slide">
+        <img src="health-merged.png" alt="Patient Health Education Platform — web home dashboard with AI symptom check and mobile article view with AI summary">
+        <div class="slide-label">Patient Health Education Platform</div>
       </div>
-      <div class="quote">"Complexity isn't the enemy — confusion is. I design for the person with the least room for error, because understanding why people trust or distrust a system matters as much as how it works."</div>
+      <div class="slide">
+        <img src="visitor-host-real.png" alt="AI-Powered Visitor Experience host dashboard">
+        <div class="slide-label">AI-Powered Visitor Experience</div>
+      </div>
+      <div class="slide">
+        <img src="maci-screen1.png" alt="MACI Microsoft Teams chatbot assistant">
+        <div class="slide-label">MACI — AI Chatbot Assistant</div>
+      </div>
+      <div class="slide">
+        <img src="essp-dashboard-2.png" alt="Employee Self-Service Portal home screen">
+        <div class="slide-label">Employee Self-Service Portal</div>
+      </div>
     </div>
   </div>
 </section>
@@ -295,11 +325,27 @@
     <div class="eyebrow">What I Do Best</div>
     <h2 class="section-title">Core Expertise</h2>
     <div class="expertise-grid">
-      <div class="exp-card"><div class="tag">Product Leadership</div><p>Design Thinking · Product &amp; UX Strategy · Product Discovery · Stakeholder Management · Agile Delivery · Cross-functional Leadership</p></div>
-      <div class="exp-card"><div class="tag">AI &amp; Responsible AI</div><p>AI Product Design · Responsible AI · AI Governance · Agentic AI · Explainable AI · AI Workflow Design · Prompt Engineering</p></div>
-      <div class="exp-card"><div class="tag">UX Research</div><p>User Interviews · Contextual Inquiry · Usability Testing · Information Architecture · User Journeys · Service Blueprint · Heuristic Evaluation · Behavioural Psychology</p></div>
-      <div class="exp-card"><div class="tag">Interaction Design</div><p>Wireframing · Prototyping · Micro-interactions · Design Systems · Visual Design · Typography · Iconography · Motion Design · Responsive Design</p></div>
-      <div class="exp-card"><div class="tag">Web Accessibility</div><p>WCAG 2.2 AA · ADA · European Accessibility Act (EAA) · Inclusive Design · ARIA · Semantic HTML · Keyboard Navigation · Screen Reader Testing</p></div>
+      <div class="exp-card"><div class="tag">UX &amp; Product Design</div><p>Interaction Design · Information Architecture · User Flows · Wireframing · Prototyping · High-Fidelity UI · Responsive Design · Visual Hierarchy · Design Systems</p></div>
+      <div class="exp-card"><div class="tag">UX Research</div><p>Customer Discovery · User Interviews · Contextual Inquiry · Usability Testing · Journey Mapping · Personas · Heuristic Evaluation · A/B Testing</p></div>
+      <div class="exp-card"><div class="tag">Product &amp; Client Collaboration</div><p>Product Discovery · UX Strategy · Problem Solving · Stakeholder Management · Cross-functional Collaboration · Agile Delivery · Design Critiques</p></div>
+      <div class="exp-card"><div class="tag">Accessibility</div><p>WCAG 2.2 AA · Inclusive Design · ARIA · Semantic HTML · Keyboard Navigation · Screen Reader Testing</p></div>
+      <div class="exp-card"><div class="tag">AI Product Design</div><p>AI Product Design · Conversational AI · AI Workflow Design · Responsible AI · AI Governance</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DOMAIN EXPERTISE -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Where I've Applied It</div>
+    <h2 class="section-title">Domain Expertise</h2>
+    <div class="expertise-grid">
+      <div class="exp-card"><div class="tag">HealthTech &amp; Healthcare</div><p>Healthcare platforms · Pharmaceutical compliance · Accessibility · Complex clinical &amp; regulatory workflows</p></div>
+      <div class="exp-card"><div class="tag">EdTech &amp; Learning</div><p>Learning platforms · Educational applications · AI-assisted learning · Student &amp; educator experiences · Assessments · Progress tracking · Personalized learning · Accessible digital</p></div>
+      <div class="exp-card"><div class="tag">Enterprise SaaS &amp; B2B</div><p>Enterprise applications · Workflow automation · Admin portals · ITSM · Service platforms</p></div>
+      <div class="exp-card"><div class="tag">Banking &amp; FinTech</div><p>Digital banking · Financial platforms · FinTech applications · Complex transactional workflows</p></div>
+      <div class="exp-card"><div class="tag">AI Products</div><p>Conversational AI · AI-assisted workflows · AI product experiences · Responsible AI</p></div>
+      <div class="exp-card"><div class="tag">Other Domains</div><p>E-commerce · IoT · UK Social Housing</p></div>
     </div>
   </div>
 </section>
@@ -311,8 +357,23 @@
     <h2 class="section-title">Case Studies</h2>
     <div class="case-grid">
 
+      <div class="case-card" onclick="openModal('modal-health')">
+        <div class="case-img"><img src="health-web-home.png" alt="Patient health education platform home dashboard with AI symptom check and topic cards"></div>
+        <div class="case-body">
+          <div class="case-tags"><span class="case-tag">HealthTech</span><span class="case-tag">AI-Personalised Content</span><span class="case-tag">WCAG 2.2 AA</span></div>
+          <h3>Patient Health Education Platform</h3>
+          <div class="role">Product Manager &amp; Product Designer — 6 Months</div>
+          <p class="desc">Redesigned a consumer health education platform end-to-end — AI-personalised content, mobile-first IA, and WCAG 2.2 accessibility baked into the design system, not bolted on.</p>
+          <div class="case-outcomes">
+            <div><div class="n">+71%</div><div class="l">Article completion</div></div>
+            <div><div class="n">0</div><div class="l">Critical WCAG failures</div></div>
+          </div>
+          <span class="case-link">View Case Study →</span>
+        </div>
+      </div>
+
       <div class="case-card" onclick="openModal('modal-atom')">
-        <div class="case-img"><img src="download.jpg" alt="  Artwork library showing generated label cards and workflow actions"></div>
+        <div class="case-img"><img src="atom.png" alt="Kallik AToM label editor with real-time content locked and role-gated editing"></div>
         <div class="case-body">
           <div class="case-tags"><span class="case-tag">Enterprise SaaS</span><span class="case-tag">Responsible AI</span><span class="case-tag">Pharma Compliance</span></div>
           <h3>Artwork Labelling AToM</h3>
@@ -327,7 +388,7 @@
       </div>
 
       <div class="case-card" onclick="openModal('modal-access')">
-        <div class="case-img"><img src="screen1.png" alt="AI-powered visitor check-in host dashboard and kiosk flow"></div>
+        <div class="case-img"><img src="visitor-host-real.png" alt="AI-powered visitor host dashboard, Welcome back Rashmi, with pre-register visitor and today's visits"></div>
         <div class="case-body">
           <div class="case-tags"><span class="case-tag">AI Workplace UX</span><span class="case-tag">Visitor Experience</span><span class="case-tag">Service Design</span></div>
           <h3>AI-Powered Visitor Experience</h3>
@@ -336,21 +397,6 @@
           <div class="case-outcomes">
             <div><div class="n">78%</div><div class="l">Faster check-in</div></div>
             <div><div class="n">80%</div><div class="l">Less reception workload</div></div>
-          </div>
-          <span class="case-link">View Case Study →</span>
-        </div>
-      </div>
-
-      <div class="case-card" onclick="openModal('modal-maci')">
-        <div class="case-img"><img src="maci-screen1.png" alt="MACI Microsoft Teams chatbot showing quick actions for timesheet, leave, and support"></div>
-        <div class="case-body">
-          <div class="case-tags"><span class="case-tag">Conversational AI</span><span class="case-tag">MS Teams Bot</span><span class="case-tag">0 → 1 Product</span></div>
-          <h3>MACI — AI Chatbot Assistant</h3>
-          <div class="role">LTIMindtree — UX Research, Wireframing &amp; UI Design</div>
-          <p class="desc">Designed a personal assistant chatbot inside Microsoft Teams, replacing a legacy portal's poor navigation with one guided conversation for timesheets, leave, approvals, and support.</p>
-          <div class="case-outcomes">
-            <div><div class="n">1</div><div class="l">Conversation replaces 3 apps</div></div>
-            <div><div class="n">✓</div><div class="l">Shipped in MS Teams</div></div>
           </div>
           <span class="case-link">View Case Study →</span>
         </div>
@@ -367,14 +413,14 @@
 <section class="about" id="experience">
   <div class="wrap">
     <div class="eyebrow">Experience</div>
-    <h2 class="section-title">19+ Years of Doing the Work</h2>
+    <h2 class="section-title">A Track Record of Doing the Work</h2>
 
     <div class="exp-item">
       <div class="period">Sep 2023 – Jun 2026</div>
       <h3>Product Design Leader &amp; Research Strategist</h3>
       <div class="company">NEO Technology Solutions · Remote — UK Client</div>
       <ul>
-        <li>Led end-to-end product design for enterprise SaaS products from discovery through delivery.</li>
+        <li>Owned end-to-end product design for enterprise SaaS products from discovery through delivery.</li>
         <li>Directed AI-powered workflow and Agentic AI experience design.</li>
         <li>Defined and governed a design system adopted across 8+ teams, reducing UI inconsistencies by 88%.</li>
         <li>Increased user trust by 77% through transparent AI interaction design.</li>
@@ -388,11 +434,12 @@
       <h3>Senior Product Designer &amp; UX Research Strategist</h3>
       <div class="company">LTIMindtree · 16 years</div>
       <ul>
-        <li>Led UX strategy for a 40K+ user financial platform, reducing workflow failures by 70% and failed searches by 35%.</li>
+        <li>Directed UX strategy for a 40K+ user financial platform, reducing workflow failures by 70% and failed searches by 35%.</li>
         <li>Conducted the accessibility audit for a 220K+ user banking platform, improving compliance from 31 to 89 (94% WCAG AA).</li>
         <li>Unified 100+ IT services into one platform for 90K+ employees — 35% faster resolution, 2.5× first-time resolution.</li>
         <li>Ran 26+ contextual inquiries, reducing workflow inconsistencies by 60%.</li>
-        <li>Built and governed enterprise design systems adopted across multiple teams; mentored designers.</li>
+        <li>Built and governed enterprise design systems adopted across multiple teams.</li>
+        <li>Facilitated design critiques and mentored designers on UX best practices, partnering directly with VP-level and executive stakeholders to align design strategy.</li>
       </ul>
     </div>
   </div>
@@ -539,7 +586,7 @@
           <div class="case-body">
             <div class="case-tags"><span class="case-tag">Enterprise Dashboard</span><span class="case-tag">UK Social Housing</span><span class="case-tag">4 User Roles</span></div>
             <h3>PropSys 360</h3>
-            <div class="role">Neo Technology / UK Social Housing — Lead Product UX Designer</div>
+            <div class="role">NEO Technology Solutions / UK Social Housing — Lead Product UX Designer</div>
             <p class="desc">A role-adaptive asset management platform giving four distinct teams the right KPIs, alerts, and actions from one shared data model.</p>
             <div class="case-outcomes">
               <div><div class="n">62%</div><div class="l">Faster void turnaround</div></div>
@@ -556,8 +603,22 @@
             <div class="role">LTIMindtree ULTIMA Works — UX Researcher &amp; Product Designer</div>
             <p class="desc">A UX audit and redesign of an enterprise self-service portal — turning tangled navigation and a desktop-only layout into a simplified, mobile-ready, self-serve experience.</p>
             <div class="case-outcomes">
-              <div><div class="n">✓</div><div class="l">Usability validated</div></div>
-              <div><div class="n">↓</div><div class="l">Support tickets</div></div>
+              <div><div class="n">Positive</div><div class="l">Usability results</div></div>
+              <div><div class="n">Fewer</div><div class="l">Support tickets</div></div>
+            </div>
+            <span class="case-link">View Case Study →</span>
+          </div>
+        </div>
+        <div class="case-card" onclick="closeModal('modal-more'); openModal('modal-maci')">
+          <div class="case-img"><img src="maci-screen1.png" alt="MACI Microsoft Teams chatbot showing quick actions for timesheet, leave, and support"></div>
+          <div class="case-body">
+            <div class="case-tags"><span class="case-tag">Conversational AI</span><span class="case-tag">MS Teams Bot</span><span class="case-tag">0 → 1 Product</span></div>
+            <h3>MACI — AI Chatbot Assistant</h3>
+            <div class="role">LTIMindtree — UX Research, Wireframing &amp; UI Design</div>
+            <p class="desc">Designed a personal assistant chatbot inside Microsoft Teams, replacing a legacy portal's poor navigation with one guided conversation for timesheets, leave, approvals, and support.</p>
+            <div class="case-outcomes">
+              <div><div class="n">1</div><div class="l">Conversation replaces 3 apps</div></div>
+              <div><div class="n">✓</div><div class="l">Shipped in MS Teams</div></div>
             </div>
             <span class="case-link">View Case Study →</span>
           </div>
@@ -567,6 +628,305 @@
   </div>
 </div>
 
+<!-- MODAL: Patient Health Education Platform -->
+<div class="modal-overlay" id="modal-health" role="dialog" aria-modal="true" aria-labelledby="modal-health-title">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-title" id="modal-health-title">Patient Health Education Platform</div>
+        <div class="modal-subtitle">Product Manager &amp; Product Designer · 6 Months · Healthcare / Patient Education</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('modal-health')" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+
+      <div class="modal-section">
+        <div class="modal-section-title">Overview</div>
+        <p class="modal-text">A consumer-facing digital health platform delivering evidence-based patient education — articles, symptom guides, decision tools, and care videos — across 70M+ annual patient touchpoints, deployed via health system portals, EHR integrations, and health plan apps. Strong content depth, but a UX that hadn't evolved in years. I conducted the redesign as both Product Manager and Product Designer, wearing both hats across a 6-month, 3-team engagement.</p>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title">Process</div>
+        <div class="process-timeline">
+          <span class="pt-step">Discovery</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Research</span><span class="pt-arrow">→</span>
+          <span class="pt-step">IA &amp; Card Sorting</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Ideation</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Wireframes</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Prototype &amp; Test</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Visual Design</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Launch</span><span class="pt-arrow">→</span>
+          <span class="pt-step">Validate</span>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title">Outcomes — Post-Launch</div>
+        <div class="modal-outcomes">
+          <div><div class="modal-outcome-num">38%→65%</div><div class="modal-outcome-label">Article completion (+71% relative)</div></div>
+          <div><div class="modal-outcome-num">+34pp</div><div class="modal-outcome-label">Mobile task success</div></div>
+          <div><div class="modal-outcome-num">0</div><div class="modal-outcome-label">Critical WCAG failures, down from 47</div></div>
+          <div><div class="modal-outcome-num">82%</div><div class="modal-outcome-label">Search-to-article success, up from 44%</div></div>
+          <div><div class="modal-outcome-num">−52%</div><div class="modal-outcome-label">Mobile bounce rate</div></div>
+          <div><div class="modal-outcome-num">4.8/5</div><div class="modal-outcome-label">Patient satisfaction, n=1,200</div></div>
+        </div>
+      </div>
+
+      <details class="modal-details">
+        <summary>The Problem <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <p class="modal-text" style="margin-bottom:.9rem">Growing mobile traffic, rising accessibility litigation risk, and new AI capabilities created the case for a full redesign. Six things were broken, and each one had a real cost attached:</p>
+          <ul class="modal-list">
+            <li><strong style="color:var(--cream)">Mobile-first failure</strong> — 48% of traffic was mobile but the UI was desktop-designed. Navigation collapsed, text overflowed, touch targets undersized.</li>
+            <li><strong style="color:var(--cream)">Accessibility risk</strong> — 47 WCAG 2.1 AA failures: colour contrast, broken focus states, screen reader semantics. An ADA risk and a real user blocker.</li>
+            <li><strong style="color:var(--cream)">Findability crisis</strong> — no unified search. Users averaged 4.2 clicks to find a relevant article; the symptom checker was effectively invisible.</li>
+            <li><strong style="color:var(--cream)">Content overload</strong> — long-form articles with no chunking. 62% abandoned before reaching actionable guidance, above the 40% norm.</li>
+            <li><strong style="color:var(--cream)">EHR integration gaps</strong> — clinician-sent education links delivered generic content; condition-specific linking broken across 3 EHR partners.</li>
+            <li><strong style="color:var(--cream)">No AI advantage</strong> — a vast content library but zero personalisation, zero reading-level adaptation, zero AI-assisted discovery.</li>
+          </ul>
+        </div>
+      </details>
+
+      <div class="modal-section">
+        <div class="modal-section-title">Martin's Journey — Before &amp; After</div>
+        <div class="journey-map-wrap">
+          <img class="journey-map-light" src="health-journey-map.svg" alt="Martin, 68, Type 2 Diabetes patient journey before redesign: no clear entry so he googles instead of using the app, desktop UI collapses on mobile, no unified search averaging 4.2 clicks, wall of text with 62 percent abandonment, generic EHR link breaking on 3 partners, gives up with zero health literacy support. After redesign: 2-tap entry via bottom nav, AI symptom triage with autocomplete and body map, AI content match scored by symptom at 82 percent, AI summary and reading level with 71 percent article completion, 1-click EHR assign with 98 percent condition match, confident with 4.8 out of 5 satisfaction.">
+          <img class="journey-map-dark" src="health-journey-map-dark.svg" alt="Martin, 68, Type 2 Diabetes patient journey before redesign: no clear entry so he googles instead of using the app, desktop UI collapses on mobile, no unified search averaging 4.2 clicks, wall of text with 62 percent abandonment, generic EHR link breaking on 3 partners, gives up with zero health literacy support. After redesign: 2-tap entry via bottom nav, AI symptom triage with autocomplete and body map, AI content match scored by symptom at 82 percent, AI summary and reading level with 71 percent article completion, 1-click EHR assign with 98 percent condition match, confident with 4.8 out of 5 satisfaction.">
+        </div>
+      </div>
+
+      <details class="modal-details">
+        <summary>Research &amp; Insights — Why Each Method, What It Unlocked <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="method-chips">
+            <span class="method-chip">Stakeholder Interviews — 8 sessions</span>
+            <span class="method-chip">Moderated Usability — 20 sessions, ages 22–74</span>
+            <span class="method-chip">Analytics + Heatmaps — GA4 + Hotjar</span>
+            <span class="method-chip">Accessibility Audit — axe + NVDA/VoiceOver</span>
+            <span class="method-chip">Heuristic Evaluation — Nielsen's 10</span>
+            <span class="method-chip">Competitive Benchmark — 4 platforms</span>
+          </div>
+
+          <div class="decision-item">
+            <div class="dt">Stakeholder Interviews</div>
+            <div class="decision-final"><b>Why:</b> Needed to surface unstated constraints — EHR partner SLAs, clinical review requirements, compliance timelines — before designing anything. Teams that skip this pay for it in rework.</div>
+          </div>
+          <div class="decision-item">
+            <div class="dt">↳ Unlocked</div>
+            <div class="decision-final"><b></b>Revealed EHR deep-linking was technically broken, not just a UX decision. Changed the roadmap sequencing.</div>
+          </div>
+
+          <div class="decision-item" style="margin-top:1.1rem">
+            <div class="dt">Moderated Usability Sessions (not unmoderated)</div>
+            <div class="decision-final"><b>Why:</b> The audience included low-literacy and elderly users — populations that don't vocalise confusion the way tech-savvy users do. High observation mattered more than sample size.</div>
+          </div>
+          <div class="decision-item">
+            <div class="dt">↳ Unlocked</div>
+            <div class="decision-final"><b></b>68% of low-literacy users used the reading-level toggle without being prompted — only visible through direct observation.</div>
+          </div>
+
+          <div class="decision-item" style="margin-top:1.1rem">
+            <div class="dt">Accessibility Audit — automated + manual combined</div>
+            <div class="decision-final"><b>Why:</b> Automated tools catch roughly 30% of WCAG issues. Cognitive load, focus order, and ARIA live-region behaviour only surface through manual screen reader testing.</div>
+          </div>
+          <div class="decision-item">
+            <div class="dt">↳ Unlocked</div>
+            <div class="decision-final"><b></b>47 failures, severity-rated — critical for sprint planning, since not all 47 could be fixed in the first pass.</div>
+          </div>
+
+          <div class="decision-item" style="margin-top:1.1rem">
+            <div class="dt">Competitive Benchmark — deliberately mixed literacy levels</div>
+            <div class="decision-final"><b>Why:</b> Chose platforms at different ends of the health-literacy spectrum — NHS inform (Grade 6 targeted) vs. WebMD (expert-forward) — to see what "best in class" looked like across both ends, not just one.</div>
+          </div>
+          <div class="decision-item">
+            <div class="dt">↳ Unlocked</div>
+            <div class="decision-final"><b></b>No competitor combined AI content personalisation with reading-level adaptation. That gap became the product's differentiator.</div>
+          </div>
+
+          <p class="modal-text" style="margin-top:1.2rem"><strong style="color:var(--cream)">Sequencing:</strong> heuristic evaluation + analytics first (to brief stakeholders fast) → stakeholder interviews → user sessions → accessibility audit → competitive benchmark.</p>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Information Architecture — 7 Nodes to 4 <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="journey-map-wrap">
+            <img class="journey-map-light" src="health-ia-map.svg" alt="Information architecture restructure: before had 7 keyword-first top-level nodes (Home, Health Library, Wellness, Tools, News, Ask Expert, Glossary) validated at 41 percent correct placement in card sort. After has 4 condition-first nodes (Home, Symptom Checker as primary action, Topics grouping Conditions Wellness and Life Stages, Saved/Profile) validated at 89 percent correct placement, n=48 closed card sort.">
+            <img class="journey-map-dark" src="health-ia-map-dark.svg" alt="Information architecture restructure: before had 7 keyword-first top-level nodes (Home, Health Library, Wellness, Tools, News, Ask Expert, Glossary) validated at 41 percent correct placement in card sort. After has 4 condition-first nodes (Home, Symptom Checker as primary action, Topics grouping Conditions Wellness and Life Stages, Saved/Profile) validated at 89 percent correct placement, n=48 closed card sort.">
+          </div>
+          <p class="modal-text" style="margin-top:1rem"><strong style="color:var(--cream)">Card sort finding:</strong> an open card sort (Maze, 48 participants) revealed 3 distinct mental models — condition-first (62%), symptom-first (28%), topic-first (10%). No participant grouped content the way the original IA was structured; "Health Library" was recognised by only 34%. "Topics" replaced four ambiguous, overlapping nodes ("Health Library", "Wellness", "Diseases", "Conditions") with one condition-first entry and three clear sub-categories.</p>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Ideation &amp; Prioritization <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <p class="modal-text" style="margin-bottom:.9rem"><strong style="color:var(--cream)">How Might We —</strong> the five questions that framed ideation:</p>
+          <ul class="modal-list">
+            <li>Make health content discoverable in under 2 taps on mobile?</li>
+            <li>Use AI to personalise content to a user's condition and literacy level?</li>
+            <li>Give clinicians a frictionless way to assign relevant education?</li>
+            <li>Surface the symptom checker as the primary entry point?</li>
+            <li>Make long articles feel manageable without losing depth?</li>
+          </ul>
+          <p class="modal-text" style="margin:.9rem 0">Prioritized on effort vs. impact — the high-impact, low-effort quadrant shaped the first release:</p>
+          <div class="priority-matrix" style="grid-template-columns:1fr 1fr">
+            <div class="matrix-quad">
+              <div class="mq-title">High Impact — Shipped First</div>
+              <div class="mq-items">
+                <span class="matrix-item">AI Reading-Level Adapter</span>
+                <span class="matrix-item">Unified Search + Filters</span>
+                <span class="matrix-item">Mobile Bottom Nav</span>
+                <span class="matrix-item">Symptom Checker Promo</span>
+              </div>
+            </div>
+            <div class="matrix-quad">
+              <div class="mq-title">Sequenced In After</div>
+              <div class="mq-items">
+                <span class="matrix-item">Progressive Disclosure</span>
+                <span class="matrix-item">EHR Deep Link Fix</span>
+                <span class="matrix-item">WCAG Token System</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Five Pillars of the Solution <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="modal-list">
+            <li><strong style="color:var(--cream)">AI-Assisted Content</strong> — GPT-powered reading-level adaptation, personalised article summaries, AI-driven recommendations based on condition, history, and literacy.</li>
+            <li><strong style="color:var(--cream)">Unified Smart Search</strong> — single search with condition/type/literacy filters, autosuggest, contextual ranking. From 4.2 clicks to under 2.</li>
+            <li><strong style="color:var(--cream)">Mobile-First Redesign</strong> — bottom nav, swipeable topic cards, 44px+ touch targets, progressive disclosure. Built mobile-out, not adapted down.</li>
+            <li><strong style="color:var(--cream)">Accessibility by Design</strong> — WCAG 2.2 AA token system embedded in the design system. Zero critical failures on final audit, ADA + EAA compliant.</li>
+            <li><strong style="color:var(--cream)">EHR Content Linking</strong> — contextual deep-linking from clinical workflow. Condition-matched article assignment in one click from within the EHR.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Persona <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-top">
+                <div class="persona-avatar">M</div>
+                <div>
+                  <div class="persona-name">Martin</div>
+                  <div class="persona-role">68 · Type 2 Diabetes · Mobile User</div>
+                </div>
+              </div>
+              <p class="persona-pain">Feels unwell, googles instead of opening the app because there's no clear entry point. Desktop-designed navigation confuses him on his phone; a wall of text with no chunking makes him give up before finding anything actionable.</p>
+              <div class="persona-need"><b>Needed</b>A 2-tap path from symptom to trustworthy, right-reading-level content — and a doctor's link that's actually about his condition.</div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Wireframe → Prototype → Validate <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <p class="modal-text" style="margin-bottom:.9rem">Six key flows wireframed lo-fi first — symptom-to-content, search-to-read, EHR-link-to-article, homepage-to-article, reading-level adaptation, and save/return/progress — tested in 2 rounds (n=12) before moving to hi-fi.</p>
+          <ul class="modal-list">
+            <li><strong style="color:var(--cream)">Lo-Fi</strong> (FigJam + paper) — rapid sketches of 6 flows, IA decisions validated, 2 rounds/12 users. Caught 4 critical navigation errors early.</li>
+            <li><strong style="color:var(--cream)">Mid-Fi</strong> (Figma, grayscale) — clickable prototype focused on interaction patterns: search filters, accordion behaviour, reading-level toggle. Task completion: 73%, up from a 51% baseline.</li>
+            <li><strong style="color:var(--cream)">Hi-Fi</strong> (Figma, branded) — full visual fidelity with the design system applied, 20-user validation. Task completion: 87%, 4.8/5 ease score.</li>
+          </ul>
+          <p class="modal-text" style="margin:.9rem 0 .5rem"><strong style="color:var(--cream)">What testing changed:</strong></p>
+          <ul class="modal-list">
+            <li>Bottom nav reduced task time by 42% on mobile vs. a hamburger menu.</li>
+            <li>Unified search with autosuggest and condition filters lifted search-to-article success from 44% to 82% — patients found the right article far more often on the first try.</li>
+            <li>AI summary card increased full-article reads to 71% of the time.</li>
+            <li>Reading-level toggle used by 68% of low-literacy participants — unprompted.</li>
+            <li>First search filter iteration had too many options — simplified from 8 to 3.</li>
+            <li>EHR link flow needed 2 additional confirmation steps after clinician testing.</li>
+            <li>Symptom checker awareness rose to 83%, up from 19% pre-redesign.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Visual Design System <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="journey-map-wrap" style="margin-bottom:1rem">
+            <img src="health-design-system.png" alt="Health platform design system showing colour tokens (Teal, Mint, Purple, Navy, Card, Danger, Warning), typography (DM Serif Display for display, Inter SemiBold for headings, Inter Regular body), 8pt spacing scale, and components including primary action button, ghost action, filter chips, and the purple AI Summary card." style="width:100%;border-radius:10px">
+          </div>
+          <div class="type-specimen">
+            <div class="type-row"><span class="type-sample" style="font-family:Georgia,serif;font-size:1.5rem">Aa — DM Serif Display</span><span class="type-meta">Article headlines, display type</span></div>
+            <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-weight:600;font-size:1.05rem">Aa — Inter SemiBold</span><span class="type-meta">Headings, nav labels</span></div>
+            <div class="type-row"><span class="type-sample" style="font-family:var(--font-body);font-size:.95rem;color:var(--cream-dim)">Aa — Inter Regular · 1.6 line height</span><span class="type-meta">Body copy — tuned for readability at low literacy levels</span></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Accessibility — WCAG 2.2, Baked In Not Bolted On <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="modal-list">
+            <li><strong style="color:var(--cream)">Colour contrast</strong> — all text ≥ 4.5:1, large text ≥ 3:1, no colour-only indicators, tested across light and dark surfaces.</li>
+            <li><strong style="color:var(--cream)">Keyboard navigation</strong> — full site keyboard-operable, logical focus order, custom 3px teal focus rings, skip-to-content on every page.</li>
+            <li><strong style="color:var(--cream)">Screen reader support</strong> — semantic HTML5 + ARIA throughout, live regions for dynamic AI content updates. Tested with NVDA, JAWS, VoiceOver.</li>
+            <li><strong style="color:var(--cream)">Reflow &amp; zoom</strong> — content reflows at 320px (400% zoom), no horizontal scroll, touch targets ≥ 44×44px on all interactive elements.</li>
+            <li><strong style="color:var(--cream)">Readable content</strong> — plain-language guidelines, Flesch-Kincaid score ≤ Grade 8 default, reading-level selector, tooltip definitions for medical terms.</li>
+            <li><strong style="color:var(--cream)">Compliance result</strong> — 47 → 0 critical failures. WCAG 2.2 AA achieved, ADA compliant, EAA 2025 ready, verified by third-party audit.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>My Role — Product Manager + Product Designer <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-top">
+                <div class="persona-avatar">PM</div>
+                <div><div class="persona-name">As Product Manager</div></div>
+              </div>
+              <p class="persona-pain">Defined the problem space with stakeholders and set success metrics. Scoped 6 months of work across 3 cross-functional teams. Built the effort/impact matrix and negotiated scope with engineering. Managed backlog and sprint cadence in Jira. Owned the accessibility compliance timeline and third-party audit. Coordinated EHR partner sign-off. Defined the A/B test plan and monitored post-launch analytics.</p>
+            </div>
+            <div class="persona-card">
+              <div class="persona-top">
+                <div class="persona-avatar">PD</div>
+                <div><div class="persona-name">As Product Designer</div></div>
+              </div>
+              <p class="persona-pain">Conducted 20 user sessions plus the accessibility audit (axe + screen reader testing). Synthesised insights into personas and journey maps. Ran card-sorting and HMW ideation workshops. Took 6 user flows from lo-fi through mid-fi to hi-fi in Figma. Built the design system — WCAG 2.2 tokens and AI content components. Delivered annotated specs and accessibility documentation for engineers.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>Key Learnings <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <ul class="modal-list">
+            <li><strong style="color:var(--cream)">Wearing both hats sharpens prioritisation.</strong> Being PM and PD forced ruthless decisions about what to design — every choice had a business case behind it. Less decoration, more function.</li>
+            <li><strong style="color:var(--cream)">AI doesn't replace design — it expands the design space.</strong> Integrating AI content features meant designing for uncertainty: summaries that might be wrong, recommendations that needed guardrails. AI raised UX complexity, not lowered it.</li>
+            <li><strong style="color:var(--cream)">Accessibility is a PM problem as much as a UX one.</strong> Getting a11y into sprint planning, audit timelines, and EHR partner sign-off was product management work — design alone doesn't ship accessible products.</li>
+            <li><strong style="color:var(--cream)">Test with the hardest users first.</strong> Running round-1 sessions with low-literacy users meant design assumptions were challenged while it was still cheap to change them — it saved weeks of rework.</li>
+          </ul>
+        </div>
+      </details>
+
+      <div class="modal-section">
+        <div class="modal-section-title">UI Screens</div>
+        <div class="modal-screens">
+          <img src="health-mobile-home.png" alt="Mobile home dashboard with quick symptom check CTA and browse topics">
+          <img src="health-mobile-search.png" alt="Mobile search filtered results with AI match percentage relevance scoring">
+          <img src="health-mobile-article.png" alt="Mobile article view with AI summary card and reading level toggle">
+          <img src="health-mobile-symptom.png" alt="Mobile symptom checker results with triage urgency and AI-scored articles">
+          <img src="health-ehr-desktop.png" alt="Clinician-facing EHR desktop integration with AI pre-selected condition-matched articles and one-click assign">
+          <img src="health-web-home.png" alt="Web patient dashboard with personalised greeting, symptom check CTA, and topic cards">
+          <img src="health-web-search.png" alt="Web search results with AI-scored relevance and condition-matched filtering">
+          <img src="health-web-article.png" alt="Web article view with reading level toggle, AI summary card, and accordion sections">
+          <img src="health-web-symptom1.png" alt="Web symptom checker step 1 of 3, enter symptom with AI autocomplete">
+          <img src="health-web-symptom2.png" alt="Web symptom checker triage result with urgency card and AI-scored article matches">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 <!-- MODAL: Kallik AToM -->
 <div class="modal-overlay" id="modal-atom" role="dialog" aria-modal="true" aria-labelledby="modal-atom-title">
   <div class="modal-box">
@@ -614,7 +974,7 @@
         </div>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Problem <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <p class="modal-text" style="margin-bottom:.7rem">The process was as risky as the label itself: personal naming conventions stood in for version control, AI flags carried no rule or confidence so reviewers closed every one, approvals moved by email reply with no audit trail, and print operators received files with no confirmation of approval status.</p>
@@ -622,14 +982,14 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Research &amp; Insights <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="method-chips">
-            <span class="method-chip"><span class="ic">🗣️</span>Contextual Interviews — 48 sessions</span>
-            <span class="method-chip"><span class="ic">🗺️</span>Workflow &amp; Journey Mapping — 6 maps</span>
-            <span class="method-chip"><span class="ic">🃏</span>Card Sorting — 8 participants</span>
-            <span class="method-chip"><span class="ic">🧪</span>Moderated Usability Testing — 2 rounds</span>
+            <span class="method-chip">Contextual Interviews — 48 sessions</span>
+            <span class="method-chip">Workflow &amp; Journey Mapping — 6 maps</span>
+            <span class="method-chip">Card Sorting — 8 participants</span>
+            <span class="method-chip">Moderated Usability Testing — 2 rounds</span>
           </div>
           <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> 80+ people across three role groups, 400+ data points across two usability rounds, and a full mapping of exactly where the artwork "lost its identity" between handoffs.</p>
           <div class="journey-map-wrap" style="margin:1rem 0">
@@ -644,7 +1004,7 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Personas &amp; Pain Points <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="persona-grid">
@@ -689,7 +1049,7 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Key Decisions <span class="sicon">+</span></summary>
         <div class="modal-details-body">
 
@@ -722,7 +1082,7 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Feature Prioritization Matrix <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <p class="modal-text" style="margin-bottom:.9rem">Scored against the personas' pain points — Impact on trust &amp; compliance risk vs. Effort to ship.</p>
@@ -764,7 +1124,7 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Information Architecture <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="journey-map-wrap">
@@ -774,7 +1134,7 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Typography <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <p class="modal-text" style="margin-bottom:.9rem">The product runs on <strong style="color:var(--cream)">Roboto</strong> throughout — chosen for its neutral, highly legible letterforms and tabular figures, which matter when reviewers are scanning version numbers and rule codes under time pressure.</p>
@@ -791,7 +1151,7 @@
         <div class="quote" style="font-size:1rem">"By transforming three disconnected products into one governed platform, we created a system that Aria, Rowan, and Finn could each trust — for different reasons, at different stages. In industries where a label error can reach a patient, that trust is not a design preference. It is the product." — Rashmi Padmanabha, Principal Product Designer</div>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Key Learnings <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <ul class="modal-list">
@@ -831,7 +1191,7 @@
         <p class="modal-text">I designed an end-to-end workplace visitor experience system that turns check-in into a connected service moment. One check-in triggers access control, host notifications, room readiness, navigation guidance, hospitality preparation, and visitor support.</p>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Who This Was For <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <ul class="modal-list">
@@ -847,14 +1207,14 @@
         <p class="modal-text">Clients experienced delays and confusion during check-in. Hosts lacked reliable tools to plan visits and arrange hospitality. Receptionists had to handle access, coordination, questions, and peak visitor traffic manually, which made premium visits feel fragmented.</p>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Research &amp; Insights <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="method-chips">
-            <span class="method-chip"><span class="ic">🗣️</span>Receptionist Interviews</span>
-            <span class="method-chip"><span class="ic">👥</span>Host Discussions</span>
-            <span class="method-chip"><span class="ic">💬</span>Client Feedback</span>
-            <span class="method-chip"><span class="ic">🧪</span>Task-Based Usability Testing</span>
+            <span class="method-chip">Receptionist Interviews</span>
+            <span class="method-chip">Host Discussions</span>
+            <span class="method-chip">Client Feedback</span>
+            <span class="method-chip">Task-Based Usability Testing</span>
           </div>
           <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> Logged reception overload during visitor peaks, host follow-through on food/room/access arrangements, and where clients lost confidence in the flow after check-in.</p>
           <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> Check-in was not a single kiosk interaction — it was a chain of dependent moments across people, access, space, and hospitality. This reframed the design problem from "screen design" to system design.</p>
@@ -869,7 +1229,7 @@
         </div>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Key Decisions <span class="sicon">+</span></summary>
         <div class="modal-details-body">
 
@@ -890,7 +1250,7 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Information Architecture <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="journey-map-wrap">
@@ -910,7 +1270,7 @@
         </div>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Learnings <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <ul class="modal-list">
@@ -924,8 +1284,9 @@
       <div class="modal-section">
         <div class="modal-section-title">UI Screens</div>
         <div class="modal-screens">
-          <img src="screen1.png" alt="Host dashboard and four-step AI self check-in flow">
-          <img src="screen2.png" alt="Visitor portal with AI assistant, access status, directions, and hospitality support">
+          <img src="visitor-host-real.png" alt="Host dashboard, Welcome back Rashmi, with pre-register visitor, plan a meeting, today's visits, and quick actions">
+          <img src="visitor-checkin-real.png" alt="Four-step self check-in flow: choose check-in method, face recognition capture, confirm details, and checked-in confirmation with checkout code">
+          <img src="visitor-portal-real.png" alt="Visitor portal with meeting details, access status, visit essentials, and the Visitor Assistant AI chat helping with directions and refreshment requests">
         </div>
       </div>
     </div>
@@ -953,7 +1314,7 @@
         <p class="modal-text">With most employees working virtually, communication became vital and service requests grew harder to fulfil. The legacy platform used for daily actions was tremendously difficult to access — poor navigation, a complicated journey map, and no responsive design meant simple tasks like applying for leave took far too many steps.</p>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Persona <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="persona-grid">
@@ -968,35 +1329,25 @@
               <p class="persona-pain">Busy with primary tasks, rarely has time to read manuals — visits the web app mainly to browse policies and organizational updates, bookmarking NIO, Timesheet, and Leave for daily use.</p>
               <div class="persona-need"><b>Goal</b>Complete assigned tasks quickly; after office hours, mainly wants to spend time with family.</div>
             </div>
-            <div class="persona-card">
-              <div class="persona-top">
-                <div class="persona-avatar">!</div>
-                <div>
-                  <div class="persona-name">Pain Points</div>
-                  <div class="persona-role">From research</div>
-                </div>
-              </div>
-              <p class="persona-pain">Misses submitting timesheets and leaves many times — an efficient platform to organize and automate daily tasks is needed.</p>
-              <div class="persona-need"><b>Needed</b>Use digital channels efficiently to complete daily tasks with minimal effort.</div>
-            </div>
           </div>
+          <div class="modal-text" style="margin-top:1rem"><strong style="color:var(--cream)">Pain points from research:</strong> Employees repeatedly missed submitting timesheets and leave requests, and needed a way to complete daily tasks through digital channels with minimal effort.</div>
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Research &amp; Insights <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="method-chips">
-            <span class="method-chip"><span class="ic">🗣️</span>User Interviews</span>
-            <span class="method-chip"><span class="ic">📋</span>Surveys</span>
-            <span class="method-chip"><span class="ic">🧪</span>Usability Evaluation of Existing Platforms</span>
-            <span class="method-chip"><span class="ic">🔍</span>Market Research</span>
+            <span class="method-chip">User Interviews</span>
+            <span class="method-chip">Surveys</span>
+            <span class="method-chip">Usability Evaluation of Existing Platforms</span>
+            <span class="method-chip">Market Research</span>
           </div>
           <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> After empathising with users, their needs, pain points, and frustrations doing daily activities became clear — different people had different needs, which a single portal redesign wouldn't solve. That pointed toward a conversational assistant available anywhere, not another screen to navigate.</p>
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Why a Chatbot <span class="sicon">+</span></summary>
         <div class="modal-details-body">
 
@@ -1025,7 +1376,7 @@
         </div>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Feature Prioritization <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <p class="modal-text" style="margin-bottom:.9rem">Scored for immediate release against the full backlog of requested features.</p>
@@ -1051,7 +1402,7 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Basic Flow — "What Can I Do?" <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="journey-map-wrap">
@@ -1071,7 +1422,7 @@
         </div>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Key Learnings <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <ul class="modal-list">
@@ -1106,7 +1457,7 @@
     <div class="modal-body">
       <div class="modal-section">
         <div class="modal-section-title">Overview</div>
-        <p class="modal-text">ULTIMA Works is the enterprise self-service portal employees use to manage timesheets, attendance, personal data, and access every internal application. I led a UX audit and redesign to fix tangled navigation, a desktop-only layout, and inconsistent design that were pushing employees toward the support desk instead of self-service.</p>
+        <p class="modal-text">ULTIMA Works is the enterprise self-service portal employees use to manage timesheets, attendance, personal data, and access every internal application. I conducted a UX audit and redesign to fix tangled navigation, a desktop-only layout, and inconsistent design that were pushing employees toward the support desk instead of self-service.</p>
       </div>
 
       <div class="modal-section">
@@ -1114,14 +1465,14 @@
         <p class="modal-text">The self-service portal is how every employee manages their personal and professional information day to day — but complex navigation, a non-responsive layout, and inconsistent visual design were turning simple tasks into support tickets. Critical information like policy benefits was buried deep in the structure, hard for employees to find on their own.</p>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Research &amp; Insights <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="method-chips">
-            <span class="method-chip"><span class="ic">📊</span>Session Analysis on Existing Portal</span>
-            <span class="method-chip"><span class="ic">🧪</span>Usability Study</span>
-            <span class="method-chip"><span class="ic">📋</span>Quantitative Survey</span>
-            <span class="method-chip"><span class="ic">👁️</span>Task Analysis</span>
+            <span class="method-chip">Session Analysis on Existing Portal</span>
+            <span class="method-chip">Usability Study</span>
+            <span class="method-chip">Quantitative Survey</span>
+            <span class="method-chip">Task Analysis</span>
           </div>
           <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> Observed employees performing common tasks to surface pain points and confusion, paired with survey data for measurable, quantitative validation of what the sessions showed.</p>
           <p class="modal-text"><strong style="color:var(--cream)">Key findings:</strong></p>
@@ -1134,7 +1485,7 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Key Decisions <span class="sicon">+</span></summary>
         <div class="modal-details-body">
 
@@ -1171,7 +1522,7 @@
         </div>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Testing &amp; Validation <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <p class="modal-text">Employees were invited to perform specific tasks on the redesigned portal while I observed their interactions, collected feedback, and measured task completion time and success rates. Results were positive — the simplified navigation, mobile optimization, consistent layout, and search functionality streamlined processes and improved employee satisfaction.</p>
@@ -1181,14 +1532,14 @@
       <div class="modal-section">
         <div class="modal-section-title">Outcomes</div>
         <div class="modal-outcomes">
-          <div><div class="modal-outcome-num">✓</div><div class="modal-outcome-label">Positive usability results</div></div>
-          <div><div class="modal-outcome-num">↑</div><div class="modal-outcome-label">User engagement</div></div>
-          <div><div class="modal-outcome-num">↑</div><div class="modal-outcome-label">Task completion speed</div></div>
-          <div><div class="modal-outcome-num">↓</div><div class="modal-outcome-label">Support tickets raised</div></div>
+          <div><div class="modal-outcome-num">Positive</div><div class="modal-outcome-label">Usability results</div></div>
+          <div><div class="modal-outcome-num">Higher</div><div class="modal-outcome-label">User engagement</div></div>
+          <div><div class="modal-outcome-num">Faster</div><div class="modal-outcome-label">Task completion</div></div>
+          <div><div class="modal-outcome-num">Fewer</div><div class="modal-outcome-label">Support tickets</div></div>
         </div>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Key Learnings <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <ul class="modal-list">
@@ -1216,7 +1567,7 @@
     <div class="modal-header">
       <div>
         <div class="modal-title" id="modal-propsys-title">PropSys 360</div>
-        <div class="modal-subtitle">Neo Technology / UK Social Housing — Lead Product UX Designer · 20 Weeks</div>
+        <div class="modal-subtitle">NEO Technology Solutions / UK Social Housing — Lead Product UX Designer · 20 Weeks</div>
       </div>
       <button class="modal-close" onclick="closeModal('modal-propsys')" aria-label="Close">✕</button>
     </div>
@@ -1229,7 +1580,7 @@
         <p class="modal-text">A UK social housing association managing 50,000+ units had no unified platform — four operational roles each relied on spreadsheets and email chains to track KPIs and compliance. I designed a single role-adaptive platform surfacing the right information to each role from one shared data model.</p>
       </div>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>The Four Roles <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <ul class="modal-list">
@@ -1241,21 +1592,21 @@
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Research &amp; Insights <span class="sicon">+</span></summary>
         <div class="modal-details-body">
           <div class="method-chips">
-            <span class="method-chip"><span class="ic">👥</span>Contextual Inquiry &amp; Shadowing — 4 roles</span>
-            <span class="method-chip"><span class="ic">🗺️</span>Service Blueprinting</span>
-            <span class="method-chip"><span class="ic">🧭</span>Journey Mapping</span>
-            <span class="method-chip"><span class="ic">💡</span>Design Thinking Workshops</span>
+            <span class="method-chip">Contextual Inquiry &amp; Shadowing — 4 roles</span>
+            <span class="method-chip">Service Blueprinting</span>
+            <span class="method-chip">Journey Mapping</span>
+            <span class="method-chip">Design Thinking Workshops</span>
           </div>
           <p class="modal-text" style="margin-bottom:.7rem"><strong style="color:var(--cream)">Data gathered:</strong> Measured average void re-let time against target SLA, tracked how often compliance deadlines were missed due to lack of visibility, and mapped duplicate data entry happening independently across teams.</p>
           <p class="modal-text"><strong style="color:var(--cream)">Insight → Decision:</strong> All four roles needed the same underlying data but conflicting views of it — so the decision was one shared data model with role-based dashboard routing, instead of building four separate apps.</p>
         </div>
       </details>
 
-      <details class="modal-details" open>
+      <details class="modal-details">
         <summary>Key Decision <span class="sicon">+</span></summary>
         <div class="modal-details-body">
 
