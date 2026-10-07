@@ -266,6 +266,11 @@
   .role-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin:0 auto 1.6rem;max-width:720px}
   .role-badge{display:flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:600;padding:.6rem 1.15rem;border-radius:30px;border:1px solid rgba(58,181,195,.4);background:rgba(58,181,195,.09);color:var(--teal)}
   .role-badge .bi{font-size:1rem}
+  /* HIDDEN CASE STUDIES — remove the "is-hidden" class from an element to show it again */
+  .is-hidden{display:none!important}
+  /* two visible hero slides; remove "two-up" from .hero-slideshow when all slides are shown */
+  @keyframes heroFade2{0%{opacity:0}3%{opacity:1}47%{opacity:1}50%{opacity:0}100%{opacity:0}}
+  .hero-slideshow.two-up .slide{animation:heroFade2 10s infinite}
 </style>
 </head>
 <body>
@@ -298,20 +303,24 @@
       <p>Every research finding gets weighed against a business number, not just a usability score — review time, error rate, support tickets, revenue retained. Design that can't point to one of those is a guess wearing a nice interface.</p>
       <a class="btn" href="#work">View Case Studies →</a>
     </div>
-    <div class="hero-slideshow">
+    <div class="hero-slideshow two-up">
       <div class="slide">
         <img src="health-merged.png" alt="Patient Health Education Platform — web home dashboard with AI symptom check and mobile article view with AI summary">
         <div class="slide-label">Patient Health Education Platform</div>
       </div>
       <div class="slide">
+        <img src="atom.png" alt="Kallik AToM label editor with real-time content locked and role-gated editing">
+        <div class="slide-label">Artwork Labelling AToM</div>
+      </div>
+      <div class="slide is-hidden">
         <img src="visitor-host-real.png" alt="AI-Powered Visitor Experience host dashboard">
         <div class="slide-label">AI-Powered Visitor Experience</div>
       </div>
-      <div class="slide">
+      <div class="slide is-hidden">
         <img src="maci-screen1.png" alt="MACI Microsoft Teams chatbot assistant">
         <div class="slide-label">MACI — AI Chatbot Assistant</div>
       </div>
-      <div class="slide">
+      <div class="slide is-hidden">
         <img src="essp-dashboard-2.png" alt="Employee Self-Service Portal home screen">
         <div class="slide-label">Employee Self-Service Portal</div>
       </div>
@@ -387,7 +396,7 @@
         </div>
       </div>
 
-      <div class="case-card" onclick="openModal('modal-access')">
+      <div class="case-card is-hidden" onclick="openModal('modal-access')">
         <div class="case-img"><img src="visitor-host-real.png" alt="AI-powered visitor host dashboard, Welcome back Rashmi, with pre-register visitor and today's visits"></div>
         <div class="case-body">
           <div class="case-tags"><span class="case-tag">AI Workplace UX</span><span class="case-tag">Visitor Experience</span><span class="case-tag">Service Design</span></div>
@@ -403,7 +412,7 @@
       </div>
 
     </div>
-    <div style="text-align:center;margin-top:2.5rem">
+    <div class="is-hidden" style="text-align:center;margin-top:2.5rem">
       <a class="btn" href="javascript:void(0)" onclick="openModal('modal-more')">More Case Studies →</a>
     </div>
   </div>
@@ -666,7 +675,7 @@
         <div class="modal-outcomes">
           <div><div class="modal-outcome-num">38%→65%</div><div class="modal-outcome-label">Article completion (+71% relative)</div></div>
           <div><div class="modal-outcome-num">+34pp</div><div class="modal-outcome-label">Mobile task success</div></div>
-          <div><div class="modal-outcome-num">0</div><div class="modal-outcome-label">Critical WCAG failures, down from 47</div></div>
+          <div><div class="modal-outcome-num">0</div><div class="modal-outcome-label">Critical WCAG failures at final audit (47 failures at baseline)</div></div>
           <div><div class="modal-outcome-num">82%</div><div class="modal-outcome-label">Search-to-article success, up from 44%</div></div>
           <div><div class="modal-outcome-num">−52%</div><div class="modal-outcome-label">Mobile bounce rate</div></div>
           <div><div class="modal-outcome-num">4.8/5</div><div class="modal-outcome-label">Patient satisfaction, n=1,200</div></div>
@@ -679,7 +688,7 @@
           <p class="modal-text" style="margin-bottom:.9rem">Growing mobile traffic, rising accessibility litigation risk, and new AI capabilities created the case for a full redesign. Six things were broken, and each one had a real cost attached:</p>
           <ul class="modal-list">
             <li><strong style="color:var(--cream)">Mobile-first failure</strong> — 48% of traffic was mobile but the UI was desktop-designed. Navigation collapsed, text overflowed, touch targets undersized.</li>
-            <li><strong style="color:var(--cream)">Accessibility risk</strong> — 47 WCAG 2.1 AA failures: colour contrast, broken focus states, screen reader semantics. An ADA risk and a real user blocker.</li>
+            <li><strong style="color:var(--cream)">Accessibility risk</strong> — 47 WCAG failures at baseline (2.1 AA audit): colour contrast, broken focus states, screen reader semantics. An ADA risk and a real user blocker.</li>
             <li><strong style="color:var(--cream)">Findability crisis</strong> — no unified search. Users averaged 4.2 clicks to find a relevant article; the symptom checker was effectively invisible.</li>
             <li><strong style="color:var(--cream)">Content overload</strong> — long-form articles with no chunking. 62% abandoned before reaching actionable guidance, above the 40% norm.</li>
             <li><strong style="color:var(--cream)">EHR integration gaps</strong> — clinician-sent education links delivered generic content; condition-specific linking broken across 3 EHR partners.</li>
@@ -874,7 +883,7 @@
             <li><strong style="color:var(--cream)">Screen reader support</strong> — semantic HTML5 + ARIA throughout, live regions for dynamic AI content updates. Tested with NVDA, JAWS, VoiceOver.</li>
             <li><strong style="color:var(--cream)">Reflow &amp; zoom</strong> — content reflows at 320px (400% zoom), no horizontal scroll, touch targets ≥ 44×44px on all interactive elements.</li>
             <li><strong style="color:var(--cream)">Readable content</strong> — plain-language guidelines, Flesch-Kincaid score ≤ Grade 8 default, reading-level selector, tooltip definitions for medical terms.</li>
-            <li><strong style="color:var(--cream)">Compliance result</strong> — 47 → 0 critical failures. WCAG 2.2 AA achieved, ADA compliant, EAA 2025 ready, verified by third-party audit.</li>
+            <li><strong style="color:var(--cream)">Compliance result</strong> — 47 failures at baseline (2.1 AA audit) → 0 critical failures at final audit. WCAG 2.2 AA achieved, ADA compliant, EAA 2025 ready, verified by third-party audit.</li>
           </ul>
         </div>
       </details>
@@ -942,7 +951,7 @@
     <div class="modal-body">
       <div class="modal-section">
         <div class="modal-section-title">Overview</div>
-        <p class="modal-text">Regulated artwork operations ran across three disconnected products — an artwork editor, a file manager, and an early AI validation concept — stitched together with email, shared drives, and manual sign-offs. I unified them into one governed platform, cutting label review time from 6 hours to 38 minutes.</p>
+        <p class="modal-text">Regulated artwork operations ran across three disconnected products — an artwork editor, a file manager, and an early AI validation concept — stitched together with email, shared drives, and manual sign-offs. I unified them into one governed platform, cutting label review time from up to 6 hours to 38 minutes.</p>
       </div>
       <div class="modal-section">
         <div class="modal-section-title">Process</div>
@@ -971,8 +980,8 @@
       <div class="modal-section">
         <div class="modal-section-title">User Journey — Before &amp; After</div>
         <div class="journey-map-wrap">
-          <img class="journey-map-light" src="kallik-journey-map.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review 4 to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from 6 hours to 38 minutes, an 89 percent reduction.">
-          <img class="journey-map-dark" src="kallik-journey-map-dark.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review 4 to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from 6 hours to 38 minutes, an 89 percent reduction.">
+          <img class="journey-map-light" src="kallik-journey-map.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review up to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from up to 6 hours to 38 minutes, an 89 percent reduction.">
+          <img class="journey-map-dark" src="kallik-journey-map-dark.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review up to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from up to 6 hours to 38 minutes, an 89 percent reduction.">
         </div>
       </div>
 
@@ -1029,7 +1038,7 @@
                   <div class="persona-role">Reviewer &amp; Approver</div>
                 </div>
               </div>
-              <p class="persona-pain">Spent 4–6 hrs per label on manual checklists, ignored AI flags with no rule cited, approved by email reply.</p>
+              <p class="persona-pain">Spent up to 6 hrs per label on manual checklists, ignored AI flags with no rule cited, approved by email reply.</p>
               <div class="persona-need"><b>Needed</b>AI that shows its reasoning, and one structured workflow.</div>
             </div>
             <div class="persona-card">
