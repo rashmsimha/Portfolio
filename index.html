@@ -266,11 +266,6 @@
   .role-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:.7rem;margin:0 auto 1.6rem;max-width:720px}
   .role-badge{display:flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:600;padding:.6rem 1.15rem;border-radius:30px;border:1px solid rgba(58,181,195,.4);background:rgba(58,181,195,.09);color:var(--teal)}
   .role-badge .bi{font-size:1rem}
-  /* HIDDEN CASE STUDIES — remove the "is-hidden" class from an element to show it again */
-  .is-hidden{display:none!important}
-  /* two visible hero slides; remove "two-up" from .hero-slideshow when all slides are shown */
-  @keyframes heroFade2{0%{opacity:0}3%{opacity:1}47%{opacity:1}50%{opacity:0}100%{opacity:0}}
-  .hero-slideshow.two-up .slide{animation:heroFade2 10s infinite}
 </style>
 </head>
 <body>
@@ -303,24 +298,20 @@
       <p>Every research finding gets weighed against a business number, not just a usability score — review time, error rate, support tickets, revenue retained. Design that can't point to one of those is a guess wearing a nice interface.</p>
       <a class="btn" href="#work">View Case Studies →</a>
     </div>
-    <div class="hero-slideshow two-up">
+    <div class="hero-slideshow">
       <div class="slide">
         <img src="health-merged.png" alt="Patient Health Education Platform — web home dashboard with AI symptom check and mobile article view with AI summary">
         <div class="slide-label">Patient Health Education Platform</div>
       </div>
       <div class="slide">
-        <img src="atom.png" alt="Kallik AToM label editor with real-time content locked and role-gated editing">
-        <div class="slide-label">Artwork Labelling AToM</div>
-      </div>
-      <div class="slide is-hidden">
         <img src="visitor-host-real.png" alt="AI-Powered Visitor Experience host dashboard">
         <div class="slide-label">AI-Powered Visitor Experience</div>
       </div>
-      <div class="slide is-hidden">
+      <div class="slide">
         <img src="maci-screen1.png" alt="MACI Microsoft Teams chatbot assistant">
         <div class="slide-label">MACI — AI Chatbot Assistant</div>
       </div>
-      <div class="slide is-hidden">
+      <div class="slide">
         <img src="essp-dashboard-2.png" alt="Employee Self-Service Portal home screen">
         <div class="slide-label">Employee Self-Service Portal</div>
       </div>
@@ -396,7 +387,7 @@
         </div>
       </div>
 
-      <div class="case-card is-hidden" onclick="openModal('modal-access')">
+      <div class="case-card" onclick="openModal('modal-access')">
         <div class="case-img"><img src="visitor-host-real.png" alt="AI-powered visitor host dashboard, Welcome back Rashmi, with pre-register visitor and today's visits"></div>
         <div class="case-body">
           <div class="case-tags"><span class="case-tag">AI Workplace UX</span><span class="case-tag">Visitor Experience</span><span class="case-tag">Service Design</span></div>
@@ -412,7 +403,7 @@
       </div>
 
     </div>
-    <div class="is-hidden" style="text-align:center;margin-top:2.5rem">
+    <div style="text-align:center;margin-top:2.5rem">
       <a class="btn" href="javascript:void(0)" onclick="openModal('modal-more')">More Case Studies →</a>
     </div>
   </div>
@@ -444,12 +435,13 @@
       <div class="company">LTIMindtree · 16 years</div>
       <ul>
         <li>Directed UX strategy for a 40K+ user financial platform, reducing workflow failures by 70% and failed searches by 35%.</li>
-        <li>Conducted the accessibility audit for a 220K+ user banking platform, improving compliance from 31 to 89 (94% WCAG AA).</li>
+        <li>Conducted the accessibility audit for a 220K+ user banking platform, improving the accessibility compliance score from 31 to 89.</li>
         <li>Unified 100+ IT services into one platform for 90K+ employees — 35% faster resolution, 2.5× first-time resolution.</li>
         <li>Ran 26+ contextual inquiries, reducing workflow inconsistencies by 60%.</li>
         <li>Built and governed enterprise design systems adopted across multiple teams.</li>
         <li>Facilitated design critiques and mentored designers on UX best practices, partnering directly with VP-level and executive stakeholders to align design strategy.</li>
       </ul>
+      <p style="font-size:.78rem;opacity:.7;margin-top:.8rem">All percentages above are measured outcomes.</p>
     </div>
   </div>
 </section>
@@ -651,8 +643,12 @@
     <div class="modal-body">
 
       <div class="modal-section">
-        <div class="modal-section-title">Overview</div>
-        <p class="modal-text">A consumer-facing digital health platform delivering evidence-based patient education — articles, symptom guides, decision tools, and care videos — across 70M+ annual patient touchpoints, deployed via health system portals, EHR integrations, and health plan apps. Strong content depth, but a UX that hadn't evolved in years. I conducted the redesign as both Product Manager and Product Designer, wearing both hats across a 6-month, 3-team engagement.</p>
+        <div class="modal-section-title">The short version</div>
+        <p class="modal-text"><b>The stakes.</b> This platform delivers patient education across 70M+ annual touchpoints, through health system portals, EHR integrations and health plan apps. A UX that hadn't moved in years meant patients gave up before reaching guidance, and 47 accessibility failures were an ADA risk.</p>
+        <p class="modal-text"><b>The problem.</b> 48% of traffic was mobile, but the UI was desktop-designed. There was no unified search (4.2 clicks to find an article), 62% abandoned long articles, and clinician-sent EHR links delivered generic content.</p>
+        <p class="modal-text"><b>What I owned.</b> Both product manager and designer across 6 months and 3 teams: success metrics, scope negotiation with engineering through an effort/impact matrix, the accessibility compliance timeline, EHR partner sign-off, and the research.</p>
+        <p class="modal-text"><b>The outcome.</b> Post-launch, article completion rose from 38% to 65%, search-to-article success from 44% to 82%, and critical WCAG failures went from 47 to 0.</p>
+        <p class="modal-text"><b>What I took from it.</b> Testing first with the hardest users, people with low literacy, challenged my assumptions while they were still cheap to change.</p>
       </div>
 
       <div class="modal-section">
@@ -673,13 +669,14 @@
       <div class="modal-section">
         <div class="modal-section-title">Outcomes — Post-Launch</div>
         <div class="modal-outcomes">
-          <div><div class="modal-outcome-num">38%→65%</div><div class="modal-outcome-label">Article completion (+71% relative)</div></div>
+          <div><div class="modal-outcome-num">38%→65%</div><div class="modal-outcome-label">Article completion rate</div></div>
           <div><div class="modal-outcome-num">+34pp</div><div class="modal-outcome-label">Mobile task success</div></div>
-          <div><div class="modal-outcome-num">0</div><div class="modal-outcome-label">Critical WCAG failures at final audit (47 failures at baseline)</div></div>
+          <div><div class="modal-outcome-num">0</div><div class="modal-outcome-label">Critical WCAG failures, down from 47</div></div>
           <div><div class="modal-outcome-num">82%</div><div class="modal-outcome-label">Search-to-article success, up from 44%</div></div>
           <div><div class="modal-outcome-num">−52%</div><div class="modal-outcome-label">Mobile bounce rate</div></div>
           <div><div class="modal-outcome-num">4.8/5</div><div class="modal-outcome-label">Patient satisfaction, n=1,200</div></div>
         </div>
+        <p class="modal-text" style="font-size:.78rem;opacity:.7;margin-top:.8rem">Basis: post-launch results, compared with the pre-redesign baseline where one is shown. Satisfaction is from n=1,200 patient responses.</p>
       </div>
 
       <details class="modal-details">
@@ -688,7 +685,7 @@
           <p class="modal-text" style="margin-bottom:.9rem">Growing mobile traffic, rising accessibility litigation risk, and new AI capabilities created the case for a full redesign. Six things were broken, and each one had a real cost attached:</p>
           <ul class="modal-list">
             <li><strong style="color:var(--cream)">Mobile-first failure</strong> — 48% of traffic was mobile but the UI was desktop-designed. Navigation collapsed, text overflowed, touch targets undersized.</li>
-            <li><strong style="color:var(--cream)">Accessibility risk</strong> — 47 WCAG failures at baseline (2.1 AA audit): colour contrast, broken focus states, screen reader semantics. An ADA risk and a real user blocker.</li>
+            <li><strong style="color:var(--cream)">Accessibility risk</strong> — 47 WCAG 2.1 AA failures: colour contrast, broken focus states, screen reader semantics. An ADA risk and a real user blocker.</li>
             <li><strong style="color:var(--cream)">Findability crisis</strong> — no unified search. Users averaged 4.2 clicks to find a relevant article; the symptom checker was effectively invisible.</li>
             <li><strong style="color:var(--cream)">Content overload</strong> — long-form articles with no chunking. 62% abandoned before reaching actionable guidance, above the 40% norm.</li>
             <li><strong style="color:var(--cream)">EHR integration gaps</strong> — clinician-sent education links delivered generic content; condition-specific linking broken across 3 EHR partners.</li>
@@ -847,7 +844,7 @@
           <p class="modal-text" style="margin:.9rem 0 .5rem"><strong style="color:var(--cream)">What testing changed:</strong></p>
           <ul class="modal-list">
             <li>Bottom nav reduced task time by 42% on mobile vs. a hamburger menu.</li>
-            <li>Unified search with autosuggest and condition filters lifted search-to-article success from 44% to 82% — patients found the right article far more often on the first try.</li>
+            <li>Unified search with autosuggest and condition filters came out of testing. The measured lift came post-launch: search-to-article success rose from 44% to 82%, so patients found the right article far more often on the first try.</li>
             <li>AI summary card increased full-article reads to 71% of the time.</li>
             <li>Reading-level toggle used by 68% of low-literacy participants — unprompted.</li>
             <li>First search filter iteration had too many options — simplified from 8 to 3.</li>
@@ -883,7 +880,7 @@
             <li><strong style="color:var(--cream)">Screen reader support</strong> — semantic HTML5 + ARIA throughout, live regions for dynamic AI content updates. Tested with NVDA, JAWS, VoiceOver.</li>
             <li><strong style="color:var(--cream)">Reflow &amp; zoom</strong> — content reflows at 320px (400% zoom), no horizontal scroll, touch targets ≥ 44×44px on all interactive elements.</li>
             <li><strong style="color:var(--cream)">Readable content</strong> — plain-language guidelines, Flesch-Kincaid score ≤ Grade 8 default, reading-level selector, tooltip definitions for medical terms.</li>
-            <li><strong style="color:var(--cream)">Compliance result</strong> — 47 failures at baseline (2.1 AA audit) → 0 critical failures at final audit. WCAG 2.2 AA achieved, ADA compliant, EAA 2025 ready, verified by third-party audit.</li>
+            <li><strong style="color:var(--cream)">Compliance result</strong> — 47 → 0 critical failures. WCAG 2.2 AA achieved, ADA compliant, EAA 2025 ready, verified by third-party audit.</li>
           </ul>
         </div>
       </details>
@@ -950,8 +947,12 @@
     </div>
     <div class="modal-body">
       <div class="modal-section">
-        <div class="modal-section-title">Overview</div>
-        <p class="modal-text">Regulated artwork operations ran across three disconnected products — an artwork editor, a file manager, and an early AI validation concept — stitched together with email, shared drives, and manual sign-offs. I unified them into one governed platform, cutting label review time from up to 6 hours to 38 minutes.</p>
+        <div class="modal-section-title">The short version</div>
+        <p class="modal-text"><b>The stakes.</b> In regulated pharma and FMCG labelling, an error that slips through can mean a failed compliance check or a recalled product, and reviewers were catching them by hand.</p>
+        <p class="modal-text"><b>The problem.</b> Three disconnected products (an artwork editor, a file manager and an early AI validation concept) were held together by email, shared drives and manual sign-offs. Reviewers ignored AI flags that gave no reason.</p>
+        <p class="modal-text"><b>What I owned.</b> The research (48 contextual interviews, card sorting, two usability rounds), the decision to unify the three products instead of patching them, and the design of the AI validation: rule-cited, confidence-scored, with a human making the final call.</p>
+        <p class="modal-text"><b>The outcome.</b> Label review time fell from 6 hours to 38 minutes. The AI flagged 91% of compliance errors, observed over the first 3 months post-launch on live usage, not a controlled test.</p>
+        <p class="modal-text"><b>What I took from it.</b> People didn't distrust the AI. They distrusted flags that couldn't explain themselves.</p>
       </div>
       <div class="modal-section">
         <div class="modal-section-title">Process</div>
@@ -976,12 +977,13 @@
           <div><div class="modal-outcome-num">3×</div><div class="modal-outcome-label">AI action rate</div></div>
           <div><div class="modal-outcome-num">4</div><div class="modal-outcome-label">New enterprise customers</div></div>
         </div>
+        <p class="modal-text" style="font-size:.78rem;opacity:.7;margin-top:.8rem">Basis: 91% and 3× are observed on live usage, not a controlled test. Method and limits are in AI Workflow &amp; Evaluation below.</p>
       </div>
       <div class="modal-section">
         <div class="modal-section-title">User Journey — Before &amp; After</div>
         <div class="journey-map-wrap">
-          <img class="journey-map-light" src="kallik-journey-map.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review up to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from up to 6 hours to 38 minutes, an 89 percent reduction.">
-          <img class="journey-map-dark" src="kallik-journey-map-dark.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review up to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from up to 6 hours to 38 minutes, an 89 percent reduction.">
+          <img class="journey-map-light" src="kallik-journey-map.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review 4 to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from 6 hours to 38 minutes, an 89 percent reduction.">
+          <img class="journey-map-dark" src="kallik-journey-map-dark.svg" alt="Kallik AToM user journey before: Create, Export and email, Manual review 4 to 6 hours, AI check ignored, Approve by email, Print guessing version. After: Create and lock, In-system review, AI validation 38 minutes, One-click approve, Release to print, Audit-ready. Review time drops from 6 hours to 38 minutes, an 89 percent reduction.">
         </div>
       </div>
 
@@ -1038,7 +1040,7 @@
                   <div class="persona-role">Reviewer &amp; Approver</div>
                 </div>
               </div>
-              <p class="persona-pain">Spent up to 6 hrs per label on manual checklists, ignored AI flags with no rule cited, approved by email reply.</p>
+              <p class="persona-pain">Spent 4–6 hrs per label on manual checklists, ignored AI flags with no rule cited, approved by email reply.</p>
               <div class="persona-need"><b>Needed</b>AI that shows its reasoning, and one structured workflow.</div>
             </div>
             <div class="persona-card">
@@ -1075,7 +1077,7 @@
             <div class="dt">2. AI validation</div>
             <div class="decision-alt"><b>Considered:</b> a separate validation report/checklist, shown after export — closer to how compliance checks already worked.</div>
             <div class="decision-alt"><b>Rejected because:</b> reviewers already had a separate checklist and had learned to route around it. The issue wasn't where the check lived, it was that flags carried no reasoning — moving an unexplained flag to a new location wouldn't fix that (confirmed by the pivot above).</div>
-            <div class="decision-final"><b>Chose:</b> inline, rule-cited, confidence-scored validation (High/Review/Flag) directly on the canvas, with a suggested fix attached. Result: 91% of errors caught, 3× AI action rate.</div>
+            <div class="decision-final"><b>Chose:</b> inline, rule-cited, confidence-scored validation (High/Review/Flag) directly on the canvas, with a suggested fix attached. Result: 91% of errors caught (method in AI Workflow &amp; Evaluation below), 3× AI action rate.</div>
           </div>
 
           <div class="decision-item">
@@ -1090,6 +1092,30 @@
             <div class="decision-final"><b>Chose:</b> status-led navigation — Draft → Review → Approved → Released as the primary IA. Result: status visible at a glance, no searching required.</div>
           </div>
 
+        </div>
+      </details>
+
+      <details class="modal-details">
+        <summary>AI Workflow &amp; Evaluation <span class="sicon">+</span></summary>
+        <div class="modal-details-body">
+          <div class="decision-item">
+            <div class="dt">Uncertainty</div>
+            <div class="decision-final"><b>Three levels, not pass/fail:</b> High (rule met), Review (AI unsure, human decides), Flag (rule breached). Every indicator cites the rule and carries a suggested fix. Anything below High is never passed silently; it always reaches a human.</div>
+          </div>
+          <div class="decision-item">
+            <div class="dt">Failure states</div>
+            <div class="decision-alt"><b>Missed error (false negative):</b> AI never approves a label. Every label still needs human sign-off before release.</div>
+            <div class="decision-alt"><b>Over-flagging (false positive):</b> each flag cites its rule and suggested fix, so reviewers can act or dismiss quickly instead of batch-closing unexplained alerts.</div>
+            <div class="decision-alt"><b>Unreadable / low-confidence artwork:</b> show a "couldn't validate" state rather than a false pass, and route the label to manual review.</div>
+          </div>
+          <div class="decision-item">
+            <div class="dt">Human oversight</div>
+            <div class="decision-final"><b>AI suggests, reviewer decides.</b> One-click approve records version, checks and timestamp; overrides are logged to the audit trail. AI can never release a label; a named approver always does.</div>
+          </div>
+          <div class="decision-item">
+            <div class="dt">How success was evaluated</div>
+            <div class="decision-final"><b>91% of compliance errors were flagged by the AI</b>, observed over the first 3 months post-launch on live usage, not a controlled test. Limitation: no seeded-error baseline, so I can't rule out missed errors. Trust signal: reviewers acted on AI flags about 3× as often after flags cited their rule and confidence. <b>Next time:</b> I'd run a seeded-error test set and track false-positive and override rates alongside it.</div>
+          </div>
         </div>
       </details>
 
@@ -1279,6 +1305,7 @@
           <div><div class="modal-outcome-num">0</div><div class="modal-outcome-label">Visitor confusion after guidance</div></div>
           <div><div class="modal-outcome-num">1</div><div class="modal-outcome-label">Connected system, entry to exit</div></div>
         </div>
+        <p class="modal-text" style="font-size:.78rem;opacity:.7;margin-top:.8rem">Basis: measured outcomes.</p>
       </div>
 
       <details class="modal-details">
@@ -1658,6 +1685,7 @@
           <div><div class="modal-outcome-num">78%</div><div class="modal-outcome-label">Compliance risk reduction</div></div>
           <div><div class="modal-outcome-num">4</div><div class="modal-outcome-label">Roles, one platform</div></div>
         </div>
+        <p class="modal-text" style="font-size:.78rem;opacity:.7;margin-top:.8rem">Basis: 62% and 78% are measured; £2.4M is a projected annual saving, not yet realised.</p>
       </div>
     </div>
   </div>
